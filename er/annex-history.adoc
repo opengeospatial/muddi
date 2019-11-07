@@ -1,0 +1,12 @@
+[appendix]
+== Revision History
+
+.Revision History
+[width="90%",options="header"]
+|====================
+|Date |Editor |Release | Primary clauses modified |Descriptions
+|December 1, 2017 |J. Lieberman | 0.1 |all |initial version
+|January 21, 2018 |J. Lieberman | 0.5 |all |expanded draft with mappings
+|July 23, 2018 |J. Lieberman | 0.9 |all |expanded draft with mappings
+|November 29, 2017 |J. Lieberman | 1.0 |all |Complete after reviews
+|====================

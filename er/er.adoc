@@ -1,0 +1,103 @@
+// *****************************************************************************
+// please provide the following elements
+// *****************************************************************************
+// name of the ER after the colon
+:title: Model for Underground Data Definition and Integration (MUDDI) Engineering Report
+// document identifier. The identifier has the format OGC YY-nnn, e.g. OGC 17-067. You can obtain the identifier from the OGC Portal: https://portal.opengeospatial.org/?m=public&subtab=request&tab=1
+:docReference: OGC 17-090
+// date when you posted the document to OGC Portal>Pending Documents. Please use the format: yyyy-mm-dd
+:postedDate: 2018-06-01
+// name of all editors. Separate multiple editors by comma, e.g. John Wayne, Bud Spencer
+:editor: Josh Lieberman
+// proposed working group for review, e.g. Architecture DWG, or WCS SWG
+:workingGroup: Energy and Utilities DWG, Smart Cities DWG
+// *****************************************************************************
+// done, please continue with the imports at line 62 of this document
+// *****************************************************************************
+
+// *****************************************************************************
+// please don't change any of the following, but proceed at line 62
+// *****************************************************************************
+:publicationDate: Draft
+:approvalDate: Draft
+:referenceURL: ID
+:copyrightYear: 2017
+//
+:titletext: {title}
+:doctype: book
+:encoding: utf-8
+:lang: en
+:toc: macro
+:toclevels: 3
+:numbered:
+:sectanchors:
+:source-highlighter: coderay
+// set media to output format print or screen for pdf export
+:media: print
+:bibtex-file: resources/bibtex-file.bib
+
+= {title}
+
+Publication Date: {publicationDate}
+
+Approval Date: {approvalDate}
+
+Posted Date: {postedDate}
+
+Reference number of this document: {docReference}
+
+Reference URL for this document: http://www.opengis.net/doc/PER/t13-{referenceURL}
+
+Category: Public Engineering Report
+
+Editor: {editor}
+
+Title: {titletext}
+
+''''
+
+include::0-preface.adoc[]
+
+include::1-summary.adoc[]
+
+// *****************************************************************************
+// Organize your included files as appropriate
+// *****************************************************************************
+include::2-references.adoc[]
+
+include::3-terms.adoc[]
+
+include::4-overview.adoc[]
+
+include::5-use-cases-reqs.adoc[]
+
+include::6-candidate-models.adoc[]
+
+include::7-core-and-overview.adoc[]
+
+include::8-interfaces-modules.adoc[]
+
+include::9-mappings.adoc[]
+
+//include::10-implementation-guidelines.adoc[]
+
+////
+add or remove annexes as necessary
+////
+include::annex-a.adoc[]
+
+//include::annex-b.adoc[]
+
+include::annex-c.adoc[]
+
+////
+Revision History should be the last annex before the Bibliography
+Bibliography should be the last annex
+////
+include::annex-history.adoc[]
+
+include::annex-bibliography.adoc[]
+
+// *****************************************************************************
+// Now jump to the first file, 0-summary.adoc and start editing it for content. File 0-preface.adoc shall remain untouched.
+// *****************************************************************************

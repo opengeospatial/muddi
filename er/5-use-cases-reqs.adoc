@@ -1,0 +1,64 @@
+[[UseCaseReqs]]
+== Use Cases and Derived Requirements
+
+The following 6 UGII application use cases are detailed in cite:[Lieberman2017] and the first 3 use cases are considered a priority for the OGC Underground Pilot.
+
+=== Use cases
+
+. *Routine street excavations (EX)*
++
+There are on average between 30 and 40 excavations annually per mile of roadway in many developed areas. Since urban and even suburban underground space is typically crowded with many different utility lines, most jurisdictions require that utilities share their data at the location of a proposed excavation in order to avoid utility strikes, which can cause extensive damage and result in significant costs and delays. In many cases, mark-up crews must locate records for the street in question and bring them out into the field in their vehicles. Information sharing and collaboration consists of "graffiti-style" sketches made on the street with spray paint or chalk. Getting all the utilities to respond routinely takes several days to a couple of weeks – if essential records can be located at all. The effectiveness of the street markup process depends upon the often questionable, rarely documented, and even more rarely tested accuracy and completeness of the records being referenced.
++
+With utilities records in standards-based digital formats, information requests can be answered with digital submissions from each utility. Because the utility data is in a common format, it can be seamlessly integrated by excavators and used to guide underground work. Modern methods of data exchange, including wireless communications to mobile devices in the field, then make it possible to rapidly assemble utility information directly in the field, potentially lowering the strike risk and also reducing the time to mitigate strike hazards from days or weeks to minutes.
++
+. *Planning, design and construction of large scale projects (AE)*
++
+Cities and other large jurisdictions undergo constant change. At any one moment there may be a dozen or more new projects on the drawing boards and in construction. It is in the interests of these jurisdictions that new development be as economical as possible: that costs are held to a minimum and that projects are completed on schedule and in budget. To meet these objectives, project planners, engineers and architects need access to the best possible information to guide their plans and designs. They need to know if the capacity of utilities and characteristics of the underground environment can support the scale of the project envisioned. They will also need to know precisely where those utilities are located in order to properly plan building foundations and new building service connections. Answers to these questions require access to high quality information in a form that is straightforward to integrate and analyze.
++
+Comprehensive and interoperable information about existing infrastructure networks is a pre-requisite for efficient planning and design for major new development. Information about existing and potential natural conditions are also essential for assessing both impacts to the environment and vulnerabilities to events such as flooding, hurricanes, and earthquakes. All of these need to be appropriately accounted for in good designs. When data are incomplete, incompatible, and difficult to find, this can lead to unduly large contract contingencies as well as significant delays in moving forward. Once construction does commence, unexpected discoveries of serious underlying conditions too often require very expensive change orders and long time delays. Major projects that cover a large area and extend over many years need continuing access to good underground data. If this access is not maintained, it adds additional cost and risk to the project.
++
+. *Disaster planning and response (DP)*
++
+Large scale disasters do not happen very often, but when they do, the failure to anticipate effects on major infrastructure features as well as on other components of the built environment that depend upon that infrastructure, can add billions to costs and result in the displacement, injury and death of large numbers of people. Disasters that are particularly associated with infrastructure failures include power blackouts, floods, tsunamis and storm surges; earthquakes, tornados, hurricanes and other high wind events; high heat events, fuel explosions, and terrorist attacks. A disaster event, at its most disabling, can lead to the failure of major utility generating, storage, control or transmission facilities, cutting off utility resources to large areas. Power failures caused by storm, flood or heat can black out an entire region and cause the shutdown of many critical facilities. A storm surge can flood transit and vehicular tunnels, short circuit electric substations and knock out basement utilities.  Interdependencies between infrastructure networks can mean that the failure of one system disables others in a cascading effect. Although not all the damage caused by a disaster event can be anticipated or prevented, any capacity to do so is utterly dependent on the rapid availability of high-quality, interoperable, geospatially enabled data for analyzing vulnerabilities to disaster consequences.
++
+Interoperable underground utility data that depict large-scale and/or critical transmission, generation, or storage features with their physical and functional interconnections are particularly important. They enable analysis and simulation of the effects of a disaster event, development of protective strategies, and quick reaction to outages and damage. Such data are also important for ing single points of failure, interdependencies, and triggers for cascading effects. Data about corresponding above-surface features along with underground environment characteristics such as permeability and saturation are also needed to examine the effects of disaster scenarios such as storm surge levels. Major utility features comprise only a small percentage of the overall utility infrastructure, dominated as it is by street-level distribution branches, and concerns for their security often mitigate against data standardization and sharing. Nevertheless, without proper integration and analysis of data for both strategic and street-level infrastructure components, jurisdictions will remain hopelessly vulnerable and reactive to disaster events rather than properly prepared.
++
+. *Utility related emergency response (ER)*
++
+Bringing together utility information for routine excavations may take a significant amount of time, but there is far more urgency when dealing with a potential emergency. Not only must on-scene responders know about all the utility lines they may encounter, and their capacity, before excavation, but they also need to know about the location of utility control features that can rapidly shut off service in the event of a significant break. For example, when a water main leak is strongly suspected, a series of control valves must be located and shut off in sequence to stop the flow since a water supply system is a looped rather than a radial network. Soil and sediment data is also helpful in understanding whether flow and scour from a major water main break may undermine adjacent utility lines and nearby building foundations. Slow or incomplete delivery of this information can lead to a dangerous and costly event. Stories abound of utility workers at the scene of an incident huddling over paper plans on the hood of a truck, trying to figure out what might be happening.
++
+Complete, accurate and interoperable underground infrastructure data available via wireless communications to the field can enable emergency field responders to rapidly understand the nature of a utility problem and to take informed action. Shut off valves can be quickly located and closed. Digging to expose the damaged pipe or conduit can be commenced immediately with confidence that all other utilities locations in the vicinity are known and can be avoided.
++
+. *Private and public utility operations, maintenance, repair and replacement programs (OM)*
++
+All utilities have maintenance programs to ensure that their networks are functioning optimally with a minimum of complaints and outages. An important part of such maintenance operations is the replacement of old and obsolete infrastructure elements with new, safer and higher-capacity components. The ability to comprehensively analyze the performance of individual utility features as well as entire networks, on the basis of complete and accurate utility feature information including age, material, capacity and location, is essential for making economically responsible decisions. While installing new gas lines or electric conduit may be expensive, analysis can show it to be less expensive than dealing with major service outages when utility components fail or no longer meet demand.
++
+Utility maintenance and repair processes depend upon data that relates complaints and problems to specific utility element locations and characteristics. Information about the underground environment, including earth materials and structures, moisture, vibration and the effects of adjacent utility lines, can also help utility analysts understand where segments of their networks are at greatest risk of corrosion, damage and breakage. As the use of utility-monitoring sensors becomes more widespread, additional layers of information and intelligence can be made available to support decision making processes.
++
+. *Smart Cities, Future Cities (SC)*
+New generations of sensors and smart control valves that can be attached to underground infrastructure components are transforming the way in which infrastructure networks are monitored, and are revolutionizing the way infrastructure product delivery is managed. In turn, these sensors and controls will likely require new supportive power and telecommunications infrastructure, increasing the interdependencies between utilities. Furthermore, innovative technologies coming into use will require new types of utility services such as curb outlets for recharging electric vehicles and navigation infrastructure to guide autonomous vehicles. As underground networks adapt to such new developments, comprehensive knowledge of infrastructure locations and characteristics will be essential for modernization.
++
+To keep up with the pace of technological transformation it will be necessary for jurisdictions to be prepared for major overhauls of their underground infrastructure environment. There is likely to be increased need to access buried networks and install new services as efficiently as possible. An important step in preparing for these changes will be to fully document the infrastructure that is currently in place, and to evolve standard data models for the new services and devices that are on the way. Losing track of what is underground will be a substantial barrier to realizing the benefits of future city innovations.
+
+=== Derived model requirements
+
+The following model requirements are drawn from the foregoing use cases and reference back to them.
+
+.Use case derived model requirements
+[width="100%",cols="10,40,30",options="header"]
+|===
+|*ID*|*Requirement*|*Capability Example*
+|EX1|Horizontal cross-section of all UGI (Underground Information) entities with high horizontal, medium vertical accuracy|2.5D feature geometries
+|AE1|Detailed 3D UGI geometry|3D feature geometries
+|AE2|Detailed 3D underground environment information|Voxel indexing
+|AE3|Survey, sample, and measurement information|Linked survey measurements
+|DP1|Physical and operational dependency relationships|Topological, structural, functional dependencies
+|DP2|Vulnerabilities - inundation, fire, frost, environmental hazards, terrorism / vandalism|Vulnerability assessments
+|DP3|Simulations and predictions (thencast / nowcast / forecast)|Simulation model parameters
+|ER1|Spatial and functional relationships between all UGI elements|Network topology
+|OM1|Within-network topology and functional relationships above-below ground|Network roles
+|OM2|UGI asset status and lifecycle information for cross-utility planning|Feature-as-asset lifecycle
+|SC1|Instrumentation, property, and feature-of-interest relationships|Related sensor observations and inspections
+|SC2|Sensing data streams|Time-series properties
+|SC3|Contributed observations|Data quality / provenance indicators
+|===

@@ -1,0 +1,4 @@
+[appendix]
+== Informative MUDDI Implementation Examples
+
+This section will cover MUDDI implementation details and guidance. This may eventually include a GML / CityGML implementation, an SF-SQL implementation, and an RDF/OWL implementation.

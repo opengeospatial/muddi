@@ -1,0 +1,30 @@
+== Terms and definitions
+
+For the purposes of this report, the definitions specified in Clause 4 of the OWS Common Implementation Standard https://portal.opengeospatial.org/files/?artifact_id=38867&version=2[OGC 06-121r9] shall apply. In addition, the following terms and definitions apply.
+
+[[Soils]]Soils::
+This term has a precise definition as the primary component of the Earth's pedosphere. It is used here in a more general sense to refer to all overburden earth materials in the underground environment, including soils, sediments, and construction fill, that might surround and support underground infrastructure components.
+
+[[SubsurfaceInfrastructure]]Subsurface Infrastructure::
+See <<UndergroundInfrastructure,Underground Infrastructure>>
+
+[[UndergroundEnvironment]]Underground Environment::
+Material forming the ground in which underground infrastructure is embedded, and its aspects such as geology, hydrology, chemistry, and engineering properties. This term also covers dynamic subsurface processes such as physical deformation, fluid flow, and chemical / biological alteration.
+
+[[UndergroundInfrastructure]]Underground Infrastructure::
+The totality of built components or structures embedded below ground surface that are part of services such as utility networks and/or that support ground surface structures.
+
+[[UndergroundInfrastructureInformation]]Underground Infrastructure Information::
+Information collected about or pertaining to <<UndergroundInfrastructure,Underground Infrastructure>>
+
+[[UndergroundInfrastructureInformationSystem]]Underground Infrastructure Information System::
+Computing system or platform that manages information pertaining to <<UndergroundInfrastructure,Underground Infrastructure>>
+
+===	Abbreviated terms
+
+//.NOTE: The abbreviated terms clause gives a list of the abbreviated terms and the symbols necessary for understanding this document.
+
+ * [[UGE]]UGE: <<UndergroundEnvironment,Underground Environment>>
+ * [[UGI]]UGI: <<UndergroundInfrastructure,Underground Infrastructure>>
+ * [[UGII]]UGII: <<UndergroundInfrastructureInformation,Underground Infrastructure Information>>
+ * [[UGIIS]]UGIIS: <<UndergroundInfrastructureInformationSystem,Underground Infrastructure Information System>>

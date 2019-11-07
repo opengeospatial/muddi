@@ -1,0 +1,37 @@
+== Summary
+The recently published Underground Infrastructure Concept Development Study (UICDS) Engineering Report cite:[Lieberman2017] examines the present state of underground infrastructure information (UGII), costs and benefits of that state, as well as future opportunities for an improved state. That report describes a number of candidate models for UGII and recommends a number of follow-on activities, including development of a prototype UGII integration model to support subsequent UGII integration and exchange initiatives. The present report describes the design and development of conceptual UGII integration model MUDDI (Model for Underground Data Definition and Interchange). The goal of MUDDI is not to replace existing models but to serve as the basis for integration of datasets from different models, at the levels of detail required to address application use cases described in cite:[Lieberman2017]. MUDDI as described here is a conceptual model which will serve as the basis for one or more conformant and interchangeable physical implementations such as GML (Geographic Markup Language) or SFS (Simple Features SQL). As a prototype model, the current version of MUDDI is also not intended to be final, but to serve as an input to the proposed OGC Underground Infrastructure Pilot and similar activities which will in turn serve to refine and improve the model through implementation and deployment in realistic application scenarios.
+
+
+=== Requirements & Research Motivation
+The development of MUDDI has been motivated by a number of specific design requirements described in the <<overview,Overview>> but the principal motivation has been to achieve compatibility and minimal information loss with regard to data represented by several significant existing models and model standards, in order to support both data interchange and data integration across a variety of underground infrastructure components, functions, and associated environmental properties.
+
+=== Prior-After Comparison
+Findings presented in cite:[Lieberman2017] describe the present generally inadequate state of UGII in many cities and suburban regions. The model presented here, and subsequent pilot activities based on it, along with needed policy, financial, and cultural advances,  have the potential to improve UGII quality, reduce incurred costs, and provide numerous opportunities to improve how cities function.
+
+
+=== Future Recommendations
+Naturally, publication of a prototype MUDDI is intended to support both the proposed Pilot initiative, as well as development and approval of complete conceptual and implementation specifications.
+
+
+===	Document contributor contact points
+
+All questions regarding this document should be directed to the editor or the contributors:
+
+.Contacts
+[width="80%",options="header"]
+|====================
+|Name |Organization
+|((Josh Lieberman, editor)) | (( Tumbling Walls ))
+|((George Percivall)) | ((OGC))
+|((Alan Leidner)) | ((FCNY))
+|====================
+
+
+// *****************************************************************************
+// please don't change the foreword
+// *****************************************************************************
+=== Foreword
+
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
+
+Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.

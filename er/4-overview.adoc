@@ -1,0 +1,32 @@
+[[Overview]]
+== Overview
+
+The recently published Underground Infrastructure Concept Development Study (UICDS) Engineering Report cite:[Lieberman2017] examines the present state of UGII, costs and benefits of that state, as well as future opportunities for an improved state. The report describes a number of candidate models for UGII and recommends a number of follow-on activities, including development of a prototype MUDDI integration model to support subsequent UGII integration and exchange initiatives. The present report describes the design and development of a MUDDI conceptual model. The goal of MUDDI is not to replace existing models but to serve as the basis for integration of datasets from different models, at the levels of detail required to address application use cases described in cite:[Lieberman2017]. MUDDI as described here is a conceptual model intended to serve as the basis for one or more conformant and interchangeable logical and physical implementations such as GML or SFS. As a prototype model, the current version of MUDDI is also not intended to be final, but to serve as an input to the proposed OGC Underground Infrastructure Pilot and other activities, which will in turn serve to refine and improve the model through implementation and deployment in realistic application scenarios.
+
+
+=== Design Requirements
+The development of MUDDI has been motivated by a number of specific design requirements:
+
+1) Functionality:: The model should specifically address three priority application use cases (Excavation, Large-scale Construction Design, Disaster Planning)
+2) Compatibility:: The model should derive from or map to/from existing candidate models such as INSPIRE (Infrastructure for Spatial Information in the European Community), CityGML UN ADE (Itility Networks Application Domain Extension), GeoSciML, or IMKL (Informatie Model Kabels en Leidingen).
+3) Modularity:: The model should have a modular structure with a simple mandatory core and additional elements in the form of optional extensions or interfaces, in order to minimize the quantity and detail of data required for specific use cases.
+4) Traceability:: The model should provide for UGII to be linked directly with the survey measurements, sensor observations, and supporting evidence from which it was derived and from which its quality can be determined.
+5) Flexibility:: The model should support implementations that include the geometric and topological representations needed for specific applications, such as 2D geometries for excavation planning, 3D geometries for construction design, or functional graph topologies for disaster vulnerability assessments.
+
+=== Design Patterns
+There are a number of common model design patterns which might satisfy MUDDI requirements, particularly modularity and flexibility:
+
+Relational:: the pattern of fixed tables connected by foreign key relations. Clearly an established implementation pattern, but tends to result in duplication of data to support specialization and rather brittle relationships between model elements.
+Graph:: an extremely flexible pattern of data elements connected by diverse relation predicates tends to represent knowledge webs and physical networks very well, but is still hard to implement for spatial data.
+Object:: inheritance patterns are particularly well suited to UML modeling, but specialization hierarchies themselves can lack flexibility in terms of being able to choose different configurations of specialized attributes for specific applications.
+Interface:: a variant of the object model in which specializations can also be supported by the addition of  interface elements (consisting of attributes and/or operations) to primary objects. Interfaces can be mixed and matched as well as reused for different primary objects, but the variety of ways in which they can be implemented may present a risk of non-interoperability between implementations.
+
+
+=== Report Structure
+
+. Description of application use cases, priorities, and derived model requirements
+. Description of candidate model scopes, characteristics, goals, strengths, and weaknesses
+. Overview and narrative of the MUDDI UML model
+. Details of individual MUDDI modules / interfaces and the use cases they address
+. Mappings between MUDDI and elements of significant existing models
+. Guidelines for MUDDI implementations

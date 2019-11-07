@@ -1,0 +1,5 @@
+[appendix]
+== UML model
+
+* https://portal.opengeospatial.org/files/?artifact_id=90837[MUDDI Conceptual Model v0.9 EA file]
+* https://portal.opengeospatial.org/files/?artifact_id=90837&version=1&format=xml[MUDDI Conceptual Model v0.9 XMI file]

@@ -1,0 +1,92 @@
+[[InterfacesModules]]
+
+== MUDDI Modules and Interfaces
+
+
+=== Modules
+The following tables describe core MUDDI elements and some extended elements. The relations and attributes shown in the module tables may realize optional (but commonly used) interfaces. Other interface relations, attributes, and operations are shown below.
+
+Each of these elements include attributes that describe the specific class or type classification of more specialized instances, such as _containerClass_. This allows aggregation of diverse utility structures without losing their more specialized identities. More general MUDDI elements such as _NetworkLink_ could also be specialized for the specific utility types listed in <<UtilityTypes,Section 6>> and/or for specialized types that characterize the candidate models. Such subclass entities are not (yet) included in this report.
+
+==== Core elements
+
+.MUDDI core elements
+[width="100%",cols="20,30,20,20",options="header"]
+|===
+|*Name*|*Description*|*Relations*|*Attributes*
+|Structure|Base unit of underground features |partOf, surfaceConnect, hasProperty |localIdentifier, class, position, extent, shape, size, color, material, ownership, status, validTime, inService, description
+|NetworkObject |Base unit of network elements  |connect, transport, produce, consume | function, usage, commodityClass, isComplex
+|EnvironmentObject |Base underground environmental region |surrounds, underlays, overlays, adjoins, boundedBy, unit, hasSample|featureClass, domain, method, regionName, unitName
+|ContainerObject |Base unit of structures that primarily contain other structures   |contains|containerClass
+|FoundationObject |Base unit of structures that primarily give physical support to other structures  |supports|foundationClass
+|===
+
+==== Network elements
+
+.MUDDI network elements derived from NetworkObject
+[width="100%",cols="20,30,20,20",options="header"]
+|===
+|*Name*|*Description*|*Relations*|*Attributes*
+|Network|Network complex structure that transports / stores / provides / consumes a utility commodity |subNet, subordinateNet, constitutes, commodity| networkClass
+|NetworkNode|Network node structure that connects NetworkLinks, may connect Networks, and may control and/or measure a utility commodity property |connectsFrom, connectsTo, consistsOf, internalTo, interfacesWith, sensedBy, actuatedBy|nodeClass, isSource, isSink, isTerminal
+|NetworkLink|Network edge structure that connects between NetworkNodes |linksTo, linksFrom| linkClass
+|===
+
+==== Environment elements
+
+.MUDDI environment elements derived from EnvironmentObject
+[width="100%",cols="20,30,20,20",options="header"]
+|===
+|*Name*|*Description*|*Relations*|*Attributes*
+|GeoObject|Environmental region defined in the geological domain||geoClass, rockType
+|PedoObject|Environmental region defined in the pedological (soil) domain||soilHorizon, soilClass
+|HydroObject|Environmental region defined in the hydrological domain||hydroClass, saturation, head
+|PhenomObject|Environmental region defined by an observable physical-chemical characteristic||delimitationMethod
+|===
+
+==== Container and support elements
+
+.MUDDI container elements derived from containerObject
+[width="100%",cols="20,30,20,20",options="header"]
+|===
+|*Name*|*Description*|*Relations*|*Attributes*
+|Conduit|Simple network link / node container||conduitClass
+|Vault|Multipurpose network element container|commodity|vaultClass
+|Shield|Structure providing limited protection (e.g. grout curtain) for other underground structures|shields, shieldsFrom|shieldClass, shieldOrientation
+|Access|Access structure (e.g. manhole) for container or other structure|accessTo, accessFrom| accessClass
+|===
+
+.MUDDI support elements derived from supportObject
+[width="100%",cols="20,30,20,20",options="header"]
+|===
+|*Name*|*Description*|*Relations*|*Attributes*
+|Footing|Simple footing support||footingClass
+|Foundation|Foundation for underground or surface structures||foundationClass
+|Piling|Vertical foundation element for underground or surface structures||pilingClass
+|===
+
+=== Interfaces
+
+.MUDDI Interfaces
+[width="100%",cols="10,20,20,20,20",options="header"]
+|===
+|*Name*|*Description*|*RealizedBy*|*Attributes/Operations*|*Relations*
+|IAsset|Attributes of maintained asset, such as lifecycle stage|Structure|assetID, assetClass, operator, lifecycleStage, serviceLife, timeToFailure, initialValue, depreciationMethod, predecessor, getPresentValue|
+|I2D|2D Geometry plus depth|Structure| GM_Geometry (2D), elevation, depthBelowSurface, footprint, scale|
+|I3D|3D Geometric solid in 3D space|Structure| GM_Geometry (3D), anchorPosition, resolution|
+|IVoxel|Collection of voxels containing the 3D extent of the feature|Structure| voxelClassification, voxelScheme, anchorPosition, voxelResolution, getVoxels|
+|IRendered|3D rendered model of the feature (e.g. Collada)|Structure|model, modelClass, modelFormat, anchorPosition|modelConfiguration
+|IIFC|Operations for reading or writing IFC objects|Structure|GetIFC, GetMUDDI|
+|ICityGML|Operations for reading/writing CityGML with or without the UN ADE|Structure|GetCityGML, GetMUDDI|
+|ISurveyed|Position and extent measurements|Structure|surveyMethod, positionResult, extentResult, resultPrecision, resultAccuracy |surveyEvent
+|IObserved|Measurements of observed properties|Structure|observedProperty, procedure, resultValue| observationEvent
+|IDataQuality|Quality of positioning and other measurements of infrastructure characteristics |Structure |surveyQualityLevelASCE3802, completeness, positionalAccuracy, topologicalConsistency, thematicAccuracy, maximalFootprint | surveyEvent
+|ILink|General link facility for distributed data|Structure|linkClass, role, targetClass, action| linkTarget
+|IModel|Configuration, input and output attributes specific to simulation models and model results|Structure|inputProperty[0..\*], outputProperty[1..*]|model, modelEvent
+|IGraph|Attributes and relations for topological networks|NetworkObject|isComplex|connectsFrom, connectsTo, consistsOf, constitutes
+|IService|Network service area, sources, and sinks |Network |providerArea, consumerArea |
+|IControl|Attributes of network nodes which control network operation|NetworkNode|controlClass, controlState, isSource, isSink|dependsOn, actuationEvent
+|IDistribute|Attributes of network links affecting or reflecting network operation|NetworkLink|cross-section, flowVelocity, flowRate, flowDirection, potential, potentialDifference, commodityStatus, measuredTime|
+|IBore|Borehole geometry and interval features, either real or synthetic|EnvironmentObject|surfacePosition, axisLinestring, diameter, isSample, interpolationMethod, getCore, getCoreInterval|
+|ISection|Cross-section geometry and 2D region features constructed from environmental objects|EnvironmentObject|interpolationMethod, surfaceTrace, getSectionSurface, depth, getModel, |sectionRegion
+|===

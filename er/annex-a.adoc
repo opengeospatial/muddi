@@ -1,0 +1,15 @@
+[appendix]
+== Abstract MUDDI Test Suite
+
+.[big]*A.1 Test module for conformance level 1*
+
+.A.1.1	Conformance Class OGC 17-090_c1
+[cols=">20h,<80d",width="100%"]
+|====================
+|Test identifier | MUDDI_UML
+|Test purpose: | Confirm that a valid implementation of MUDDI is conformant with the UML model
+|Test method: a| Inspection of all required and optional implementation elements for MUDDI UML conformance
+
+|Requirement: |OGC 17-090_r1
+|Test type: |Implementation conformance
+|====================

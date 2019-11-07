@@ -1,0 +1,31 @@
+[[references]]
+== References
+
+The following normative documents are referenced in this document.
+
+.NOTE: 	Only normative standards are referenced here, e.g. OGC, ISO or other SDO standards. All other references are listed in the bibliography.
+
+ * [[NR-ASCE-38-02]]ASCE 38-02: Standard Guideline for the Collection and Depiction of Existing Subsurface Utility Data, American Society of Civil Engineers, 2002.
+//The ASCE Construction Institute Committee for the Standard for Recording and Exchanging Utility Infrastructure Data is producing a white paper that should be available for referencing by Fall 2017
+
+ * [[NR-CityGML-UN-ADE]]CityGML Utility Network ADE::
+http://en.wiki.utilitynetworks.sig3d.org
+ * [[NR-EarthResourceML]]EarthResourceML:
+http://www.cgi-iugs.org/tech_collaboration/earthResourceML.html
+ * [[NR-GeoSciML]]GeoSciML:
+http://www.opengeospatial.org/standards/geosciml
+ * [[NR-GML]]Geographic Markup Language:
+http://www.opengeospatial.org/standards/gml
+ * [[NR-INSPIRE-UN]]INSPIRE Utility Networks:
+http://inspire.ec.europa.eu/theme/us
+ * [[NR-IMKL]]Information model for cable and pipes:
+https://www.agiv.be/producten/klip/meer-over/technische-documentatie/technische-documentatie-imkl
+ * [[NR-LandInfra]]Land Infra:
+Land and Infrastructure Conceptual Model Standard at http://www.opengeospatial.org/standards/landinfra
+ * [[NR-PAS-128]]PAS 128:2014:
+Specification for Underground Utility Detection, Verification and Location, British Standards Institution, 2014.
+ * [[NR-PAS-256]]PAS 256:2017:
+Buried assets. Capturing, Recording, Maintaining and Sharing of Location Information and Data, British Standards Institution, 2017.
+ * [[NR-CIM]]Common Information Model:
+International Electrotechnical Commission global series of standards for electric power transmission and distribution at https://webstore.iec.ch/home?ReadForm.
+ * [[NR-MultiSpeak]]MultiSpeak: North American standard for data exchange between enterprise systems at http://www.multispeak.org/

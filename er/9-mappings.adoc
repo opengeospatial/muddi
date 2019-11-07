@@ -1,0 +1,26 @@
+[[Mappings]]
+== Mappings between MUDDI and Candidate Models
+
+This section presents provisional mappings between MUDDI entities and those of candidate models described in <<CandidateModels,Section 6>>. Some mappings may be direct, broader, or narrower. There may also be different cardinalities, e.g. one MUDDI entity mapping into multiple entities in a different model. The mappings presented here are a first pass for developing data conversion routines, as well as guiding future MUDDI implementations.
+
+.Mappings from MUDDI to candidate infrastructure model entities
+[width="100%",cols="20,20,20,20,20",options="header"]
+|===
+|*MUDDI Entity Name*|*CityGML UN ADE*|*Target Fit*|*INSPIRE / IMKL*|*Target Fit*
+|Structure |AbstractCityObject |wider |Feature |wider
+|NetworkObject |AbstractNetworkFeature |narrower |NetworkElement |level
+|Network |Network +/- NetworkGraph +/- FeatureGraph |level |Network |level
+|NetworkNode |Node +/- FeatureGraph |level / complex |Node |level
+|NetworkLink |AbstractLink +/- FeatureGraph +/- AbstractDistributionElement |level / complex |Link |level
+|ContainerObject |ProtectiveElement |wider |UtilityNodeContainer |narrower
+|SupportObject |Bedding |narrower |PoleFoundation | narrower
+|===
+.Mappings from MUDDI to candidate environment model entities
+[width="100%",cols="20,20,20,20,20",options="header"]
+|===
+|*MUDDI Entity Name*|*GeoSciML*|*Fit*|*INSPIRE Geo / Hydrogeo / Soil*|*Fit*
+|GeoObject |GeologicFeature |level |GeologicUnit or GeologicStructure |level
+|PedoObject |- | |SoilBody or SoilHorizon or SoilLayer |narrower
+|HydroObject |- | |HydrogeologicalObject or HydrogeologicalUnit or GroundwaterBody |narrower
+|PhenomObject |PhysicalDescription |narrower |GroundwaterProfile or PossibleContaminatedSoilSite |narrower
+|===
