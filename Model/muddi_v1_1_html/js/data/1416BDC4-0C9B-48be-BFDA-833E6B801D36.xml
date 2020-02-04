@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.4:1", "", "MUDDI_Network", "EARoot/EA4/EA47.htm", "175.png", "46", "0", "", "Logical diagram0","{D3BB3C59-5801-48a3-9D6A-5F66437BD96F}");
+tocTab[tocTab.length] = new Array("0.4:2", "", "assemblageTypeValue", "EARoot/EA4/EA50.htm", "5.png", "E322", "0", "", "Class0","{2C3A548A-2C8F-499d-99E6-A2BCE6CF9793}");
+tocTab[tocTab.length] = new Array("0.4:3", "", "«enumeration» LinkType", "EARoot/EA4/EA51.htm", "5.png", "E277", "0", "", "Class0","{788B4CA5-82DA-4a7f-9C9C-B5C0670118EA}");
+tocTab[tocTab.length] = new Array("0.4:4", "", "«FeatureType» NetworkAssemblage", "EARoot/EA4/EA52.htm", "5.png", "E320", "0", "", "Class0","{6A7DAF4C-69D1-42aa-9023-662B87DCB2FA}");

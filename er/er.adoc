@@ -2,15 +2,15 @@
 // please provide the following elements
 // *****************************************************************************
 // name of the ER after the colon
-:title: Model for Underground Data Definition and Integration (MUDDI) Engineering Report
+:title: MUDDI v1.1 (Model for Underground Data Definition and Integration) Engineering Report
 // document identifier. The identifier has the format OGC YY-nnn, e.g. OGC 17-067. You can obtain the identifier from the OGC Portal: https://portal.opengeospatial.org/?m=public&subtab=request&tab=1
-:docReference: OGC 17-090
+:docReference: OGC 19-081
 // date when you posted the document to OGC Portal>Pending Documents. Please use the format: yyyy-mm-dd
-:postedDate: 2018-06-01
+:postedDate: 2019-02-01
 // name of all editors. Separate multiple editors by comma, e.g. John Wayne, Bud Spencer
 :editor: Josh Lieberman
 // proposed working group for review, e.g. Architecture DWG, or WCS SWG
-:workingGroup: Energy and Utilities DWG, Smart Cities DWG
+:workingGroup: Energy and Utilities DWG, Smart Cities DWG, 3DIM DWG
 // *****************************************************************************
 // done, please continue with the imports at line 62 of this document
 // *****************************************************************************
@@ -21,7 +21,7 @@
 :publicationDate: Draft
 :approvalDate: Draft
 :referenceURL: ID
-:copyrightYear: 2017
+:copyrightYear: 2019
 //
 :titletext: {title}
 :doctype: book

@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.5">
-<title>Model for Underground Data Definition and Integration (MUDDI) Engineering Report</title>
+<title>MUDDI v1.1 (Model for Underground Data Definition and Integration) Engineering Report</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -511,7 +511,7 @@ table.CodeRay td.code>pre{padding:0}
 </head>
 <body class="book">
 <div id="header">
-<h1>Model for Underground Data Definition and Integration (MUDDI) Engineering Report</h1>
+<h1>MUDDI v1.1 (Model for Underground Data Definition and Integration) Engineering Report</h1>
 </div>
 <div id="content">
 <div id="preamble">
@@ -523,10 +523,10 @@ table.CodeRay td.code>pre{padding:0}
 <p>Approval Date: Draft</p>
 </div>
 <div class="paragraph">
-<p>Posted Date: 2018-06-01</p>
+<p>Posted Date: 2019-02-01</p>
 </div>
 <div class="paragraph">
-<p>Reference number of this document: OGC 17-090</p>
+<p>Reference number of this document: OGC 19-081</p>
 </div>
 <div class="paragraph">
 <p>Reference URL for this document: <a href="http://www.opengis.net/doc/PER/t13-ID" class="bare">http://www.opengis.net/doc/PER/t13-ID</a></p>
@@ -538,7 +538,7 @@ table.CodeRay td.code>pre{padding:0}
 <p>Editor: Josh Lieberman</p>
 </div>
 <div class="paragraph">
-<p>Title: Model for Underground Data Definition and Integration (MUDDI) Engineering Report</p>
+<p>Title: MUDDI v1.1 (Model for Underground Data Definition and Integration) Engineering Report</p>
 </div>
 <hr>
 <div class="paragraph">
@@ -546,7 +546,7 @@ table.CodeRay td.code>pre{padding:0}
 <p><strong>COPYRIGHT</strong></p>
 </div>
 <div class="paragraph">
-<p>Copyright © 2017 Open Geospatial Consortium.
+<p>Copyright © 2019 Open Geospatial Consortium.
 To obtain additional rights of use, visit <a href="http://www.opengeospatial.org/" class="bare">http://www.opengeospatial.org/</a></p>
 </div>
 <div class="paragraph">
@@ -626,7 +626,8 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_system_context">7.1. System context</a></li>
 <li><a href="#_muddi_model_architecture">7.2. MUDDI model architecture</a></li>
 <li><a href="#_muddi_core_model_elements">7.3. MUDDI core model elements</a></li>
-<li><a href="#_muddi_network_entities_and_relationships">7.4. MUDDI network entities and relationships</a></li>
+<li><a href="#_muddi_environment_entities_and_relationships">7.4. MUDDI environment entities and relationships</a></li>
+<li><a href="#_muddi_network_entities_and_relationships">7.5. MUDDI network entities and relationships</a></li>
 </ul>
 </li>
 <li><a href="#InterfacesModules">8. MUDDI Modules and Interfaces</a>
@@ -656,7 +657,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <h2 id="_summary"><a class="anchor" href="#_summary"></a>1. Summary</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The recently published Underground Infrastructure Concept Development Study (UICDS) Engineering Report [<a href="#Lieberman2017">1</a>] examines the present state of underground infrastructure information (UGII), costs and benefits of that state, as well as future opportunities for an improved state. That report describes a number of candidate models for UGII and recommends a number of follow-on activities, including development of a prototype UGII integration model to support subsequent UGII integration and exchange initiatives. The present report describes the design and development of conceptual UGII integration model MUDDI (Model for Underground Data Definition and Interchange). The goal of MUDDI is not to replace existing models but to serve as the basis for integration of datasets from different models, at the levels of detail required to address application use cases described in [<a href="#Lieberman2017">1</a>]. MUDDI as described here is a conceptual model which will serve as the basis for one or more conformant and interchangeable physical implementations such as GML (Geographic Markup Language) or SFS (Simple Features SQL). As a prototype model, the current version of MUDDI is also not intended to be final, but to serve as an input to the proposed OGC Underground Infrastructure Pilot and similar activities which will in turn serve to refine and improve the model through implementation and deployment in realistic application scenarios.</p>
+<p>The Underground Infrastructure Concept Development Study (UICDS) Engineering Report [<a href="#Lieberman2017">1</a>] examined the present state of underground infrastructure information (UGII), costs and benefits of that state, as well as future opportunities for an improved state. That report describes a number of candidate models for UGII and recommends a number of follow-on activities, including development of a prototype UGII integration model to support subsequent UGII integration and exchange initiatives. A follow-up workshop and model development effort resulted in another engineering report describing an initial (1.0) version of the conceptual UGII integration model MUDDI (Model for Underground Data Definition and Interchange) (<a href="#Lieberman2018">Lieberman2018</a>).  The present updated report describes MUDDI version 1.1. The goal of MUDDI is to serve as the basis for integration of datasets from different models, at the levels of detail required to address application use cases described in [<a href="#Lieberman2017">1</a>]. MUDDI as described here is a conceptual model which will serve as the basis for one or more conformant and interchangeable logical and physical implementations such as GML (Geographic Markup Language) or SFS (Simple Features SQL). The current version 1.1 of MUDDI is has been updated and refined from the initial version 1.0, but is still intended to serve as an input to the proposed OGC Underground Infrastructure Pilot as well as similar implementations and deployments in realistic application scenarios. The present model is also suitable as input to begin development of a formal conceptual model standard.</p>
 </div>
 <div class="sect2">
 <h3 id="_requirements_research_motivation"><a class="anchor" href="#_requirements_research_motivation"></a>1.1. Requirements &amp; Research Motivation</h3>
@@ -705,6 +706,10 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Alan Leidner</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">FCNY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Carsten Roensdorf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ordnance Survey</p></td>
 </tr>
 </tbody>
 </table>
@@ -838,7 +843,7 @@ International Electrotechnical Commission global series of standards for electri
 <h2 id="Overview"><a class="anchor" href="#Overview"></a>4. Overview</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The recently published Underground Infrastructure Concept Development Study (UICDS) Engineering Report [<a href="#Lieberman2017">1</a>] examines the present state of UGII, costs and benefits of that state, as well as future opportunities for an improved state. The report describes a number of candidate models for UGII and recommends a number of follow-on activities, including development of a prototype MUDDI integration model to support subsequent UGII integration and exchange initiatives. The present report describes the design and development of a MUDDI conceptual model. The goal of MUDDI is not to replace existing models but to serve as the basis for integration of datasets from different models, at the levels of detail required to address application use cases described in [<a href="#Lieberman2017">1</a>]. MUDDI as described here is a conceptual model intended to serve as the basis for one or more conformant and interchangeable logical and physical implementations such as GML or SFS. As a prototype model, the current version of MUDDI is also not intended to be final, but to serve as an input to the proposed OGC Underground Infrastructure Pilot and other activities, which will in turn serve to refine and improve the model through implementation and deployment in realistic application scenarios.</p>
+<p>The Underground Infrastructure Concept Development Study (UICDS) Engineering Report [<a href="#Lieberman2017">1</a>] examined the present state of underground infrastructure information (UGII), costs and benefits of that state, as well as future opportunities for an improved state. That report describes a number of candidate models for UGII and recommends a number of follow-on activities, including development of a prototype UGII integration model to support subsequent UGII integration and exchange initiatives. A follow-up workshop and model development effort resulted in another engineering report describing an initial (1.0) version of the conceptual UGII integration model MUDDI (Model for Underground Data Definition and Interchange) (<a href="#Lieberman2018">Lieberman2018</a>).  The present updated report describes MUDDI version 1.1. The goal of MUDDI is to serve as the basis for integration of datasets from different models, at the levels of detail required to address application use cases described in [<a href="#Lieberman2017">1</a>]. MUDDI as described here is a conceptual model which will serve as the basis for one or more conformant and interchangeable logical and physical implementations such as GML (Geographic Markup Language) or SFS (Simple Features SQL). The current version 1.1 of MUDDI is has been updated and refined from the initial version 1.0, but is still intended to serve as an input to the proposed OGC Underground Infrastructure Pilot as well as similar implementations and deployments in realistic application scenarios. The present model is also suitable as input to begin development of a formal conceptual model standard.</p>
 </div>
 <div class="sect2">
 <h3 id="_design_requirements"><a class="anchor" href="#_design_requirements"></a>4.1. Design Requirements</h3>
@@ -1480,7 +1485,7 @@ National Geological Model – UK 3D NGM</p>
 <div class="sect2">
 <h3 id="_muddi_model_architecture"><a class="anchor" href="#_muddi_model_architecture"></a>7.2. MUDDI model architecture</h3>
 <div class="paragraph">
-<p>The MUDDI model consists of a small number of core entities derived from a general structure feature, including network features, support and container features, and underground environment features. The core entities are further specialized for specific utility network types with both additional attributes and utility-specific type codes.</p>
+<p>The MUDDI model consists of a small number of core entities derived from a general feature object, including network features, support and container features, and underground environment features. The core entities are further specialized for specific utility network types with both additional attributes and utility-specific type codes.</p>
 </div>
 <div class="paragraph">
 <p>These core feature entities are then enhanced as needed by realizing one or more interfaces that support specific types of input data, transformations to/from significant external model schemas, additional geometry types such as 2D, 3D, and voxel, network connectivity and functionality, data quality measures, and so on that are further described in Section 7.</p>
@@ -1495,40 +1500,70 @@ National Geological Model – UK 3D NGM</p>
 <div class="sect2">
 <h3 id="_muddi_core_model_elements"><a class="anchor" href="#_muddi_core_model_elements"></a>7.3. MUDDI core model elements</h3>
 <div class="paragraph">
-<p>The full core model (not including utility-specific specializations) is shown in Figure 10. The core MUDDI feature is extended by 12 optional interfaces which add attributes and/or operations to the core class. A child network object feature is specialized by three network elements: a network itself, a network node, and a network link. The basic network serves as a container for other network elements. The IGraph interface provides topological elements and relations which permit networks to represent the connectivity structure among links and nodes.</p>
+<p>The MUDDI model packages are shown in Figure 10 and comprises a core package, network package, environment package, and package of extended interfaces. An additional package is an example of a logical model specialization of the conceptual model. The core MUDDI classes are shown in Figure 11. The root class of the model is MUDDIObject, whose attributes include many of those recommended for infrastructure assets in the ASCE As-Built draft specification</p>
 </div>
 <div class="paragraph">
-<p>Another structure feature child is the Environment Object feature, further specialized into features representing geological, hydrological, pedological (soil-specific), and phenomenological features of the subsurface environment. The general geometry type for these features will be a region bounded by surfaces, but interfaces add both cross-sections and borehole geometries as input and/or output capabilities.</p>
+<p>A child network object feature includes most of the other attributed specified by the ASCI As-Built is specialized by three network elements: a network node, a network surface node, and a network link. The basic network also includes network and network facility objects as well as simple optional relationships between them.</p>
 </div>
 <div class="paragraph">
-<p>Two other structure feature children are the container and support object features, for built structures which do not constitute directly either network infrastructure or environmental elements, but contain or support other infrastructure elements.</p>
+<p>Two other MUDDIObject children are the container and support object features, for built structures which do not constitute directly either network infrastructure or environmental elements, but contain or support other infrastructure elements.</p>
+</div>
+<div class="paragraph">
+<p>A significant update to the version 1.0 model is inclusion of a number of codelists shown in Figure 12 that provide both controlled and authoritative values for many of the attributes for the core MUDDI features.</p>
 </div>
 <div id="img_modelCore" class="imageblock">
 <div class="content">
-<img src="images/7-model_core.png" alt="7 model core">
+<img src="images/7-model_packages.png" alt="7 model packages">
 </div>
-<div class="title">Figure 10. MUDDI core elements</div>
+<div class="title">Figure 10. MUDDI packages</div>
+</div>
+<div id="img_modelCore" class="imageblock">
+<div class="content">
+<img src="images/7-model_core_features.png" alt="7 model core features">
+</div>
+<div class="title">Figure 11. MUDDI core features</div>
+</div>
+<div id="img_modelCore" class="imageblock">
+<div class="content">
+<img src="images/7-model_codelists.png" alt="7 model codelists">
+</div>
+<div class="title">Figure 12. MUDDI code lists</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_muddi_network_entities_and_relationships"><a class="anchor" href="#_muddi_network_entities_and_relationships"></a>7.4. MUDDI network entities and relationships</h3>
+<h3 id="_muddi_environment_entities_and_relationships"><a class="anchor" href="#_muddi_environment_entities_and_relationships"></a>7.4. MUDDI environment entities and relationships</h3>
+<div class="paragraph">
+<p>Another MUDDIObject specialization shown in Figure 13 is the Environment Object feature, further specialized into features representing geological, hydrological, pedological (soil-specific), and phenomenological features of the subsurface environment. The general geometry type for these features will be a region bounded by surfaces, but interfaces add both cross-sections and borehole geometries as input and/or output capabilities.</p>
+</div>
+<div id="img_modelCore" class="imageblock">
+<div class="content">
+<img src="images/7-model_environment_features.png" alt="7 model environment features">
+</div>
+<div class="title">Figure 13. MUDDI environment features</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_muddi_network_entities_and_relationships"><a class="anchor" href="#_muddi_network_entities_and_relationships"></a>7.5. MUDDI network entities and relationships</h3>
 <div class="paragraph">
 <p>The combination of MUDDI network features and network-specific interfaces need only describe collections of network infrastructure elements, but may optionally support a number of distinct levels of network representation complexity, as well as levels of detail. Figure 11 hides the inheritance relations between the different network entities in order to focus on the relationships that can be represented between them. The IGraph interface adds these specific relationships. For example, networks can be related to each other as either subnetworks (containment) or subordinate networks (dependency). Networks consist of nodes and links, which in turn connect to each other. Relative to a particular network, however, either a node or a link may in addition serve as an interfacial element, belonging to more than one network or connecting to an element of another network.</p>
 </div>
 <div class="paragraph">
-<p>A capability supported by CityGML UN ADE is the option to represent internal networks ("internal" relationship) which depict additional graph detail inside of what is represented as either a node or a link at a lower level of detail. This generally requires interfacial relations to describe the connection between the internal network and elements of the enclosing network</p>
+<p>A capability supported by CityGML UN ADE is the option to represent inter-network assemblages ("internal" relationship) which depict additional graph detail inside of what is represented as either a node or a link at a lower level of detail. This generally requires interfacial relations to describe the connection between the internal network and elements of the enclosing network</p>
+</div>
+<div id="img_modelCore" class="imageblock">
+<div class="content">
+<img src="images/7-model_network.png" alt="7 model network">
+</div>
+<div class="title">Figure 14. MUDDI network features and relations</div>
 </div>
 <div class="paragraph">
-<p>Conversely, the IService interface adds a generalization to represent homogeneous the geographic area that may be served by a particular network or network segment in order to identify vulnerable customers even if all of the network house connections are not represented.</p>
-</div>
-<div class="paragraph">
-<p>Additional IControl and IDistribute interfaces add network roles and functionality for both operations and simulation modeling purposes, which may be combined with additional model parameters via the IModel interface.</p>
+<p>The MUDDI interfaces package comprises some 19 different interfaces that add geometric attributes, additional network relations, transformations to other model perspectives, and other capabilities to any parent or child object without the requirement for them to be carried along to further specializations.</p>
 </div>
 <div id="img_networkRelations" class="imageblock">
 <div class="content">
-<img src="images/7-network_relations.png" alt="7 network relations">
+<img src="images/7-model_interfaces.png" alt="7 model interfaces">
 </div>
-<div class="title">Figure 11. MUDDI network entities and relationships</div>
+<div class="title">Figure 15. MUDDI extended interfaces</div>
 </div>
 </div>
 </div>
@@ -2158,6 +2193,9 @@ National Geological Model – UK 3D NGM</p>
 <li>
 <p><a id="Lieberman2017"></a>J. Lieberman and A. ed’s Ryan, “OGC Underground Infrastructure Concept Study Engineering Report,” 2017.</p>
 </li>
+<li>
+<p><a id="Lieberman2018"></a>Lieberman2018</p>
+</li>
 </ol>
 </div>
 </div>
@@ -2165,7 +2203,7 @@ National Geological Model – UK 3D NGM</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-06-01 17:00:30 EDT
+Last updated 2019-11-13 23:32:00 EST
 </div>
 </div>
 </body>

@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("0.1:1", "", "MUDDI_Environment", "EARoot/EA1/EA9.htm", "175.png", "45", "0", "", "Logical diagram0","{D8A42882-E0B4-40d1-B909-B2B5348A83F1}");
+tocTab[tocTab.length] = new Array("0.1:2", "", "Class1", "EARoot/EA1/EA12.htm", "5.png", "E324", "0", "", "Class0","{5CA26593-2ADB-4800-B72F-5723035F46D4}");
+tocTab[tocTab.length] = new Array("0.1:3", "", "«FeatureType» EnvironmentObject", "EARoot/EA1/EA13.htm", "5.png", "E18", "0", "", "Class0","{70EFC46C-47C6-42eb-8629-533D0069F453}");
+tocTab[tocTab.length] = new Array("0.1:4", "", "«FeatureType» GeoObject", "EARoot/EA1/EA14.htm", "5.png", "E32", "0", "", "Class0","{B4F2B4F5-3E5A-4c1a-B19E-F0545C23E1D9}");
+tocTab[tocTab.length] = new Array("0.1:5", "", "«FeatureType» HydroObject", "EARoot/EA1/EA15.htm", "5.png", "E33", "0", "", "Class0","{5E119A6C-D986-4dcc-B859-42AE25C93929}");
+tocTab[tocTab.length] = new Array("0.1:6", "", "«FeatureType» PhenomenonObject", "EARoot/EA1/EA16.htm", "5.png", "E34", "0", "", "Class0","{2E439CF1-EA52-47b2-8FE4-FCF0183E61A3}");
+tocTab[tocTab.length] = new Array("0.1:7", "", "«FeatureType» SoilObject", "EARoot/EA1/EA17.htm", "5.png", "E35", "0", "", "Class0","{96510091-7311-45ce-BDF8-E4F9834755C5}");
+tocTab[tocTab.length] = new Array("0.1:8", "", "«FeatureType» SpaceObject", "EARoot/EA1/EA18.htm", "5.png", "E325", "0", "", "Class0","{0A0B7E8A-4499-4efb-9705-128C6B017B52}");
