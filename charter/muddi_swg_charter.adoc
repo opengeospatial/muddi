@@ -1,0 +1,213 @@
+:Title: MUDDI (Model for Underground Data Definition and Integration) SWG Charter
+:titletext: {Title}
+:doctype: book
+:encoding: utf-8
+:lang: en
+:toc:
+:toc-placement!:
+:toclevels: 4
+:numbered:
+:sectanchors:
+:source-highlighter: pygments
+
+<<<
+[cols = ">",frame = "none",grid = "none"]
+|===
+|{set:cellbgcolor:#FFFFFF}
+|[big]*Open Geospatial Consortium*
+|Submission Date: <2020-2-13>
+|Approval Date:   <2020->
+|Internal reference number of this OGC(R) document:    20-007
+|Category: OGC(R) Standards Working Group Charter
+|Authors:   Josh Lieberman, Carsten Rönsdorf, Alex Ramage
+|===
+
+[cols = "^", frame = "none"]
+|===
+|[big]*{titletext}*
+|===
+
+[cols = "^", frame = "none", grid = "none"]
+|===
+|*Copyright notice*
+|Copyright (C) 2020 Open Geospatial Consortium
+|To obtain additional rights of use, visit http://www.opengeospatial.org/legal/
+|===
+
+<<<
+
+To: OGC members & interested parties
+
+A new OGC Standards Working Group is being formed. The OGC members listed below have proposed the OGC MUDDI SWG.  The SWG proposal provided in this document meets the requirements of the OGC Technical Committee (TC) Policies and Procedures.
+
+The SWG name, statement of purpose, scope, list of deliverables, audience, and language specified in the proposal will constitute the SWG's official charter. Technical discussions may occur no sooner than the SWG's first meeting.
+
+This SWG will operate under the OGC IPR Policy. The eligibility requirements for becoming a participant in the SWG at the first meeting (see details below) are that:
+
+* You must be an employee of an OGC member organization or an individual
+member of OGC;
+
+* The OGC member must have signed the OGC Membership agreement;
+
+* You must notify the SWG chair of your intent to participate in the first meeting. Members may do so by logging onto the OGC Portal and navigating to the Observer page and clicking on the link for the SWG they wish to join and;
+
+* You must attend meetings of the SWG. The first meeting of this SWG is at the time and date fixed below. Attendance may be by teleconference.
+
+Of course, participants also may join the SWG at any time. The OGC and the SWG welcomes all interested parties.
+
+Non-OGC members who wish to participate may contact us about joining the OGC. In addition, the public may access some of the resources maintained for each SWG: the SWG public description, the SWG Charter, Change Requests, and public comments, which will be linked from the SWG’s page.
+
+Please feel free to forward this announcement to any other appropriate lists. The OGC is an open standards organization; we encourage your feedback.
+
+== Purpose of the Standards Working Group
+
+The MUDDI Standards Working Group will standardize a conceptual model, a modular framework, one or more logical models, one or more implementation specifications, and mappings to/from other models for geospatial data that represent underground infrastructure assets and characterize the underground environment that contains those assets.
+
+ * The conceptual model will provide a general basis for interoperability between multiple MUDDI implementations and encodings.
+
+ * The modular framework will support extensible model capabilities as they are needed to meet specific use cases
+
+ * Each logical model will be consistent with the conceptual model and provide a more specific level of interoperability between two or more implementation standards and/or encodings.
+
+ * Each implementation specification will support a specific data language and encoding, such as GML, CityGML, or SF-SQL.
+
+ * Mappings between MUDDI and other relevant models such as LandInfra or BIM / IFC (Building Information Model / Industry Foundation Classes) will support maximum reuse of data between different domains of application and computing environments
+
+
+== Business Value Proposition
+
+Every year the vast majority of seemingly routine street excavations occurring around the world are adversely impacted by lack of usable information about buried utility infrastructure. Large-scale construction projects are frequently stalled, incurring delay claims and change orders that significantly increase costs, because the locations of utility installations were never properly recorded or depicted. Bid costs may be increased by a minimum of 10-30% for contingencies to deal with buried unknowns. Lack of knowledge about underground built environment dependencies and vulnerabilities often stands in the way of effective disaster response and recovery.
+
+These costs and risks could all be mitigated if accurate, comprehensive underground built environment information were available and shared between responsible parties for rapid integration and analysis. An essential first step towards achieving this capability involves developing geo-enabled utility data models with built-in capabilities for enabling data interoperability and integration. Development and adoption of such models would deliver significant benefits by improving data interchange, integration, and application readiness. Models should focus on those attributes most important for specific use cases such as safe digging, construction design, and disaster resilience, with the capacity for extension as needed to accommodate more complex use cases as the business value of data sharing and interoperability is established.
+
+An additional value of developing standardized data models for selected underground utility components and environmental characteristics will be the opportunity to connect with models such as CityGML or BIM / IFC that principally address above-ground features, or GeoSciML / WaterML that cover a broad range of geologic and hydrologic phenomena. This will allow the use of standardized, interoperable data to model the entire interconnected built and natural municipal environment from top to bottom at every scale from small local jurisdictions to regional and national extents.
+
+== Scope of Work
+
+1. Expand, prioritize, and validate a set of use cases based on [1] and [2]
+2. Update and specify a MUDDI conceptual model, based upon and with mappings to existing model standards as laid out in [2]
+3. Develop a roadmap specification that outlines a framework and mechanisms for model modularity, allowing advanced MUDDI profiles to be constructed that preserve the fundamental interoperable concepts and relationships of the model.
+4. Develop an initial logical  and physical implementation specification of the core MUDDI model as a base capability and template for future model development.
+5. Determine whether the SWG should conclude its work or continue to work on additional logical and physical models and/or harmonizations with other standards.
+
+=== Statement of relationship of planned work to the current OGC standards baseline
+
+The MUDDI standard will draw from and relate to OGC Standards relevant to the built environment, such as CityGML and LandInfra. It will also leverage OGC standards modeling the natural environment such as GeoSciML, and WaterML2.
+
+Once the SWG is established, a candidate standard will be developed within one year.
+
+=== What is Out of Scope?
+
+The SWG will only standardize a model for underground data representation, relying on OGC API's such as [3] to facilitate distributed, fine-grained, secure interchange of such representations between distributed systems and organizations.
+
+As the MUDDI standard will be modular and multi-part, its core and extension structure will allow a customized approach to implementing specific capabilities.  If a community needs to develop a MUDDI profile specialized for its own use, that profile should be specified and governed by that community based on the MUDDI framework.
+
+=== Specific Existing Work Used as Starting Point
+
+The SWG work is based on:
+
+1. OGC Underground Infrastructure Concept Study [1] and references therein.
+2. MUDDI Model for Underground Data Definition and Integration Engineering Report [2] and references .
+
+=== Is This a Persistent SWG
+
+[x] YES
+
+[ ] NO
+
+=== When can the SWG be Inactivated
+
+As there are several model specifications to be standardized, persistent SWG status is proposed, but when all the initial deliverables are finished, inactivation will be considered.
+
+== Description of deliverables
+
+These are the categories of specification deliverables. The specific titles and how they are apportioned to particular documents for publication will be determined in the course of prioritization by the SWG members.
+
+* The MUDDI conceptual model will describe the scope, critical concepts and main relationships that define the model.
+
+* The MUDDI roadmap specification will describe how extensions, interfaces, and specializations to MUDDI should be developed and provide an initial listing of expected modules.
+
+* At least one logical model specification will be developed that is consistent with the conceptual model and provides the basis for possibly automated generation of one or more implementation specifications.
+
+* At least one implementation specification will be developed to support a specific data language and encoding, such as GML, CityGML, SF-SQL, or GeoJSON.
+
+* (Optional) Mapping and/or extension specifications that describe how to carry out partial or complete data transformations between MUDDI and other relevant models that are proposed or in use for underground data such as BIM/IFC, IMKL, CityGML UN ADE (Utility Network Application Domain Extension), https://pro.arcgis.com/en/pro-app/help/data/utility-network/structure-of-a-utility-network.htm[ESRI Utility Network], etc.
+
+=== Initial Deliverables
+
+1. MUDDI Conceptual Model Specification
+1. MUDDI Roadmap and Extensibility Framework
+1. MUDDI Logical and Implementation Model Specification for GML and SF-SQL
+
+=== Additional SWG Tasks
+
+1. Elaboration and update of underground built environment data use cases.
+
+1. Identification of interface features that connect underground and above-ground environments for utilities and other built infrastructure.
+
+1. Liaison through the IDBE Subcommittee for mapping and harmonization between relevant built environment standards published by other organizations.
+
+== IPR Policy for this SWG
+
+[x] RAND-Royalty Free
+
+[ ] RAND for fee
+
+== Anticipated Audience / Participants
+
+The audience for this activity includes underground data experts but also any of the diverse stakeholders involved in the critical use cases for such data.
+
+== Domain Working Group Endorsement
+
+The 3DIM DWG [discussed and endorsed the establishment of this SWG and presented to the OGC Technical Committee in Plenary in _____ in ____ 2020].
+
+== Other informative information about the work of this SWG
+
+=== Collaboration
+
+Liaise with the OGC CityGML SWG, InfraGML SWG, GeoSciML SWG, and other SWGs and DWGs, to ensure consistency of approach to data model standardization.
+
+Other collaborators are expected to include, beside the 3DIM DWG: the IDBE Subcommittee, the LandInfra DWG, Utilities and Energy DWG, Smart City DWG, PipelineML SWG, etc within OGC, as well as BuildingSmart International (BIM/IFC) and the American Society of Civil Engineers (38-02, As-built) outside of OGC.
+
+=== Similar or Applicable Standards Work (OGC and Elsewhere)
+
+Flanders has developed, implemented, and mandated the https://overheid.vlaanderen.be/help/klip[KLIP system] for underground infrastructure based on the https://overheid.vlaanderen.be/help/klipimkl-formaat/imkl-23[IMKL model] which is in turn based on INSPIRE standards.
+
+The UK Geospatial Commission has led a https://www.gov.uk/government/news/map-of-underground-pipes-and-cables-designed-to-save-lives-and-prevent-major-disruption[National Underground Assets Registry] project using an underground asset data model based on the initial MUDDI conceptual model [2]
+
+Singapore has been developing an underground land administration model [4] based in part on the CityGML Utility Network ADE.
+
+=== Details of first meeting
+
+An Ad Hoc Working Group meeting will be convened during the Technical Meeting in March 2020 to discuss and hopefully approve this charter.
+
+An initial teleconference will be organized after Charter adoption, and the first face-to-face meeting will be at the OGC TC Montreal meeting in June 2020.
+
+=== Projected on-going meeting schedule
+
+There will be face-to-face meetings organized at each OGC Technical Committee meeting. GoToMeeting teleconferences will be arranged, probably fortnightly, between TC meetings, and the documents will be developed in an OGC public GitHub repository. Email notifications of the issues being discussed will be made available for those unable to access the GitHub.
+
+=== Supporters of this Charter
+
+The following people support this proposal and are committed to the Charter and projected meeting schedule. These members are known as SWG Founding or Charter members. The charter members agree to the SoW and IPR terms as defined in this charter. The charter members have voting rights beginning the day the SWG is officially formed. Charter Members are shown on the public SWG page. Extend the table as necessary.
+
+|===
+|Name             |Organization
+|Carsten Rönsdorf |UK Ordnance Survey
+|Alex Ramage      |Scottish Government / Transport Scotland
+|...   |   |
+|===
+
+=== Conveners
+
+Carsten Rönsdorf: Chair, 3DIM Domain WG
+
+== References
+
+[1] J. Lieberman and A. ed’s Ryan, “OGC Underground Infrastructure Concept Study Engineering Report,” 2017. http://docs.opengeospatial.org/per/17-048.html
+
+[2] J. Lieberman ed., "MUDDI Model for Underground Data Definition and Integration Engineering Report," 2019.  http://docs.opengeospatial.org/per/17-090r1.html
+
+[3] OGC API - Features - Part 1: Core https://www.opengeospatial.org/standards/ogcapi-features
+
+[4] Yan, Jingya & Jaw, Siow Wei & Soon, Kean & Wieser, Andreas & Schrotter, Gerhard. (2019). Towards an Underground Utilities 3D Data Model for Land Administration. Remote Sensing. 11. 1957. 10.3390/rs11171957.
