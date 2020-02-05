@@ -544,7 +544,7 @@ member of OGC;</p>
 <p>Each implementation specification will support a specific data language and encoding, such as GML, CityGML, or SF-SQL.</p>
 </li>
 <li>
-<p>Mappings between MUDDI and other relevant models such as IFC will support maximum reuse of data between different domains of application and computing environments</p>
+<p>Mappings between MUDDI and other relevant models such as LandInfra or BIM / IFC (Building Information Model / Industry Foundation Classes) will support maximum reuse of data between different domains of application and computing environments</p>
 </li>
 </ul>
 </div>
@@ -560,7 +560,7 @@ member of OGC;</p>
 <p>These costs and risks could all be mitigated if accurate, comprehensive underground built environment information were available and shared between responsible parties for rapid integration and analysis. An essential first step towards achieving this capability involves developing geo-enabled utility data models with built-in capabilities for enabling data interoperability and integration. Development and adoption of such models would deliver significant benefits by improving data interchange, integration, and application readiness. Models should focus on those attributes most important for specific use cases such as safe digging, construction design, and disaster resilience, with the capacity for extension as needed to accommodate more complex use cases as the business value of data sharing and interoperability is established.</p>
 </div>
 <div class="paragraph">
-<p>An additional value of developing standardized data models for selected underground utility components and environmental characteristics will be the opportunity to connect with models such as CityGML or IFC that principally address above-ground features, or GeoSciML / WaterML that cover a broad range of geologic and hydrologic phenomena. This will allow the use of standardized, interoperable data to model the entire interconnected built and natural municipal environment from top to bottom at every scale from small local jurisdictions to regional and national extents.</p>
+<p>An additional value of developing standardized data models for selected underground utility components and environmental characteristics will be the opportunity to connect with models such as CityGML or BIM / IFC that principally address above-ground features, or GeoSciML / WaterML that cover a broad range of geologic and hydrologic phenomena. This will allow the use of standardized, interoperable data to model the entire interconnected built and natural municipal environment from top to bottom at every scale from small local jurisdictions to regional and national extents.</p>
 </div>
 </div>
 </div>
@@ -570,7 +570,7 @@ member of OGC;</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Expand, prioritize, and validate a set of use cases based on [1] and [2]</p>
+<p>Expand, prioritize, and validate a set of use cases based on the 2017 <a href="https://www.opengeospatial.org/projects/initiatives/undergroundcds">OGC Underground Infrastructure Concept Development Study</a> [1] and the 2018 <a href="https://www.opengeospatial.org/projects/initiatives/ugipilot">OGC Underground Infrastructure Pilot: MUDDI Workshop</a> [2]</p>
 </li>
 <li>
 <p>Update and specify a MUDDI conceptual model, based upon and with mappings to existing model standards as laid out in [2]</p>
@@ -607,15 +607,53 @@ member of OGC;</p>
 <div class="sect2">
 <h3 id="_specific_existing_work_used_as_starting_point"><a class="anchor" href="#_specific_existing_work_used_as_starting_point"></a>3.3. Specific Existing Work Used as Starting Point</h3>
 <div class="paragraph">
-<p>The SWG work is based on:</p>
+<p>The SWG work will be based on:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>OGC Underground Infrastructure Concept Study [1] and references therein.</p>
+<p>The 2017 OGC Underground Infrastructure Concept Study (CDS) [1] and references therein. This study included:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>A compilation of information on the state of underground infrastructure information and supporting systems. Sponsors included the Ordnance Survey of Great Britain, the Singapore Land Authority (SLA), and the Center for Geospatial Innovation for the Fund for the City of New York.</p>
 </li>
 <li>
-<p>MUDDI Model for Underground Data Definition and Integration Engineering Report [2] and references .</p>
+<p>An issued RFI (request for information) that sought input from companies, jurisdictions, and nations around the world about current information challenges and how to solve them. Twenty-nine organizations responded to the RFI and delivered extremely valuable information that was summarized in the CDS report.</p>
+</li>
+<li>
+<p>Organization of a workshop at the offices of the Fund for the City of New York, which brought together selected RFI responders for a two-day conference that explored the challenges and options associated with developing standardized infrastructure information, also summarized in the CDS report.</p>
+</li>
+<li>
+<p>Delineation of 6 core use cases for underground information:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Routine street excavations;</p>
+</li>
+<li>
+<p>Emergency response;</p>
+</li>
+<li>
+<p>Utility maintenance programs;</p>
+</li>
+<li>
+<p>Large scale construction projects;</p>
+</li>
+<li>
+<p>Disaster planning and response; and</p>
+</li>
+<li>
+<p>Smart cities programs.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>MUDDI Model for Underground Data Definition and Integration Engineering Report [2] and references. This engineering report was derived from a workshop held in July 2018 to further develop requirements for an underground information model specification. The report presents the outcomes of this workshop, experiments conducted with preliminary versions of the MUDDI model, and a draft of the conceptual MUDDI model itself, also available on <a href="https://github.com/opengeospatial/muddi/tree/master/Model">Github</a> in Enterprise Architect UML form.</p>
 </li>
 </ol>
 </div>
@@ -658,7 +696,7 @@ member of OGC;</p>
 <p>At least one implementation specification will be developed to support a specific data language and encoding, such as GML, CityGML, SF-SQL, or GeoJSON.</p>
 </li>
 <li>
-<p>(Optional) Mapping and/or extension specifications that describe how to carry out partial or complete data transformations between MUDDI and other relevant models that are proposed or in use for underground data such as IFC, KLIP, UN ADE, etc.</p>
+<p>(Optional) Mapping and/or extension specifications that describe how to carry out partial or complete data transformations between MUDDI and other relevant models that are proposed or in use for underground data such as BIM/IFC, IMKL, CityGML UN ADE (Utility Network Application Domain Extension), <a href="https://pro.arcgis.com/en/pro-app/help/data/utility-network/structure-of-a-utility-network.htm">ESRI Utility Network</a>, etc.</p>
 </li>
 </ul>
 </div>
@@ -732,7 +770,7 @@ member of OGC;</p>
 <p>Liaise with the OGC CityGML SWG, InfraGML SWG, GeoSciML SWG, and other SWGs and DWGs, to ensure consistency of approach to data model standardization.</p>
 </div>
 <div class="paragraph">
-<p>Other collaborators are expected to include, beside the 3DIM DWG: the IDBE Subcommittee, the LandInfra DWG, Utilities and Energy DWG, Smart City DWG, PipelineML SWG, etc within OGC, as well as BuildingSmart International and American Society of Civil Engineers outside of OGC.</p>
+<p>Other collaborators are expected to include, beside the 3DIM DWG: the IDBE Subcommittee, the LandInfra DWG, Utilities and Energy DWG, Smart City DWG, PipelineML SWG, etc within OGC, as well as BuildingSmart International (BIM/IFC) and the American Society of Civil Engineers (38-02, As-built) outside of OGC.</p>
 </div>
 </div>
 <div class="sect2">
@@ -774,8 +812,8 @@ member of OGC;</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Name</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Organization</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Name</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Organization</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Carsten Rönsdorf</p></td>
@@ -783,10 +821,14 @@ member of OGC;</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Alex Ramage</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Transport Scotland</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Scottish Government / Transport Scotland</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">&#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Geoff Zeiss</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Between The Poles / OGC Board of Directors</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
@@ -820,7 +862,7 @@ member of OGC;</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-02-04 11:07:19 EST
+Last updated 2020-02-05 15:23:03 EST
 </div>
 </div>
 </body>

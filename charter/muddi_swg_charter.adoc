@@ -84,7 +84,7 @@ An additional value of developing standardized data models for selected undergro
 
 == Scope of Work
 
-1. Expand, prioritize, and validate a set of use cases based on [1] and [2]
+1. Expand, prioritize, and validate a set of use cases based on the 2017 https://www.opengeospatial.org/projects/initiatives/undergroundcds[OGC Underground Infrastructure Concept Development Study] [1] and the 2018 https://www.opengeospatial.org/projects/initiatives/ugipilot[OGC Underground Infrastructure Pilot: MUDDI Workshop] [2]
 2. Update and specify a MUDDI conceptual model, based upon and with mappings to existing model standards as laid out in [2]
 3. Develop a roadmap specification that outlines a framework and mechanisms for model modularity, allowing advanced MUDDI profiles to be constructed that preserve the fundamental interoperable concepts and relationships of the model.
 4. Develop an initial logical  and physical implementation specification of the core MUDDI model as a base capability and template for future model development.
@@ -104,10 +104,21 @@ As the MUDDI standard will be modular and multi-part, its core and extension str
 
 === Specific Existing Work Used as Starting Point
 
-The SWG work is based on:
+The SWG work will be based on:
 
-1. OGC Underground Infrastructure Concept Study [1] and references therein.
-2. MUDDI Model for Underground Data Definition and Integration Engineering Report [2] and references .
+1. The 2017 OGC Underground Infrastructure Concept Study (CDS) [1] and references therein. This study included:
+ * A compilation of information on the state of underground infrastructure information and supporting systems. Sponsors included the Ordnance Survey of Great Britain, the Singapore Land Authority (SLA), and the Center for Geospatial Innovation for the Fund for the City of New York.
+ * An issued RFI (request for information) that sought input from companies, jurisdictions, and nations around the world about current information challenges and how to solve them. Twenty-nine organizations responded to the RFI and delivered extremely valuable information that was summarized in the CDS report.
+ * Organization of a workshop at the offices of the Fund for the City of New York, which brought together selected RFI responders for a two-day conference that explored the challenges and options associated with developing standardized infrastructure information, also summarized in the CDS report.
+ * Delineation of 6 core use cases for underground information:
+  ** Routine street excavations;
+  ** Emergency response;
+  ** Utility maintenance programs;
+  ** Large scale construction projects;
+  ** Disaster planning and response; and
+  ** Smart cities programs.
+
+2. MUDDI Model for Underground Data Definition and Integration Engineering Report [2] and references. This engineering report was derived from a workshop held in July 2018 to further develop requirements for an underground information model specification. The report presents the outcomes of this workshop, experiments conducted with preliminary versions of the MUDDI model, and a draft of the conceptual MUDDI model itself, also available on https://github.com/opengeospatial/muddi/tree/master/Model[Github] in Enterprise Architect UML form.
 
 === Is This a Persistent SWG
 
@@ -136,16 +147,16 @@ These are the categories of specification deliverables. The specific titles and 
 === Initial Deliverables
 
 1. MUDDI Conceptual Model Specification
-1. MUDDI Roadmap and Extensibility Framework
-1. MUDDI Logical and Implementation Model Specification for GML and SF-SQL
+2. MUDDI Roadmap and Extensibility Framework
+3. MUDDI Logical and Implementation Model Specification for GML and SF-SQL
 
 === Additional SWG Tasks
 
 1. Elaboration and update of underground built environment data use cases.
 
-1. Identification of interface features that connect underground and above-ground environments for utilities and other built infrastructure.
+2. Identification of interface features that connect underground and above-ground environments for utilities and other built infrastructure.
 
-1. Liaison through the IDBE Subcommittee for mapping and harmonization between relevant built environment standards published by other organizations.
+3. Liaison through the IDBE Subcommittee for mapping and harmonization between relevant built environment standards published by other organizations.
 
 == IPR Policy for this SWG
 
@@ -192,10 +203,11 @@ There will be face-to-face meetings organized at each OGC Technical Committee me
 The following people support this proposal and are committed to the Charter and projected meeting schedule. These members are known as SWG Founding or Charter members. The charter members agree to the SoW and IPR terms as defined in this charter. The charter members have voting rights beginning the day the SWG is officially formed. Charter Members are shown on the public SWG page. Extend the table as necessary.
 
 |===
-|Name             |Organization
+| *Name*             | *Organization*
 |Carsten Rönsdorf |UK Ordnance Survey
 |Alex Ramage      |Scottish Government / Transport Scotland
-|...   |   |
+|Geoff Zeiss   | Between The Poles / OGC Board of Directors
+|              |
 |===
 
 === Conveners
