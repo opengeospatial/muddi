@@ -3,8 +3,8 @@
 :doctype: book
 :encoding: utf-8
 :lang: en
-:toc:
-:toc-placement!:
+:toc: macro
+//:toc-placement!:
 :toclevels: 4
 :numbered:
 :sectanchors:
@@ -58,6 +58,8 @@ Of course, participants also may join the SWG at any time. The OGC and the SWG w
 Non-OGC members who wish to participate may contact us about joining the OGC. In addition, the public may access some of the resources maintained for each SWG: the SWG public description, the SWG Charter, Change Requests, and public comments, which will be linked from the SWG’s page.
 
 Please feel free to forward this announcement to any other appropriate lists. The OGC is an open standards organization; we encourage your feedback.
+
+toc::[]
 
 == Purpose of the Standards Working Group
 
@@ -176,9 +178,11 @@ The 3DIM DWG [discussed and endorsed the establishment of this SWG and presented
 
 === Collaboration
 
-Liaise with the OGC CityGML SWG, InfraGML SWG, GeoSciML SWG, and other SWGs and DWGs, to ensure consistency of approach to data model standardization.
+Liaison is expected with the OGC CityGML SWG, InfraGML SWG, GeoSciML SWG, and other SWGs and DWGs, to ensure consistency of approach to data model standardization.
 
-Other collaborators are expected to include, beside the 3DIM DWG: the IDBE Subcommittee, the LandInfra DWG, Utilities and Energy DWG, Smart City DWG, PipelineML SWG, etc within OGC, as well as BuildingSmart International (BIM/IFC) and the American Society of Civil Engineers (38-02, As-built) outside of OGC.
+Liaison is also planned with the American Society of Civil Engineers for coordination with regard to ASCE 38-02, "As-Built" specifications. The contact for this coordination is Phil Meis
+
+Other collaborators are expected to include, beside the 3DIM DWG: the IDBE Subcommittee, the LandInfra DWG, Utilities and Energy DWG, Smart City DWG, PipelineML SWG, etc within OGC, as well as BuildingSmart International (BIM/IFC) outside of OGC.
 
 === Similar or Applicable Standards Work (OGC and Elsewhere)
 

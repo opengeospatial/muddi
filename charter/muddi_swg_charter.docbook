@@ -4,7 +4,7 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>MUDDI (Model for Underground Data Definition and Integration) SWG Charter</title>
-<date>2020-02-05</date>
+<date>2020-02-18</date>
 </info>
 <preface>
 <title></title>
@@ -86,6 +86,7 @@ member of OGC;</simpara>
 <simpara>Of course, participants also may join the SWG at any time. The OGC and the SWG welcomes all interested parties.</simpara>
 <simpara>Non-OGC members who wish to participate may contact us about joining the OGC. In addition, the public may access some of the resources maintained for each SWG: the SWG public description, the SWG Charter, Change Requests, and public comments, which will be linked from the SWG’s page.</simpara>
 <simpara>Please feel free to forward this announcement to any other appropriate lists. The OGC is an open standards organization; we encourage your feedback.</simpara>
+
 </preface>
 <chapter xml:id="_purpose_of_the_standards_working_group">
 <title>Purpose of the Standards Working Group</title>
@@ -265,8 +266,9 @@ member of OGC;</simpara>
 <title>Other informative information about the work of this SWG</title>
 <section xml:id="_collaboration">
 <title>Collaboration</title>
-<simpara>Liaise with the OGC CityGML SWG, InfraGML SWG, GeoSciML SWG, and other SWGs and DWGs, to ensure consistency of approach to data model standardization.</simpara>
-<simpara>Other collaborators are expected to include, beside the 3DIM DWG: the IDBE Subcommittee, the LandInfra DWG, Utilities and Energy DWG, Smart City DWG, PipelineML SWG, etc within OGC, as well as BuildingSmart International (BIM/IFC) and the American Society of Civil Engineers (38-02, As-built) outside of OGC.</simpara>
+<simpara>Liaison is expected with the OGC CityGML SWG, InfraGML SWG, GeoSciML SWG, and other SWGs and DWGs, to ensure consistency of approach to data model standardization.</simpara>
+<simpara>Liaison is also planned with the American Society of Civil Engineers for coordination with regard to ASCE 38-02, "As-Built" specifications. The contact for this coordination is Phil Meis</simpara>
+<simpara>Other collaborators are expected to include, beside the 3DIM DWG: the IDBE Subcommittee, the LandInfra DWG, Utilities and Energy DWG, Smart City DWG, PipelineML SWG, etc within OGC, as well as BuildingSmart International (BIM/IFC) outside of OGC.</simpara>
 </section>
 <section xml:id="_similar_or_applicable_standards_work_ogc_and_elsewhere">
 <title>Similar or Applicable Standards Work (OGC and Elsewhere)</title>
