@@ -4,7 +4,7 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>MUDDI (Model for Underground Data Definition and Integration) SWG Charter</title>
-<date>2020-02-18</date>
+<date>2020-03-05</date>
 </info>
 <preface>
 <title></title>
@@ -310,8 +310,20 @@ member of OGC;</simpara>
 <entry align="left" valign="top"><simpara>Between The Poles / OGC Board of Directors</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
 </row>
 <row>
-<entry align="left" valign="top"><?dbfo bgcolor="#FFFFFF"?></entry>
-<entry align="left" valign="top"><?dbfo bgcolor="#FFFFFF"?></entry>
+<entry align="left" valign="top"><simpara>Jan Hjelmager</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+<entry align="left" valign="top"><simpara>Danish Agency for Data Supply &amp; Efficiency (SDFE)</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>H.C. Gruler</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+<entry align="left" valign="top"><simpara>Leica Geosystems</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Rob van Son</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+<entry align="left" valign="top"><simpara>ETH Zurich</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Tatjana Kutzner</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+<entry align="left" valign="top"><simpara>TU Munich</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
 </row>
 </tbody>
 </tgroup>

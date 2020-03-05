@@ -211,7 +211,10 @@ The following people support this proposal and are committed to the Charter and 
 |Carsten Rönsdorf |UK Ordnance Survey
 |Alex Ramage      |Scottish Government / Transport Scotland
 |Geoff Zeiss   | Between The Poles / OGC Board of Directors
-|              |
+|  Jan Hjelmager  | Danish Agency for Data Supply & Efficiency (SDFE)
+|  H.C. Gruler | Leica Geosystems
+| Rob van Son | ETH Zurich
+| Tatjana Kutzner     | TU Munich
 |===
 
 === Conveners
