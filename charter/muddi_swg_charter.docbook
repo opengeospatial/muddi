@@ -4,7 +4,7 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>MUDDI (Model for Underground Data Definition and Integration) SWG Charter</title>
-<date>2020-04-09</date>
+<date>2020-06-18</date>
 </info>
 <preface>
 <title></title>
@@ -340,6 +340,30 @@ member of OGC;</simpara>
 <row>
 <entry align="left" valign="top"><simpara>Moufid Charafeddine</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
 <entry align="left" valign="top"><simpara>BetterGIS</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Andrew Hughes</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+<entry align="left" valign="top"><simpara>BGS</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Thomas Kolbe</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+<entry align="left" valign="top"><simpara>TU Munich</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Giorgio Agugiaro</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+<entry align="left" valign="top"><simpara>TU Delft</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Byron Cochrane</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+<entry align="left" valign="top"><simpara>OpenWork</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Jingya Yan</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+<entry align="left" valign="top"><simpara>Singapore ETH-Centre</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Gabriel S. Arancibia</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+<entry align="left" valign="top"><simpara>Public Surveyors of Canada</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
 </row>
 </tbody>
 </tgroup>

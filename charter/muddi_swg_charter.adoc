@@ -219,6 +219,12 @@ The following people support this proposal and are committed to the Charter and 
 | Victor Khoo       | Singapore Land Authority
 | Debra Laefer | New York University
 | Moufid Charafeddine | BetterGIS
+| Andrew Hughes | BGS
+| Thomas Kolbe | TU Munich
+| Giorgio Agugiaro | TU Delft
+| Byron Cochrane | OpenWork
+| Jingya Yan | Singapore ETH-Centre
+| Gabriel S. Arancibia | Public Surveyors of Canada
 |===
 
 === Conveners
