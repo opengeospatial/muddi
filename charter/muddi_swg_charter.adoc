@@ -63,7 +63,7 @@ toc::[]
 
 == Purpose of the Standards Working Group
 
-The MUDDI (Model for Underground Data Definition and Integration) Standards Working Group will standardize a conceptual model, a modular framework, one or more logical models, one or more implementation specifications, and mappings to/from other models for geospatial data that represent underground infrastructure assets and characterize the underground environment that contains those assets. According to its name, the MUDDI approach emphasizes the definition of common concepts and terminology that both mediate between elements in existing relevant data models and can be used to integrate underground data from disparate sources leveraging those models.
+The MUDDI (Model for Underground Data Definition and Integration) Standards Working Group will standardize a conceptual model, a modular framework, one or more logical models, one or more implementation specifications, and mappings to/from other models for geospatial data that represent underground infrastructure assets and characterize the underground environment that contains those assets. According to its name, the MUDDI approach emphasizes the _definition_ of common concepts and terminology that mediate between elements in existing relevant data models and can be used to _integrate_ underground data from disparate sources leveraging those models.
 
  * The conceptual model will provide a general basis for interoperability between multiple MUDDI implementations and encodings
 
@@ -215,6 +215,10 @@ The following people support this proposal and are committed to the Charter and 
 |  H.C. Gruler | Leica Geosystems
 | Rob van Son | ETH Zurich
 | Tatjana Kutzner     | TU Munich
+| Alan Leidner       | GISMO
+| Victor Khoo       | Singapore Land Authority
+| Debra Laefer | New York University
+| Moufid Charafeddine | BetterGIS
 |===
 
 === Conveners

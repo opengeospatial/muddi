@@ -4,7 +4,7 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>MUDDI (Model for Underground Data Definition and Integration) SWG Charter</title>
-<date>2020-03-10</date>
+<date>2020-04-09</date>
 </info>
 <preface>
 <title></title>
@@ -90,7 +90,7 @@ member of OGC;</simpara>
 </preface>
 <chapter xml:id="_purpose_of_the_standards_working_group">
 <title>Purpose of the Standards Working Group</title>
-<simpara>The MUDDI (Model for Underground Data Definition and Integration) Standards Working Group will standardize a conceptual model, a modular framework, one or more logical models, one or more implementation specifications, and mappings to/from other models for geospatial data that represent underground infrastructure assets and characterize the underground environment that contains those assets. According to its name, the MUDDI approach emphasizes the definition of common concepts and terminology that both mediate between elements in existing relevant data models and can be used to integrate underground data from disparate sources leveraging those models.</simpara>
+<simpara>The MUDDI (Model for Underground Data Definition and Integration) Standards Working Group will standardize a conceptual model, a modular framework, one or more logical models, one or more implementation specifications, and mappings to/from other models for geospatial data that represent underground infrastructure assets and characterize the underground environment that contains those assets. According to its name, the MUDDI approach emphasizes the <emphasis>definition</emphasis> of common concepts and terminology that mediate between elements in existing relevant data models and can be used to <emphasis>integrate</emphasis> underground data from disparate sources leveraging those models.</simpara>
 <itemizedlist>
 <listitem>
 <simpara>The conceptual model will provide a general basis for interoperability between multiple MUDDI implementations and encodings</simpara>
@@ -324,6 +324,22 @@ member of OGC;</simpara>
 <row>
 <entry align="left" valign="top"><simpara>Tatjana Kutzner</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
 <entry align="left" valign="top"><simpara>TU Munich</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Alan Leidner</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+<entry align="left" valign="top"><simpara>GISMO</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Victor Khoo</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+<entry align="left" valign="top"><simpara>Singapore Land Authority</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Debra Laefer</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+<entry align="left" valign="top"><simpara>New York University</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Moufid Charafeddine</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
+<entry align="left" valign="top"><simpara>BetterGIS</simpara><?dbfo bgcolor="#FFFFFF"?></entry>
 </row>
 </tbody>
 </tgroup>
