@@ -9,4 +9,5 @@
 |January 21, 2018 |J. Lieberman | 0.5 |all |expanded draft with mappings
 |July 23, 2018 |J. Lieberman | 0.9 |all |expanded draft with mappings
 |November 29, 2017 |J. Lieberman | 1.0 |all |Complete after reviews
+|January 3, 2020 |J. Lieberman | 1.1 |all |Updated model
 |====================
