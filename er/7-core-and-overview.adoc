@@ -29,15 +29,15 @@ Two other MUDDIObject children are the container and support object features, fo
 
 A significant update to the version 1.0 model is inclusion of a number of codelists shown in Figure 12 that provide both controlled and authoritative values for many of the attributes for the core MUDDI features.
 
-[#img_modelCore,reftext='{figure-caption} {counter:figure-num}']
+[#img_modelCore1,reftext='{figure-caption} {counter:figure-num}']
 .MUDDI packages
 image::images/7-model_packages.png[]
 
-[#img_modelCore,reftext='{figure-caption} {counter:figure-num}']
+[#img_modelCore2,reftext='{figure-caption} {counter:figure-num}']
 .MUDDI core features
 image::images/7-model_core_features.png[]
 
-[#img_modelCore,reftext='{figure-caption} {counter:figure-num}']
+[#img_modelCore3,reftext='{figure-caption} {counter:figure-num}']
 .MUDDI code lists
 image::images/7-model_codelists.png[]
 
@@ -45,7 +45,7 @@ image::images/7-model_codelists.png[]
 Another MUDDIObject specialization shown in Figure 13 is the Environment Object feature, further specialized into features representing geological, hydrological, pedological (soil-specific), and phenomenological features of the subsurface environment. The general geometry type for these features will be a region bounded by surfaces, but interfaces add both cross-sections and borehole geometries as input and/or output capabilities.
 
 
-[#img_modelCore,reftext='{figure-caption} {counter:figure-num}']
+[#img_modelCore4,reftext='{figure-caption} {counter:figure-num}']
 .MUDDI environment features
 image::images/7-model_environment_features.png[]
 
@@ -54,7 +54,7 @@ The combination of MUDDI network features and network-specific interfaces need o
 
 A capability supported by CityGML UN ADE is the option to represent inter-network assemblages ("internal" relationship) which depict additional graph detail inside of what is represented as either a node or a link at a lower level of detail. This generally requires interfacial relations to describe the connection between the internal network and elements of the enclosing network
 
-[#img_modelCore,reftext='{figure-caption} {counter:figure-num}']
+[#img_modelCore5,reftext='{figure-caption} {counter:figure-num}']
 .MUDDI network features and relations
 image::images/7-model_network.png[]
 

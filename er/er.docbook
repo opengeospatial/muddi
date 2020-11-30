@@ -3,25 +3,25 @@
 <?asciidoc-numbered?>
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
-<title>UG3IM Underground Infrastructure Information Integration Model Engineering Report</title>
-<date>2017-12-02</date>
+<title>MUDDI v1.1 (Model for Underground Data Definition and Integration) Engineering Report</title>
+<date>2019-11-13</date>
 </info>
 <preface>
 <title></title>
-<simpara>Publication Date: YYYY-MM-DD</simpara>
-<simpara>Approval Date: YYYY-MM-DD</simpara>
-<simpara>Posted Date: YYYY-MM-DD</simpara>
-<simpara>Reference number of this document: OGC 17-090</simpara>
+<simpara>Publication Date: Draft</simpara>
+<simpara>Approval Date: Draft</simpara>
+<simpara>Posted Date: 2019-02-01</simpara>
+<simpara>Reference number of this document: OGC 19-081</simpara>
 <simpara>Reference URL for this document: <link xl:href="http://www.opengis.net/doc/PER/t13-ID">http://www.opengis.net/doc/PER/t13-ID</link></simpara>
 <simpara>Category: Public Engineering Report</simpara>
 <simpara>Editor: Josh Lieberman</simpara>
-<simpara>Title: UG3IM Underground Infrastructure Information Integration Model Engineering Report</simpara>
+<simpara>Title: MUDDI v1.1 (Model for Underground Data Definition and Integration) Engineering Report</simpara>
 <simpara><?asciidoc-hr?></simpara>
 <formalpara>
 <title><emphasis role="strong"><phrase role="big">OGC Engineering Report</phrase></emphasis></title>
 <para><emphasis role="strong">COPYRIGHT</emphasis></para>
 </formalpara>
-<simpara>Copyright © 2017 Open Geospatial Consortium.
+<simpara>Copyright © 2019 Open Geospatial Consortium.
 To obtain additional rights of use, visit <link xl:href="http://www.opengeospatial.org/">http://www.opengeospatial.org/</link></simpara>
 <simpara><emphasis role="strong">WARNING</emphasis></simpara>
 <simpara>This document is not an OGC Standard. This document is an OGC Public Engineering Report created as a deliverable in an OGC Interoperability Initiative and is not an official position of the OGC membership. It is distributed for review and comment. It is subject to change without notice and may not be referred to as an OGC Standard. Further, any OGC Engineering Report should not be referenced as required or mandatory technology in procurements. However, the discussions in this document could very well lead to the definition of an OGC Standard.</simpara>
@@ -40,18 +40,18 @@ To obtain additional rights of use, visit <link xl:href="http://www.opengeospati
 </preface>
 <chapter xml:id="_summary">
 <title>Summary</title>
-<simpara>The recently published Underground Infrastructure Concept Development Study (UICDS) Engineering Report ([<link linkend="Lieberman2017">1</link>]) examines the present state of underground infrastructure information (UGII), costs and benefits of that state, as well as future opportunities for an improved state. The report describes a number of candidate models for UGII and recommends a number of follow-on activities, including development of a prototype UGII integration model to support subsequent UGII integration and exchange initiatives. The present report describes the design and development of the UG3IM conceptual model. The goal of UG3IM is not to replace existing models but to serve as the basis for integration of datasets from different models, at the levels of detail required to address application use cases described in [<link linkend="Lieberman2017">1</link>]. UG3IM as described here is a conceptual model which will serve as the basis for one or more conformant and interchangeable physical implementations such as GML or SFS. As a prototype model, the current version of UG3IM is also not intended to be final, but to serve as an input to the proposed OGC Underground Infrastructure Pilot which will in turn serve to refine and improve the model through implementation and deployment in realistic application scenarios.</simpara>
+<simpara>The Underground Infrastructure Concept Development Study (UICDS) Engineering Report [<link linkend="Lieberman2017">1</link>] examined the present state of underground infrastructure information (UGII), costs and benefits of that state, as well as future opportunities for an improved state. That report describes a number of candidate models for UGII and recommends a number of follow-on activities, including development of a prototype UGII integration model to support subsequent UGII integration and exchange initiatives. A follow-up workshop and model development effort resulted in another engineering report describing an initial (1.0) version of the conceptual UGII integration model MUDDI (Model for Underground Data Definition and Interchange) [<link linkend="Lieberman2018">Lieberman2018</link>].  The present updated report describes MUDDI version 1.1. The goal of MUDDI is to serve as the basis for integration of datasets from different models, at the levels of detail required to address application use cases described in [<link linkend="Lieberman2017">1</link>]. MUDDI as described here is a conceptual model which will serve as the basis for one or more conformant and interchangeable logical and physical implementations such as GML (Geographic Markup Language) or SFS (Simple Features SQL). The current version 1.1 of MUDDI is has been updated and refined from the initial version 1.0, but is still intended to serve as an input to the proposed OGC Underground Infrastructure Pilot as well as similar implementations and deployments in realistic application scenarios. The present model is also suitable as input to begin development of a formal conceptual model standard.</simpara>
 <section xml:id="_requirements_research_motivation">
 <title>Requirements &amp; Research Motivation</title>
-<simpara>The development of UG3IM has been motivated by a number of specific design requirements described in the <link linkend="overview">Overview</link> but the principal motivation has been to achieve compatibility and minimal information loss with regard to data represented by several significant existing models and model standards, in order to support both data interchange and data integration across a variety of underground infrastructure components, functions, and associated environmental properties.</simpara>
+<simpara>The development of MUDDI has been motivated by a number of specific design requirements described in the <link linkend="overview">Overview</link> but the principal motivation has been to achieve compatibility and minimal information loss with regard to data represented by several significant existing models and model standards, in order to support both data interchange and data integration across a variety of underground infrastructure components, functions, and associated environmental properties.</simpara>
 </section>
 <section xml:id="_prior_after_comparison">
 <title>Prior-After Comparison</title>
-<simpara>Findings presented in [<link linkend="Lieberman2017">1</link>] describe the present generally inadequate state of UGII in many cities and suburban regions. The model presented here, and subsequent pilot activities based on it, along with needed policy, financial, and cultural advances,  have the potential to \ improve UGII quality, reduce incurred costs, and provide numerous opportunities to improve how cities function.</simpara>
+<simpara>Findings presented in [<link linkend="Lieberman2017">1</link>] describe the present generally inadequate state of UGII in many cities and suburban regions. The model presented here, and subsequent pilot activities based on it, along with needed policy, financial, and cultural advances,  have the potential to improve UGII quality, reduce incurred costs, and provide numerous opportunities to improve how cities function.</simpara>
 </section>
 <section xml:id="_future_recommendations">
 <title>Future Recommendations</title>
-<simpara>Naturally, publication of a prototype UG3IM is intended to support both the proposed Pilot initiative, as well as development and approval of complete conceptual and implementation specifications.</simpara>
+<simpara>Naturally, publication of a prototype MUDDI is intended to support both the proposed Pilot initiative, as well as development and approval of complete conceptual and implementation specifications.</simpara>
 </section>
 <section xml:id="_document_contributor_contact_points">
 <title>Document contributor contact points</title>
@@ -72,16 +72,36 @@ To obtain additional rights of use, visit <link xl:href="http://www.opengeospati
 </thead>
 <tbody>
 <row>
-<entry align="left" valign="top"><simpara><indexterm><primary>Josh Lieberman, editor</primary></indexterm>Josh Lieberman, editor</simpara></entry>
-<entry align="left" valign="top"><simpara><indexterm><primary>Tumbling Walls</primary></indexterm>Tumbling Walls</simpara></entry>
+<entry align="left" valign="top"><simpara><indexterm>
+<primary>Josh Lieberman, editor</primary>
+</indexterm>Josh Lieberman, editor</simpara></entry>
+<entry align="left" valign="top"><simpara><indexterm>
+<primary>Tumbling Walls</primary>
+</indexterm>Tumbling Walls</simpara></entry>
 </row>
 <row>
-<entry align="left" valign="top"><simpara><indexterm><primary>George Percivall</primary></indexterm>George Percivall</simpara></entry>
-<entry align="left" valign="top"><simpara><indexterm><primary>OGC</primary></indexterm>OGC</simpara></entry>
+<entry align="left" valign="top"><simpara><indexterm>
+<primary>George Percivall</primary>
+</indexterm>George Percivall</simpara></entry>
+<entry align="left" valign="top"><simpara><indexterm>
+<primary>OGC</primary>
+</indexterm>OGC</simpara></entry>
 </row>
 <row>
-<entry align="left" valign="top"><simpara><indexterm><primary>Alan Leidner</primary></indexterm>Alan Leidner</simpara></entry>
-<entry align="left" valign="top"><simpara><indexterm><primary>FCNY</primary></indexterm>FCNY</simpara></entry>
+<entry align="left" valign="top"><simpara><indexterm>
+<primary>Alan Leidner</primary>
+</indexterm>Alan Leidner</simpara></entry>
+<entry align="left" valign="top"><simpara><indexterm>
+<primary>FCNY</primary>
+</indexterm>FCNY</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><indexterm>
+<primary>Carsten Roensdorf</primary>
+</indexterm>Carsten Roensdorf</simpara></entry>
+<entry align="left" valign="top"><simpara><indexterm>
+<primary>Ordnance Survey</primary>
+</indexterm>Ordnance Survey</simpara></entry>
 </row>
 </tbody>
 </tgroup>
@@ -96,90 +116,64 @@ To obtain additional rights of use, visit <link xl:href="http://www.opengeospati
 <chapter xml:id="references">
 <title>References</title>
 <simpara>The following normative documents are referenced in this document.</simpara>
-<variablelist>
+<itemizedlist>
 <title>NOTE: 	Only normative standards are referenced here, e.g. OGC, ISO or other SDO standards. All other references are listed in the bibliography.</title>
-<varlistentry>
-<term><anchor xml:id="NR-ASCE-38-02" xreflabel="[NR-ASCE-38-02]"/>ASCE 38-02</term>
 <listitem>
-<simpara>Standard Guideline for the Collection and Depiction of Existing Subsurface Utility Data, American Society of Civil Engineers, 2002.</simpara>
+<simpara><anchor xml:id="NR-ASCE-38-02" xreflabel="[NR-ASCE-38-02]"/>ASCE 38-02: Standard Guideline for the Collection and Depiction of Existing Subsurface Utility Data, American Society of Civil Engineers, 2002.</simpara>
 </listitem>
-</varlistentry>
-<varlistentry>
-<term><anchor xml:id="NR-CityGML-UN-ADE" xreflabel="[NR-CityGML-UN-ADE]"/>CityGML Utility Network ADE</term>
 <listitem>
-<simpara><link xl:href="http://en.wiki.utilitynetworks.sig3d.org">http://en.wiki.utilitynetworks.sig3d.org</link></simpara>
+<simpara><anchor xml:id="NR-CityGML-UN-ADE" xreflabel="[NR-CityGML-UN-ADE]"/>CityGML Utility Network ADE::
+<link xl:href="http://en.wiki.utilitynetworks.sig3d.org">http://en.wiki.utilitynetworks.sig3d.org</link></simpara>
 </listitem>
-</varlistentry>
-<varlistentry>
-<term><anchor xml:id="NR-EarthResourceML" xreflabel="[NR-EarthResourceML]"/>EarthResourceML</term>
 <listitem>
-<simpara><link xl:href="http://www.cgi-iugs.org/tech_collaboration/earthResourceML.html">http://www.cgi-iugs.org/tech_collaboration/earthResourceML.html</link></simpara>
+<simpara><anchor xml:id="NR-EarthResourceML" xreflabel="[NR-EarthResourceML]"/>EarthResourceML:
+<link xl:href="http://www.cgi-iugs.org/tech_collaboration/earthResourceML.html">http://www.cgi-iugs.org/tech_collaboration/earthResourceML.html</link></simpara>
 </listitem>
-</varlistentry>
-<varlistentry>
-<term><anchor xml:id="NR-GeoSciML" xreflabel="[NR-GeoSciML]"/>GeoSciML</term>
 <listitem>
-<simpara><link xl:href="http://www.opengeospatial.org/standards/geosciml">http://www.opengeospatial.org/standards/geosciml</link></simpara>
+<simpara><anchor xml:id="NR-GeoSciML" xreflabel="[NR-GeoSciML]"/>GeoSciML:
+<link xl:href="http://www.opengeospatial.org/standards/geosciml">http://www.opengeospatial.org/standards/geosciml</link></simpara>
 </listitem>
-</varlistentry>
-<varlistentry>
-<term><anchor xml:id="NR-GML" xreflabel="[NR-GML]"/>Geographic Markup Language</term>
 <listitem>
-<simpara><link xl:href="http://www.opengeospatial.org/standards/gml">http://www.opengeospatial.org/standards/gml</link></simpara>
+<simpara><anchor xml:id="NR-GML" xreflabel="[NR-GML]"/>Geographic Markup Language:
+<link xl:href="http://www.opengeospatial.org/standards/gml">http://www.opengeospatial.org/standards/gml</link></simpara>
 </listitem>
-</varlistentry>
-<varlistentry>
-<term><anchor xml:id="NR-INSPIRE-UN" xreflabel="[NR-INSPIRE-UN]"/>INSPIRE Utility Networks</term>
 <listitem>
-<simpara><link xl:href="http://inspire.ec.europa.eu/theme/us">http://inspire.ec.europa.eu/theme/us</link></simpara>
+<simpara><anchor xml:id="NR-INSPIRE-UN" xreflabel="[NR-INSPIRE-UN]"/>INSPIRE Utility Networks:
+<link xl:href="http://inspire.ec.europa.eu/theme/us">http://inspire.ec.europa.eu/theme/us</link></simpara>
 </listitem>
-</varlistentry>
-<varlistentry>
-<term><anchor xml:id="NR-IMKL" xreflabel="[NR-IMKL]"/>Information model for cable and pipes</term>
 <listitem>
-<simpara><link xl:href="https://www.agiv.be/producten/klip/meer-over/technische-documentatie/technische-documentatie-imkl">https://www.agiv.be/producten/klip/meer-over/technische-documentatie/technische-documentatie-imkl</link></simpara>
+<simpara><anchor xml:id="NR-IMKL" xreflabel="[NR-IMKL]"/>Information model for cable and pipes:
+<link xl:href="https://www.agiv.be/producten/klip/meer-over/technische-documentatie/technische-documentatie-imkl">https://www.agiv.be/producten/klip/meer-over/technische-documentatie/technische-documentatie-imkl</link></simpara>
 </listitem>
-</varlistentry>
-<varlistentry>
-<term><anchor xml:id="NR-LandInfra" xreflabel="[NR-LandInfra]"/>Land Infra</term>
 <listitem>
-<simpara>Land and Infrastructure Conceptual Model Standard at <link xl:href="http://www.opengeospatial.org/standards/landinfra">http://www.opengeospatial.org/standards/landinfra</link></simpara>
+<simpara><anchor xml:id="NR-LandInfra" xreflabel="[NR-LandInfra]"/>Land Infra:
+Land and Infrastructure Conceptual Model Standard at <link xl:href="http://www.opengeospatial.org/standards/landinfra">http://www.opengeospatial.org/standards/landinfra</link></simpara>
 </listitem>
-</varlistentry>
-<varlistentry>
-<term><anchor xml:id="NR-PAS-128" xreflabel="[NR-PAS-128]"/>PAS 128:2014</term>
 <listitem>
-<simpara>Specification for Underground Utility Detection, Verification and Location, British Standards Institute, 2014.</simpara>
+<simpara><anchor xml:id="NR-PAS-128" xreflabel="[NR-PAS-128]"/>PAS 128:2014:
+Specification for Underground Utility Detection, Verification and Location, British Standards Institution, 2014.</simpara>
 </listitem>
-</varlistentry>
-<varlistentry>
-<term><anchor xml:id="NR-PAS-256" xreflabel="[NR-PAS-256]"/>PAS 256:2017</term>
 <listitem>
-<simpara>Buried assets. Capturing, Recording, Maintaining and Sharing of Location Information and Data, British Standards Institute, 2017.</simpara>
+<simpara><anchor xml:id="NR-PAS-256" xreflabel="[NR-PAS-256]"/>PAS 256:2017:
+Buried assets. Capturing, Recording, Maintaining and Sharing of Location Information and Data, British Standards Institution, 2017.</simpara>
 </listitem>
-</varlistentry>
-<varlistentry>
-<term><anchor xml:id="NR-CIM" xreflabel="[NR-CIM]"/>Common Information Model</term>
 <listitem>
-<simpara>International Electrotechnical Commission global series of standards for electric power transmission and distribution at <link xl:href="https://webstore.iec.ch/home?ReadForm">https://webstore.iec.ch/home?ReadForm</link>.</simpara>
+<simpara><anchor xml:id="NR-CIM" xreflabel="[NR-CIM]"/>Common Information Model:
+International Electrotechnical Commission global series of standards for electric power transmission and distribution at <link xl:href="https://webstore.iec.ch/home?ReadForm">https://webstore.iec.ch/home?ReadForm</link>.</simpara>
 </listitem>
-</varlistentry>
-<varlistentry>
-<term><anchor xml:id="NR-MultiSpeak" xreflabel="[NR-MultiSpeak]"/>MultiSpeak</term>
 <listitem>
-<simpara>North American standard for data exchange between enterprise systems at <link xl:href="http://www.multispeak.org/">http://www.multispeak.org/</link></simpara>
+<simpara><anchor xml:id="NR-MultiSpeak" xreflabel="[NR-MultiSpeak]"/>MultiSpeak: North American standard for data exchange between enterprise systems at <link xl:href="http://www.multispeak.org/">http://www.multispeak.org/</link></simpara>
 </listitem>
-</varlistentry>
-</variablelist>
+</itemizedlist>
 </chapter>
 <chapter xml:id="_terms_and_definitions">
 <title>Terms and definitions</title>
 <simpara>For the purposes of this report, the definitions specified in Clause 4 of the OWS Common Implementation Standard <link xl:href="https://portal.opengeospatial.org/files/?artifact_id=38867&amp;version=2">OGC 06-121r9</link> shall apply. In addition, the following terms and definitions apply.</simpara>
 <variablelist>
 <varlistentry>
-<term><anchor xml:id="UndergroundInfrastructure" xreflabel="[UndergroundInfrastructure]"/>Underground Infrastructure</term>
+<term><anchor xml:id="Soils" xreflabel="[Soils]"/>Soils</term>
 <listitem>
-<simpara>The totality of built components or structures embedded below ground surface that are part of services such as utility networks and/or that support ground surface structures.</simpara>
+<simpara>This term has a precise definition as the primary component of the Earth&#8217;s pedosphere. It is used here in a more general sense to refer to all overburden earth materials in the underground environment, including soils, sediments, and construction fill, that might surround and support underground infrastructure components.</simpara>
 </listitem>
 </varlistentry>
 <varlistentry>
@@ -191,43 +185,13 @@ To obtain additional rights of use, visit <link xl:href="http://www.opengeospati
 <varlistentry>
 <term><anchor xml:id="UndergroundEnvironment" xreflabel="[UndergroundEnvironment]"/>Underground Environment</term>
 <listitem>
-<simpara>Material forming the ground in which underground infrastructure is embedded, and its aspects such as geology, hydrology, chemistry, and engineering properties. This term also covers dynamic subsurface processes such as fluid flow and chemical / biological alteration.</simpara>
+<simpara>Material forming the ground in which underground infrastructure is embedded, and its aspects such as geology, hydrology, chemistry, and engineering properties. This term also covers dynamic subsurface processes such as physical deformation, fluid flow, and chemical / biological alteration.</simpara>
 </listitem>
 </varlistentry>
 <varlistentry>
-<term><anchor xml:id="Soils" xreflabel="[Soils]"/>Soils</term>
+<term><anchor xml:id="UndergroundInfrastructure" xreflabel="[UndergroundInfrastructure]"/>Underground Infrastructure</term>
 <listitem>
-<simpara>This term has a precise definition as the primary component of the Earth&#8217;s pedosphere. It is used here in a more general sense to refer to all overburden earth materials in the underground environment, including soils, sediments, and construction fill, that might surround and support underground infrastructure components.</simpara>
-</listitem>
-</varlistentry>
-<varlistentry>
-<term><anchor xml:id="UGI" xreflabel="[UGI]"/>UGI</term>
-<listitem>
-<simpara>Stands for <link linkend="UndergroundInfrastructure">Underground Infrastructure</link></simpara>
-</listitem>
-</varlistentry>
-<varlistentry>
-<term><anchor xml:id="UGII" xreflabel="[UGII]"/>UGII</term>
-<listitem>
-<simpara>Stands for <link linkend="UndergroundInfrastructureInformation">Underground Infrastructure Information</link></simpara>
-</listitem>
-</varlistentry>
-<varlistentry>
-<term><anchor xml:id="UGE" xreflabel="[UGE]"/>UGE</term>
-<listitem>
-<simpara>Stands for <link linkend="UndergroundEnvironment">Underground Environment</link></simpara>
-</listitem>
-</varlistentry>
-<varlistentry>
-<term><anchor xml:id="UGIIS" xreflabel="[UGIIS]"/>UGIIS</term>
-<listitem>
-<simpara>Stands for <link linkend="UndergroundInfrastructureInformationSystem">Underground Infrastructure Information System</link></simpara>
-</listitem>
-</varlistentry>
-<varlistentry>
-<term><anchor xml:id="UndergroundInfrastructureInformationSystem" xreflabel="[UndergroundInfrastructureInformationSystem]"/>Underground Infrastructure Information System</term>
-<listitem>
-<simpara>Computing system or platform that manages information pertaining to <link linkend="UndergroundInfrastructure">Underground Infrastructure</link></simpara>
+<simpara>The totality of built components or structures embedded below ground surface that are part of services such as utility networks and/or that support ground surface structures.</simpara>
 </listitem>
 </varlistentry>
 <varlistentry>
@@ -236,14 +200,37 @@ To obtain additional rights of use, visit <link xl:href="http://www.opengeospati
 <simpara>Information collected about or pertaining to <link linkend="UndergroundInfrastructure">Underground Infrastructure</link></simpara>
 </listitem>
 </varlistentry>
+<varlistentry>
+<term><anchor xml:id="UndergroundInfrastructureInformationSystem" xreflabel="[UndergroundInfrastructureInformationSystem]"/>Underground Infrastructure Information System</term>
+<listitem>
+<simpara>Computing system or platform that manages information pertaining to <link linkend="UndergroundInfrastructure">Underground Infrastructure</link></simpara>
+</listitem>
+</varlistentry>
 </variablelist>
+<section xml:id="_abbreviated_terms">
+<title>Abbreviated terms</title>
+<itemizedlist>
+<listitem>
+<simpara><anchor xml:id="UGE" xreflabel="[UGE]"/>UGE: <link linkend="UndergroundEnvironment">Underground Environment</link></simpara>
+</listitem>
+<listitem>
+<simpara><anchor xml:id="UGI" xreflabel="[UGI]"/>UGI: <link linkend="UndergroundInfrastructure">Underground Infrastructure</link></simpara>
+</listitem>
+<listitem>
+<simpara><anchor xml:id="UGII" xreflabel="[UGII]"/>UGII: <link linkend="UndergroundInfrastructureInformation">Underground Infrastructure Information</link></simpara>
+</listitem>
+<listitem>
+<simpara><anchor xml:id="UGIIS" xreflabel="[UGIIS]"/>UGIIS: <link linkend="UndergroundInfrastructureInformationSystem">Underground Infrastructure Information System</link></simpara>
+</listitem>
+</itemizedlist>
+</section>
 </chapter>
 <chapter xml:id="Overview">
 <title>Overview</title>
-<simpara>The recently published Underground Infrastructure Concept Development Study (UICDS) Engineering Report ([<link linkend="Lieberman2017">1</link>]) examines the present state of underground infrastructure information (UGII), costs and benefits of that state, as well as future opportunities for an improved state. The report describes a number of candidate models for UGII and recommends a number of follow-on activities, including development of a prototype UGII integration model to support subsequent UGII integration and exchange initiatives. The present report describes the design and development of the UG3IM conceptual model. The goal of UG3IM is not to replace existing models but to serve as the basis for integration of datasets from different models, at the levels of detail required to address application use cases described in [<link linkend="Lieberman2017">1</link>]. UG3IM as described here is a conceptual model which will serve as the basis for one or more conformant and interchangeable physical implementations such as GML or SFS. As a prototype model, the current version of UG3IM is also not intended to be final, but to serve as an input to the proposed OGC Underground Infrastructure Pilot which will in turn serve to refine and improve the model through implementation and deployment in realistic application scenarios.</simpara>
+<simpara>The Underground Infrastructure Concept Development Study (UICDS) Engineering Report [<link linkend="Lieberman2017">1</link>] examined the present state of underground infrastructure information (UGII), costs and benefits of that state, as well as future opportunities for an improved state. That report describes a number of candidate models for UGII and recommends a number of follow-on activities, including development of a prototype UGII integration model to support subsequent UGII integration and exchange initiatives. A follow-up workshop and model development effort resulted in another engineering report describing an initial (1.0) version of the conceptual UGII integration model MUDDI (Model for Underground Data Definition and Interchange) [<link linkend="Lieberman2018">Lieberman2018</link>].  The present updated report describes MUDDI version 1.1. The goal of MUDDI is to serve as the basis for integration of datasets from different models, at the levels of detail required to address application use cases described in [<link linkend="Lieberman2017">1</link>]. MUDDI as described here is a conceptual model which will serve as the basis for one or more conformant and interchangeable logical and physical implementations such as GML (Geographic Markup Language) or SFS (Simple Features SQL). The current version 1.1 of MUDDI is has been updated and refined from the initial version 1.0, but is still intended to serve as an input to the proposed OGC Underground Infrastructure Pilot as well as similar implementations and deployments in realistic application scenarios. The present model is also suitable as input to begin development of a formal conceptual model standard.</simpara>
 <section xml:id="_design_requirements">
 <title>Design Requirements</title>
-<simpara>The development of UG3IM has been motivated by a number of specific design requirements:</simpara>
+<simpara>The development of MUDDI has been motivated by a number of specific design requirements:</simpara>
 <variablelist>
 <varlistentry>
 <term>1) Functionality</term>
@@ -254,7 +241,7 @@ To obtain additional rights of use, visit <link xl:href="http://www.opengeospati
 <varlistentry>
 <term>2) Compatibility</term>
 <listitem>
-<simpara>The model should derive from or map to/from existing candidate models such as INSPIRE, CityGML UN ADE, GeoSciML, or IMKL</simpara>
+<simpara>The model should derive from or map to/from existing candidate models such as INSPIRE (Infrastructure for Spatial Information in the European Community), CityGML UN ADE (Itility Networks Application Domain Extension), GeoSciML, or IMKL (Informatie Model Kabels en Leidingen).</simpara>
 </listitem>
 </varlistentry>
 <varlistentry>
@@ -266,7 +253,7 @@ To obtain additional rights of use, visit <link xl:href="http://www.opengeospati
 <varlistentry>
 <term>4) Traceability</term>
 <listitem>
-<simpara>The model should provide for UGII to be linked directly with the survey measurements, sensor observations, and supporting evidence from which it was derived and from which its quality can be determined</simpara>
+<simpara>The model should provide for UGII to be linked directly with the survey measurements, sensor observations, and supporting evidence from which it was derived and from which its quality can be determined.</simpara>
 </listitem>
 </varlistentry>
 <varlistentry>
@@ -279,12 +266,12 @@ To obtain additional rights of use, visit <link xl:href="http://www.opengeospati
 </section>
 <section xml:id="_design_patterns">
 <title>Design Patterns</title>
-<simpara>There are a number of common model design patterns which might UG3IM requirements, particularly modularity and flexibility:</simpara>
+<simpara>There are a number of common model design patterns which might satisfy MUDDI requirements, particularly modularity and flexibility:</simpara>
 <variablelist>
 <varlistentry>
 <term>Relational</term>
 <listitem>
-<simpara>the pattern of fixed tables connected by foreign key relations. Clearly an established implementation pattern, but tends to result in duplication of data to support specialization and rather brittle relationships between model elements</simpara>
+<simpara>the pattern of fixed tables connected by foreign key relations. Clearly an established implementation pattern, but tends to result in duplication of data to support specialization and rather brittle relationships between model elements.</simpara>
 </listitem>
 </varlistentry>
 <varlistentry>
@@ -296,13 +283,13 @@ To obtain additional rights of use, visit <link xl:href="http://www.opengeospati
 <varlistentry>
 <term>Object</term>
 <listitem>
-<simpara>inheritance patterns are particularly well suited to UML modeling, but specialization hierarchies themselves can lack flexibility in terms of being able to choose different configurations of specialized attributes for specific applications</simpara>
+<simpara>inheritance patterns are particularly well suited to UML modeling, but specialization hierarchies themselves can lack flexibility in terms of being able to choose different configurations of specialized attributes for specific applications.</simpara>
 </listitem>
 </varlistentry>
 <varlistentry>
 <term>Interface</term>
 <listitem>
-<simpara>a variant of the object model in which specializations can also be supported by the addition of  interface elements (consisting of attributes and/or operations) to primary objects. Interfaces can be mixed and matched as well as reused for different primary objects, but the variety of ways in which they can be implemented may present a risk of non-interoperability between implementations</simpara>
+<simpara>a variant of the object model in which specializations can also be supported by the addition of  interface elements (consisting of attributes and/or operations) to primary objects. Interfaces can be mixed and matched as well as reused for different primary objects, but the variety of ways in which they can be implemented may present a risk of non-interoperability between implementations.</simpara>
 </listitem>
 </varlistentry>
 </variablelist>
@@ -317,16 +304,16 @@ To obtain additional rights of use, visit <link xl:href="http://www.opengeospati
 <simpara>Description of candidate model scopes, characteristics, goals, strengths, and weaknesses</simpara>
 </listitem>
 <listitem>
-<simpara>Overview and narrative of the UG3IM UML model</simpara>
+<simpara>Overview and narrative of the MUDDI UML model</simpara>
 </listitem>
 <listitem>
-<simpara>Details of individual UG3IM modules / interfaces and the use cases they address</simpara>
+<simpara>Details of individual MUDDI modules / interfaces and the use cases they address</simpara>
 </listitem>
 <listitem>
-<simpara>Mappings between UG2IM and elements of significant existing models</simpara>
+<simpara>Mappings between MUDDI and elements of significant existing models</simpara>
 </listitem>
 <listitem>
-<simpara>Guidelines for UG3IM implementations</simpara>
+<simpara>Guidelines for MUDDI implementations</simpara>
 </listitem>
 </orderedlist>
 </section>
@@ -345,12 +332,12 @@ To obtain additional rights of use, visit <link xl:href="http://www.opengeospati
 <listitem>
 <simpara><emphasis role="strong">Planning, design and construction of large scale projects (AE)</emphasis></simpara>
 <simpara>Cities and other large jurisdictions undergo constant change. At any one moment there may be a dozen or more new projects on the drawing boards and in construction. It is in the interests of these jurisdictions that new development be as economical as possible: that costs are held to a minimum and that projects are completed on schedule and in budget. To meet these objectives, project planners, engineers and architects need access to the best possible information to guide their plans and designs. They need to know if the capacity of utilities and characteristics of the underground environment can support the scale of the project envisioned. They will also need to know precisely where those utilities are located in order to properly plan building foundations and new building service connections. Answers to these questions require access to high quality information in a form that is straightforward to integrate and analyze.</simpara>
-<simpara>Comprehensive and interoperable information about existing infrastructure networks is a pre-requisite for efficient planning and design for major new development. Information about existing and potential natural conditions are also essential for assessing both impacts to the environment and vulnerabilities to events such as flooding, hurricanes, and earthquakes. All of these need to be appropriately accounted for in good designs. When data is incomplete and incompatible and difficult to find, it can lead to unduly large contract contingencies as well as significant delays in moving forward. Once construction does commence, unexpected discoveries of serious underlying conditions too often require very expensive change orders and long time delays. Major projects that cover a large area and extend over many years need continuing access to good underground data. If this access is not maintained, it adds additional cost and risk to the project.</simpara>
+<simpara>Comprehensive and interoperable information about existing infrastructure networks is a pre-requisite for efficient planning and design for major new development. Information about existing and potential natural conditions are also essential for assessing both impacts to the environment and vulnerabilities to events such as flooding, hurricanes, and earthquakes. All of these need to be appropriately accounted for in good designs. When data are incomplete, incompatible, and difficult to find, this can lead to unduly large contract contingencies as well as significant delays in moving forward. Once construction does commence, unexpected discoveries of serious underlying conditions too often require very expensive change orders and long time delays. Major projects that cover a large area and extend over many years need continuing access to good underground data. If this access is not maintained, it adds additional cost and risk to the project.</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Disaster planning and response (DP)</emphasis></simpara>
-<simpara>Large scale disasters do not happen very often, but when they do, the failure to anticipate effects on major infrastructure features as well as on other components of the built environment that depend upon that infrastructure, can add billions to costs and result in the displacement, injury and death of large numbers of people. Disasters that are particularly associated with infrastructure failures include power blackouts, floods, tsunamis and storm surges; earthquakes, tornados, hurricanes and other high wind events; high heat events, fuel explosions, and terrorist attack. A disaster event, at its most disabling, can lead to the failure of major utility generating, storage, control or transmission facilities, cutting off utility resources to large areas. Power failures caused by storm, flood or heat can black out an entire region and cause the shutdown of many critical facilities. A storm surge can flood transit and vehicular tunnels, short circuit electric substations and knock out basement utilities.  Interdependencies between infrastructure networks can mean that the failure of one system disables others in a cascading effect. Although not all the damage caused by a disaster event can be anticipated or prevented, any capacity to do so is utterly dependent on the rapid availability of high-quality, interoperable, geospatially enabled data for analyzing vulnerabilities to disaster consequences.</simpara>
-<simpara>Interoperable underground utility data that depict large-scale and/or critical transmission, generation, or storage features with their physical and functional interconnections are particularly important. They enable analysis and simulation of the effects of a disaster event, development of protective strategies, and quick reaction to outages and damage. Such data are also important for ing single points of failure, interdependencies, and triggers for cascading effects. Data about orresponding above-surface features along with underground environment characteristics such as permeability and saturation are also needed to examine the effects of disaster scenarios such as storm surge levels. Major utility features comprise only a small percentage of the overall utility infrastructure, dominated as it is by street-level distribution branches, and concerns for their security often mitigate against data standardization and sharing. Nevertheless, without proper integration and analysis of data for both strategic and street-level infrastructure components, jurisdictions will remain hopelessly vulnerable and reactive to disaster events rather than properly prepared.</simpara>
+<simpara>Large scale disasters do not happen very often, but when they do, the failure to anticipate effects on major infrastructure features as well as on other components of the built environment that depend upon that infrastructure, can add billions to costs and result in the displacement, injury and death of large numbers of people. Disasters that are particularly associated with infrastructure failures include power blackouts, floods, tsunamis and storm surges; earthquakes, tornados, hurricanes and other high wind events; high heat events, fuel explosions, and terrorist attacks. A disaster event, at its most disabling, can lead to the failure of major utility generating, storage, control or transmission facilities, cutting off utility resources to large areas. Power failures caused by storm, flood or heat can black out an entire region and cause the shutdown of many critical facilities. A storm surge can flood transit and vehicular tunnels, short circuit electric substations and knock out basement utilities.  Interdependencies between infrastructure networks can mean that the failure of one system disables others in a cascading effect. Although not all the damage caused by a disaster event can be anticipated or prevented, any capacity to do so is utterly dependent on the rapid availability of high-quality, interoperable, geospatially enabled data for analyzing vulnerabilities to disaster consequences.</simpara>
+<simpara>Interoperable underground utility data that depict large-scale and/or critical transmission, generation, or storage features with their physical and functional interconnections are particularly important. They enable analysis and simulation of the effects of a disaster event, development of protective strategies, and quick reaction to outages and damage. Such data are also important for ing single points of failure, interdependencies, and triggers for cascading effects. Data about corresponding above-surface features along with underground environment characteristics such as permeability and saturation are also needed to examine the effects of disaster scenarios such as storm surge levels. Major utility features comprise only a small percentage of the overall utility infrastructure, dominated as it is by street-level distribution branches, and concerns for their security often mitigate against data standardization and sharing. Nevertheless, without proper integration and analysis of data for both strategic and street-level infrastructure components, jurisdictions will remain hopelessly vulnerable and reactive to disaster events rather than properly prepared.</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Utility related emergency response (ER)</emphasis></simpara>
@@ -358,7 +345,7 @@ To obtain additional rights of use, visit <link xl:href="http://www.opengeospati
 <simpara>Complete, accurate and interoperable underground infrastructure data available via wireless communications to the field can enable emergency field responders to rapidly understand the nature of a utility problem and to take informed action. Shut off valves can be quickly located and closed. Digging to expose the damaged pipe or conduit can be commenced immediately with confidence that all other utilities locations in the vicinity are known and can be avoided.</simpara>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">Private and public utility maintenance, repair and replacement programs (OM)</emphasis></simpara>
+<simpara><emphasis role="strong">Private and public utility operations, maintenance, repair and replacement programs (OM)</emphasis></simpara>
 <simpara>All utilities have maintenance programs to ensure that their networks are functioning optimally with a minimum of complaints and outages. An important part of such maintenance operations is the replacement of old and obsolete infrastructure elements with new, safer and higher-capacity components. The ability to comprehensively analyze the performance of individual utility features as well as entire networks, on the basis of complete and accurate utility feature information including age, material, capacity and location, is essential for making economically responsible decisions. While installing new gas lines or electric conduit may be expensive, analysis can show it to be less expensive than dealing with major service outages when utility components fail or no longer meet demand.</simpara>
 <simpara>Utility maintenance and repair processes depend upon data that relates complaints and problems to specific utility element locations and characteristics. Information about the underground environment, including earth materials and structures, moisture, vibration and the effects of adjacent utility lines, can also help utility analysts understand where segments of their networks are at greatest risk of corrosion, damage and breakage. As the use of utility-monitoring sensors becomes more widespread, additional layers of information and intelligence can be made available to support decision making processes.</simpara>
 </listitem>
@@ -378,9 +365,9 @@ New generations of sensors and smart control valves that can be attached to unde
 <?dbfo table-width="100%"?>
 <?dblatex table-width="100%"?>
 <tgroup cols="3">
-<colspec colname="col_1" colwidth="53*"/>
-<colspec colname="col_2" colwidth="213*"/>
-<colspec colname="col_3" colwidth="159*"/>
+<colspec colname="col_1" colwidth="53.125*"/>
+<colspec colname="col_2" colwidth="212.5*"/>
+<colspec colname="col_3" colwidth="159.375*"/>
 <thead>
 <row>
 <entry align="left" valign="top"><emphasis role="strong">ID</emphasis></entry>
@@ -391,7 +378,7 @@ New generations of sensors and smart control valves that can be attached to unde
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara>EX1</simpara></entry>
-<entry align="left" valign="top"><simpara>Horizontal UGI cross-section of all entities with high horizontal, medium vertical accuracy</simpara></entry>
+<entry align="left" valign="top"><simpara>Horizontal cross-section of all UGI (Underground Information) entities with high horizontal, medium vertical accuracy</simpara></entry>
 <entry align="left" valign="top"><simpara>2.5D feature geometries</simpara></entry>
 </row>
 <row>
@@ -463,8 +450,9 @@ New generations of sensors and smart control valves that can be attached to unde
 <title>Candidate Underground Information Models</title>
 <section xml:id="_overview">
 <title>Overview</title>
-<simpara>The UICDS contribution from Sisi Zlatanova and Ben Gorte (Delft University of Technology, Netherlands) listed a number of design criteria for UGII models which help explain the diversity of existing models which are presently in development or use:</simpara>
-<orderedlist numeration="arabic">
+<simpara>The UICDS contribution from Sisi Zlatanova and Ben Gorte (Delft University of Technology, Netherlands) listed a number of design criteria for UGII models which help explain the diversity of existing models which are presently in development or use.</simpara>
+<orderedlist xml:id="DesignCriteria" numeration="arabic">
+<title>UGII model design criteria</title>
 <listitem>
 <simpara>Different applications and user roles require different information. For example, some stakeholders need the location of the utilities, while others need the details like the type of transported material.</simpara>
 </listitem>
@@ -490,7 +478,7 @@ New generations of sensors and smart control valves that can be attached to unde
 <simpara>Operations and other processing to be performed on the data.</simpara>
 </listitem>
 <listitem>
-<simpara>System architecdture of implementing systems, e.g. distributed storage or a centralized system.</simpara>
+<simpara>System architecture of implementing systems, e.g. distributed storage or a centralized system.</simpara>
 </listitem>
 <listitem>
 <simpara>Visualisation requirements (2D/3D, web, specialized software)</simpara>
@@ -503,7 +491,7 @@ New generations of sensors and smart control valves that can be attached to unde
 </listitem>
 </orderedlist>
 <simpara>Existing models identified in the UICDS can be divided into those covering generic utility infrastructure, specific utility networks, underground geology / hydrology, land infrastructure, and practices of surveying and measuring underground features.</simpara>
-<itemizedlist>
+<itemizedlist xml:id="UtilityTypes">
 <title>Significant utility network types</title>
 <listitem>
 <simpara>Electricity network</simpara>
@@ -527,7 +515,7 @@ New generations of sensors and smart control valves that can be attached to unde
 <simpara>Transport network</simpara>
 </listitem>
 </itemizedlist>
-<itemizedlist>
+<itemizedlist xml:id="CommonAttributes">
 <title>Common feature attributes</title>
 <listitem>
 <simpara>Location – e.g., XY coordinate and/or Z-depth</simpara>
@@ -556,8 +544,8 @@ New generations of sensors and smart control valves that can be attached to unde
 <title>Candidate infrastructure models and characteristics</title>
 <orderedlist numeration="arabic">
 <listitem>
-<simpara><emphasis role="strong">CityGML Utility Network ADE (Application Domain Extension)</emphasis> <link linkend="NR-CityGML-UN-ADE">[1]</link> leverages CityGML by representing supply and disposal networks in 3D city models. CityGML is an OGC data model and XML-based format for the storage and exchange of virtual 3D city models. CityGML Utility Network ADE supports 3D topographic, topological and functional modeling of hierarchies. Thus, it can provide homogenized and integrated views of multi-utility networks.</simpara>
-<figure xml:id="img_overviewSimple" xreflabel="Figure 1">
+<simpara><emphasis role="strong">CityGML Utility Network ADE (Application Domain Extension)</emphasis> <link linkend="NR-CityGML-UN-ADE">[1]</link> leverages CityGML by representing supply and disposal networks in 3D city models. CityGML is an OGC data model and XML-based format for the storage and exchange of virtual 3D city models. As a CityGML extension, the Utility Network ADE directly supports 3D topographic, topological and functional modeling of hierarchies; it can thus provide homogenized and integrated views of multi-utility networks together with other CityObjects. It would likely require specialized CityGML software systems, however, to leverage more advanced UN ADE characteristics such as network vs feature graphs or functional network roles.</simpara>
+<figure xml:id="img_cityGML" xreflabel="Figure 1">
 <title>CityGML Utility Network ADE Data Model</title>
 <mediaobject>
 <imageobject>
@@ -617,8 +605,8 @@ New generations of sensors and smart control valves that can be attached to unde
 </listitem>
 <listitem>
 <simpara>Telecommunications network (only proposed in the technical guidance, not in legislation).</simpara>
-<figure xml:id="img_overviewSimple" xreflabel="Figure 2">
-<title>Inspire utilities network common types model</title>
+<figure xml:id="img_inspireUtilities" xreflabel="Figure 2">
+<title>INSPIRE utilities network common types model</title>
 <mediaobject>
 <imageobject>
 <imagedata fileref="images/6-inspire_utilities.png"/>
@@ -634,7 +622,7 @@ New generations of sensors and smart control valves that can be attached to unde
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">IMKL (Information model for cable and pipes)</emphasis> <link linkend="NR-IMKL">[3]</link> is an INSPIRE-based specification for the exchange of cable and pipe information. As mentioned in UICDS contribution from Sisi Zlatanova and Ben Gorte of Delft University of Technology, Netherlands, IMKL has been developed by the Dutch Cadastre and further refined by Informatie Vlaanderen. It extends the INSPIRE Utility Services model as illustrated in Figure 3.</simpara>
-<figure xml:id="img_overviewSimple" xreflabel="Figure 3">
+<figure xml:id="img_IMKL" xreflabel="Figure 3">
 <title>Flanders refinement of IMKL data model</title>
 <mediaobject>
 <imageobject>
@@ -644,7 +632,7 @@ New generations of sensors and smart control valves that can be attached to unde
 </mediaobject>
 </figure>
 <simpara>The UICDS contribution from Jef Daems of Informatie Vlaanderen highlights the adoption of IMKL in the KLIP system which facilitates the sharing of underground information from network operators in the Flanders region of Belgium in order to service excavation requests. The version of IMKL used in KLIP is based on the initial Dutch model and has evolved to meet the practical needs of excavators and the utility sector in Flanders. Essentially IMKL further specializes the specific utility network types defined in the INSPIRE theme model by inheriting additional properties from IMKL types such as Depth or ExtraTopography (Figure 4). This multiple inheritance pattern adding the IMKL Kabelenleiding (CableConduit) properties to the INSPIRE SewerPipe object is shown in Figure 5.</simpara>
-<figure xml:id="img_overviewSimple" xreflabel="Figure 4">
+<figure xml:id="img_imklModel" xreflabel="Figure 4">
 <title>IMKL data model</title>
 <mediaobject>
 <imageobject>
@@ -653,7 +641,7 @@ New generations of sensors and smart control valves that can be attached to unde
 <textobject><phrase>6 imkl model</phrase></textobject>
 </mediaobject>
 </figure>
-<figure xml:id="img_overviewSimple" xreflabel="Figure 5">
+<figure xml:id="img_imklSewerPipe" xreflabel="Figure 5">
 <title>IMKL multiple object inheritance pattern</title>
 <mediaobject>
 <imageobject>
@@ -689,7 +677,7 @@ New generations of sensors and smart control valves that can be attached to unde
 <simpara><emphasis role="strong">Power Utilities</emphasis> – IEC (International Electrotechnical Commission) CIM (Common Information Model) <link linkend="NR-CIM">[5]</link> is a global standard for electric power transmission and distribution. The CIM is currently maintained as a UML model. It defines a common vocabulary and basic ontology for aspects of the electric power industry. The standards are listed below:</simpara>
 <itemizedlist>
 <listitem>
-<simpara>IEC 62357 specifies a reference Service Oriented Architecture (SAO) and framework for the development and application of IEC standards for the exchange of power system information in distribution, transmission, and generation systems involved in electric utility operations and planning. The multi-layer reference architecture considers new concepts and evolving technologies, such as semantic modeling and canonical data models, in order to build on technology trends of other industries and standards activities to achieve the interoperability goals of the Smart Grid.</simpara>
+<simpara>IEC 62357 specifies a reference Service Oriented Architecture (SOA) and framework for the development and application of IEC standards for the exchange of power system information in distribution, transmission, and generation systems involved in electric utility operations and planning. The multi-layer reference architecture considers new concepts and evolving technologies, such as semantic modeling and canonical data models, in order to build on technology trends of other industries and standards activities to achieve the interoperability goals of the Smart Grid.</simpara>
 </listitem>
 <listitem>
 <simpara>IEC 61970 defines an application programming interface for energy management including a Common Information Model (CIM) that defines the standard for data models in electrical networks and energy management. It supports the import and export of formats such as XDF, RDF and SVG, which are based on the XML standard</simpara>
@@ -713,7 +701,7 @@ New generations of sensors and smart control valves that can be attached to unde
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Enterprise Systems for Utilities</emphasis> – The MultiSpeak specification <link linkend="NR-MultiSpeak">[6]</link> is a North American standard for data exchange between enterprise systems which commonly applied in utilities. It started in at the beginning of this century as a collaborative effort between NRECA (National Rural Electric Cooperative Association in the United States) and a small group of vendors supplying software to U.S. electric cooperatives.  The current version of the standard covers: Distribution System Modeling, Work Management, Business Functional External to Distribution Management, Distribution Operations, and Distribution Engineering, Planning Construction and GIS. MultiSpeak has its origins in serving the small utility and electric cooperative markets and is currently in use in the daily operations of more than 600 electric cooperatives, investor-owned utilities, municipals, and public power districts in the US and around the world.</simpara>
-<figure xml:id="img_overviewSimple" xreflabel="Figure 6">
+<figure xml:id="img_multiSpeak" xreflabel="Figure 6">
 <title>MultiSpeak Process Model Overview</title>
 <mediaobject>
 <imageobject>
@@ -761,7 +749,7 @@ New generations of sensors and smart control valves that can be attached to unde
 <orderedlist numeration="arabic">
 <listitem>
 <simpara><emphasis role="strong">GeoSciML</emphasis></simpara>
-<simpara>Used for geological map data, boreholes, and structural features such as faults and folds. <link xl:href="http://www.opengeospatial.org/standards/geosciml">GeoSciML</link> is the model/exchange format leverages by INSPIRE for its <link xl:href="https://inspire.ec.europa.eu/Themes/128/2892">Data Specification on Geology</link></simpara>
+<simpara>Used for geological map data, boreholes, and structural features such as faults and folds. <link xl:href="http://www.opengeospatial.org/standards/geosciml">GeoSciML</link> is the model/exchange format leveraged by INSPIRE for its <link xl:href="https://inspire.ec.europa.eu/Themes/128/2892">Data Specification on Geology</link></simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">INSPIRE</emphasis></simpara>
@@ -770,7 +758,7 @@ uses and extends GeoSciML to cover a range of geologic thematic features</simpar
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">GeoTOP</emphasis></simpara>
-<simpara><link xl:href="https://www.tno.nl/en/focus-areas/energy/geological-survey-of-the-netherlands/geological-survey-of-the-netherlands/geotop/">GeoTOP</link> is a detailed three-dimensional model of the upper 30 to 50 meters of the subsurface produced by the Netherlands Organisation for Applied Scientific Research (TNO). It provides the user with a cell-based description of the spatial variability of geological, physical, and chemical parameters in the subsurface.</simpara>
+<simpara><link xl:href="https://www.tno.nl/en/focus-areas/energy/geological-survey-of-the-netherlands/geological-survey-of-the-netherlands/geotop/">GeoTOP</link> is a detailed three-dimensional model of the upper 30 to 50 meters of the subsurface produced by the Netherlands Organization for Applied Scientific Research (TNO). It provides the user with a cell-based description of the spatial variability of geological, physical, and chemical parameters in the subsurface.</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">BGS</emphasis>
@@ -798,21 +786,11 @@ National Geological Model – UK 3D NGM</simpara>
 <simpara>Underground storage</simpara>
 <orderedlist numeration="arabic">
 <listitem>
-<simpara><emphasis role="strong">Industry Foundation Classes</emphasis>
-The most widely used architecture and engineering standard for representing and exchanging data about buildings and their components is the IFC (Industry Foundation Classes) <link linkend="NR-IFC">[4]</link>. IFC represents logical building structures and their accompanying properties (attributes) along with 2D and 3D geometry. IFC can also represent utilities components as building services, but generally focuses on buildings themselves rather than general city infrastructure.</simpara>
-<figure xml:id="img_overviewSimple" xreflabel="Figure 7">
-<title>Structure of IFC building service elements example</title>
-<mediaobject>
-<imageobject>
-<imagedata fileref="images/6-ifc_structure_excerpt.png"/>
-</imageobject>
-<textobject><phrase>6 ifc structure excerpt</phrase></textobject>
-</mediaobject>
-</figure>
+<simpara><emphasis role="strong">Industry Foundation Classes</emphasis> <link linkend="NR-IFC">[4]</link> is the most widely used architecture and engineering standard for representing and exchanging data about buildings and their components. IFC represents logical building structures and their accompanying properties (attributes) along with 2D and 3D geometry. IFC can also represent utilities components as building services, but generally focuses on buildings themselves rather than general city infrastructure.</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Land and Infrastructure Conceptual Model (LandInfra)</emphasis> <link linkend="NR-LandInfra">[5]</link> is an OGC standard for division of land. The standard includes support for topography as well as subsurface information. It also provisions support for information about civil engineered facilities such as roads and railways, and in the future, “wet” infrastructure including storm drainage, wastewater, and water distribution systems. LandInfra is divided into 15 Requirements Classes for particular subject areas. LandInfra does overlap onto many underground infrastructure elements but it&#8217;s focus is on the land divisions that may be implied by infrastructure components such as water systems, rather than the components themselves.</simpara>
-<figure xml:id="img_overviewSimple" xreflabel="Figure 8">
+<figure xml:id="img_landInfra" xreflabel="Figure 7">
 <title>Current LandInfra requirement classes and corresponding InfraGML packages (minus prospective utility network classes)</title>
 <mediaobject>
 <imageobject>
@@ -828,12 +806,12 @@ The most widely used architecture and engineering standard for representing and 
 </section>
 </chapter>
 <chapter xml:id="CoreOverview">
-<title>UG3IM Overview and Core</title>
+<title>MUDDI Overview and Core</title>
 <section xml:id="_system_context">
 <title>System context</title>
-<simpara>As described in earlier sections of this report, the UG3IM model is intended to serve as an means of integrating underground data from multiple sources, systems, and schemas. Datasets may be integrated virtually, so that each dataset is accessed remotely in the form of UG3IM data, or physically integrated and stored as UG3IM data in one system, either as a performance-enhancing cache, or as a tested and authoritative repository. With either system approach, the model requires multiple input interfaces that enable datasets to be mapped into the model from diverse sources, and multiple output interfaces that provide access to the right perspectives for each of several data-driven applications.</simpara>
-<figure xml:id="img_overviewSimple" xreflabel="Figure 9">
-<title>Integration architecture for UG3IM</title>
+<simpara>As described in earlier sections of this report, the MUDDI model is intended to serve as a basis for integrating underground data from multiple sources, systems, and schemas. Datasets may be virtually integrated, so that each dataset is accessed remotely in the form of MUDDI data, or physically integrated and stored as MUDDI data in one system, either as a performance-enhancing cache, or as a tested and authoritative repository. With either system approach, the model requires multiple input interfaces that enable datasets to be mapped into the model from diverse sources, and multiple output interfaces that provide access to the right perspectives for each of several data-driven applications.</simpara>
+<figure xml:id="img_integrationArchitecture" xreflabel="Figure 8">
+<title>Integration architecture for MUDDI</title>
 <mediaobject>
 <imageobject>
 <imagedata fileref="images/7-integration_architecture.png"/>
@@ -842,12 +820,12 @@ The most widely used architecture and engineering standard for representing and 
 </mediaobject>
 </figure>
 </section>
-<section xml:id="_ug3im_model_architecture">
-<title>UG3IM model architecture</title>
-<simpara>The UG3IM model consists of a small number of core entities derived from a general structure feature, including network features, support and container features, and underground environment features. The core entities are further specialized for specific utility network types with both additional attributes and utility-specific type codes.</simpara>
+<section xml:id="_muddi_model_architecture">
+<title>MUDDI model architecture</title>
+<simpara>The MUDDI model consists of a small number of core entities derived from a general feature object, including network features, support and container features, and underground environment features. The core entities are further specialized for specific utility network types with both additional attributes and utility-specific type codes.</simpara>
 <simpara>These core feature entities are then enhanced as needed by realizing one or more interfaces that support specific types of input data, transformations to/from significant external model schemas, additional geometry types such as 2D, 3D, and voxel, network connectivity and functionality, data quality measures, and so on that are further described in Section 7.</simpara>
-<figure xml:id="img_overviewSimple" xreflabel="Figure 10">
-<title>UG3IM</title>
+<figure xml:id="img_modelStructure" xreflabel="Figure 9">
+<title>MUDDI</title>
 <mediaobject>
 <imageobject>
 <imagedata fileref="images/7-model_structure.png"/>
@@ -856,73 +834,341 @@ The most widely used architecture and engineering standard for representing and 
 </mediaobject>
 </figure>
 </section>
-<section xml:id="_ug3im_core_model_elements">
-<title>UG3IM core model elements</title>
-<simpara>The full core model (not including utility-specific specializations) is shown in Figure 3. The core structure feature is extended by 12 optional interfaces which add attributes and/or operations to the core class. A child network object feature is specialized by three network elements: a network itself, a network node, and a network link. The basic network serves as a container for other network elements. Adding the IGraph interface provides topological elements and relations which permit networks to represent the connectivity structure among links and nodes.</simpara>
-<simpara>Another structure feature child is the Environment Object feature, further specialized into features representing geological, hydrological, pedological (soil-specific), and phenomenological features of the subsurface environment. The general geometry type for these features will be a region bounded by surfaces, but interfaces add both cross-sections and borehole geometries as input and/or output capabilities.</simpara>
-<simpara>Two other structure feature children are the container and support object features, for built structures which do not constitute directly either network infrastructure or environmental elements, but contain or support other infrastructure elements.</simpara>
-<figure xml:id="img_overviewSimple" xreflabel="Figure 11">
-<title>UG3IM core elements</title>
+<section xml:id="_muddi_core_model_elements">
+<title>MUDDI core model elements</title>
+<simpara>The MUDDI model packages are shown in Figure 10 and comprises a core package, network package, environment package, and package of extended interfaces. An additional package is an example of a logical model specialization of the conceptual model. The core MUDDI classes are shown in Figure 11. The root class of the model is MUDDIObject, whose attributes include many of those recommended for infrastructure assets in the ASCE As-Built draft specification</simpara>
+<simpara>A child network object feature includes most of the other attributed specified by the ASCI As-Built is specialized by three network elements: a network node, a network surface node, and a network link. The basic network also includes network and network facility objects as well as simple optional relationships between them.</simpara>
+<simpara>Two other MUDDIObject children are the container and support object features, for built structures which do not constitute directly either network infrastructure or environmental elements, but contain or support other infrastructure elements.</simpara>
+<simpara>A significant update to the version 1.0 model is inclusion of a number of codelists shown in Figure 12 that provide both controlled and authoritative values for many of the attributes for the core MUDDI features.</simpara>
+<figure xml:id="img_modelCore1" xreflabel="Figure 10">
+<title>MUDDI packages</title>
 <mediaobject>
 <imageobject>
-<imagedata fileref="images/7-model_core.png"/>
+<imagedata fileref="images/7-model_packages.png"/>
 </imageobject>
-<textobject><phrase>7 model core</phrase></textobject>
+<textobject><phrase>7 model packages</phrase></textobject>
+</mediaobject>
+</figure>
+<figure xml:id="img_modelCore2" xreflabel="Figure 11">
+<title>MUDDI core features</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/7-model_core_features.png"/>
+</imageobject>
+<textobject><phrase>7 model core features</phrase></textobject>
+</mediaobject>
+</figure>
+<figure xml:id="img_modelCore3" xreflabel="Figure 12">
+<title>MUDDI code lists</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/7-model_codelists.png"/>
+</imageobject>
+<textobject><phrase>7 model codelists</phrase></textobject>
 </mediaobject>
 </figure>
 </section>
-<section xml:id="_ug3im_network_entities_and_relationships">
-<title>UG3IM network entities and relationships</title>
-<simpara>The combination of UG3IM network features and network-specific interfaces need only describe collections of network infrastructure elements, but may optionally support a number of distinct levels of network representation complexity, as well as levels of detail. Figure 4 hides the inheritance relations between the different network entities in order to focus on the relationships that can be represented between them. The IGraph interface adds these specific relationships. For example, networks can be related to each other as either subnetworks (containment) or subordinate networks (dependency). Networks consist of nodes and links, which in turn connect to each other. Relative to a particular network, however, either a node or a link may in addition serve as an interfacial element, belonging to more than one network or connecting to an element of another network.</simpara>
-<simpara>A capability supported by CityGML UN ADE is the option to represent internal networks ("internal" relationship) which depict additional gtaph detail inside of what is represented as either a node or a link at a lower level of detail. This generally requires interfacial relations to describe the connection between the internal network and elements of the enclosing network</simpara>
-<simpara>Conversely, the IService interface adds a generalization to represent homogeneous the geographic area that may be served by a particular network or network segment in order to identify vulnerable customers even if all of the network house connections are not represented.</simpara>
-<simpara>Additional IControl and IDistribute interfaces add network roles and functionality for both operations and simulation modeling purposes, which may be combined with additional model parameters via the IModel interface.</simpara>
-<figure xml:id="img_overviewSimple" xreflabel="Figure 12">
-<title>UG3IM network entities and relationships</title>
+<section xml:id="_muddi_environment_entities_and_relationships">
+<title>MUDDI environment entities and relationships</title>
+<simpara>Another MUDDIObject specialization shown in Figure 13 is the Environment Object feature, further specialized into features representing geological, hydrological, pedological (soil-specific), and phenomenological features of the subsurface environment. The general geometry type for these features will be a region bounded by surfaces, but interfaces add both cross-sections and borehole geometries as input and/or output capabilities.</simpara>
+<figure xml:id="img_modelCore4" xreflabel="Figure 13">
+<title>MUDDI environment features</title>
 <mediaobject>
 <imageobject>
-<imagedata fileref="images/7-network_relations.png"/>
+<imagedata fileref="images/7-model_environment_features.png"/>
 </imageobject>
-<textobject><phrase>7 network relations</phrase></textobject>
+<textobject><phrase>7 model environment features</phrase></textobject>
+</mediaobject>
+</figure>
+</section>
+<section xml:id="_muddi_network_entities_and_relationships">
+<title>MUDDI network entities and relationships</title>
+<simpara>The combination of MUDDI network features and network-specific interfaces need only describe collections of network infrastructure elements, but may optionally support a number of distinct levels of network representation complexity, as well as levels of detail. Figure 11 hides the inheritance relations between the different network entities in order to focus on the relationships that can be represented between them. The IGraph interface adds these specific relationships. For example, networks can be related to each other as either subnetworks (containment) or subordinate networks (dependency). Networks consist of nodes and links, which in turn connect to each other. Relative to a particular network, however, either a node or a link may in addition serve as an interfacial element, belonging to more than one network or connecting to an element of another network.</simpara>
+<simpara>A capability supported by CityGML UN ADE is the option to represent inter-network assemblages ("internal" relationship) which depict additional graph detail inside of what is represented as either a node or a link at a lower level of detail. This generally requires interfacial relations to describe the connection between the internal network and elements of the enclosing network</simpara>
+<figure xml:id="img_modelCore5" xreflabel="Figure 14">
+<title>MUDDI network features and relations</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/7-model_network.png"/>
+</imageobject>
+<textobject><phrase>7 model network</phrase></textobject>
+</mediaobject>
+</figure>
+<simpara>The MUDDI interfaces package comprises some 19 different interfaces that add geometric attributes, additional network relations, transformations to other model perspectives, and other capabilities to any parent or child object without the requirement for them to be carried along to further specializations.</simpara>
+<figure xml:id="img_networkRelations" xreflabel="Figure 15">
+<title>MUDDI extended interfaces</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/7-model_interfaces.png"/>
+</imageobject>
+<textobject><phrase>7 model interfaces</phrase></textobject>
 </mediaobject>
 </figure>
 </section>
 </chapter>
 <chapter xml:id="InterfacesModules">
-<title>UG3IM Modules and Interfaces</title>
+<title>MUDDI Modules and Interfaces</title>
 <section xml:id="_modules">
 <title>Modules</title>
-<itemizedlist>
-<listitem>
-<simpara>Core structure</simpara>
-</listitem>
-<listitem>
-<simpara>Network structure</simpara>
-</listitem>
-<listitem>
-<simpara>Environment structure</simpara>
-</listitem>
-<listitem>
-<simpara>Container and support structures</simpara>
-</listitem>
-</itemizedlist>
-</section>
-<section xml:id="_interfaces">
-<title>Interfaces</title>
+<simpara>The following tables describe core MUDDI elements and some extended elements. The relations and attributes shown in the module tables may realize optional (but commonly used) interfaces. Other interface relations, attributes, and operations are shown below.</simpara>
+<simpara>Each of these elements include attributes that describe the specific class or type classification of more specialized instances, such as <emphasis>containerClass</emphasis>. This allows aggregation of diverse utility structures without losing their more specialized identities. More general MUDDI elements such as <emphasis>NetworkLink</emphasis> could also be specialized for the specific utility types listed in <link linkend="UtilityTypes">Section 6</link> and/or for specialized types that characterize the candidate models. Such subclass entities are not (yet) included in this report.</simpara>
+<section xml:id="_core_elements">
+<title>Core elements</title>
 <table frame="all" rowsep="1" colsep="1">
-<title>UG3IM Interfaces</title>
+<title>MUDDI core elements</title>
 <?dbhtml table-width="100%"?>
 <?dbfo table-width="100%"?>
 <?dblatex table-width="100%"?>
-<tgroup cols="3">
-<colspec colname="col_1" colwidth="94*"/>
-<colspec colname="col_2" colwidth="189*"/>
-<colspec colname="col_3" colwidth="142*"/>
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="94.4443*"/>
+<colspec colname="col_2" colwidth="141.6665*"/>
+<colspec colname="col_3" colwidth="94.4443*"/>
+<colspec colname="col_4" colwidth="94.4447*"/>
 <thead>
 <row>
 <entry align="left" valign="top"><emphasis role="strong">Name</emphasis></entry>
 <entry align="left" valign="top"><emphasis role="strong">Description</emphasis></entry>
-<entry align="left" valign="top"><emphasis role="strong">Realization</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Relations</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Attributes</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara>Structure</simpara></entry>
+<entry align="left" valign="top"><simpara>Base unit of underground features</simpara></entry>
+<entry align="left" valign="top"><simpara>partOf, surfaceConnect, hasProperty</simpara></entry>
+<entry align="left" valign="top"><simpara>localIdentifier, class, position, extent, shape, size, color, material, ownership, status, validTime, inService, description</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>NetworkObject</simpara></entry>
+<entry align="left" valign="top"><simpara>Base unit of network elements</simpara></entry>
+<entry align="left" valign="top"><simpara>connect, transport, produce, consume</simpara></entry>
+<entry align="left" valign="top"><simpara>function, usage, commodityClass, isComplex</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>EnvironmentObject</simpara></entry>
+<entry align="left" valign="top"><simpara>Base underground environmental region</simpara></entry>
+<entry align="left" valign="top"><simpara>surrounds, underlays, overlays, adjoins, boundedBy, unit, hasSample</simpara></entry>
+<entry align="left" valign="top"><simpara>featureClass, domain, method, regionName, unitName</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>ContainerObject</simpara></entry>
+<entry align="left" valign="top"><simpara>Base unit of structures that primarily contain other structures</simpara></entry>
+<entry align="left" valign="top"><simpara>contains</simpara></entry>
+<entry align="left" valign="top"><simpara>containerClass</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>FoundationObject</simpara></entry>
+<entry align="left" valign="top"><simpara>Base unit of structures that primarily give physical support to other structures</simpara></entry>
+<entry align="left" valign="top"><simpara>supports</simpara></entry>
+<entry align="left" valign="top"><simpara>foundationClass</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section xml:id="_network_elements">
+<title>Network elements</title>
+<table frame="all" rowsep="1" colsep="1">
+<title>MUDDI network elements derived from NetworkObject</title>
+<?dbhtml table-width="100%"?>
+<?dbfo table-width="100%"?>
+<?dblatex table-width="100%"?>
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="94.4443*"/>
+<colspec colname="col_2" colwidth="141.6665*"/>
+<colspec colname="col_3" colwidth="94.4443*"/>
+<colspec colname="col_4" colwidth="94.4447*"/>
+<thead>
+<row>
+<entry align="left" valign="top"><emphasis role="strong">Name</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Description</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Relations</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Attributes</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara>Network</simpara></entry>
+<entry align="left" valign="top"><simpara>Network complex structure that transports / stores / provides / consumes a utility commodity</simpara></entry>
+<entry align="left" valign="top"><simpara>subNet, subordinateNet, constitutes, commodity</simpara></entry>
+<entry align="left" valign="top"><simpara>networkClass</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>NetworkNode</simpara></entry>
+<entry align="left" valign="top"><simpara>Network node structure that connects NetworkLinks, may connect Networks, and may control and/or measure a utility commodity property</simpara></entry>
+<entry align="left" valign="top"><simpara>connectsFrom, connectsTo, consistsOf, internalTo, interfacesWith, sensedBy, actuatedBy</simpara></entry>
+<entry align="left" valign="top"><simpara>nodeClass, isSource, isSink, isTerminal</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>NetworkLink</simpara></entry>
+<entry align="left" valign="top"><simpara>Network edge structure that connects between NetworkNodes</simpara></entry>
+<entry align="left" valign="top"><simpara>linksTo, linksFrom</simpara></entry>
+<entry align="left" valign="top"><simpara>linkClass</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section xml:id="_environment_elements">
+<title>Environment elements</title>
+<table frame="all" rowsep="1" colsep="1">
+<title>MUDDI environment elements derived from EnvironmentObject</title>
+<?dbhtml table-width="100%"?>
+<?dbfo table-width="100%"?>
+<?dblatex table-width="100%"?>
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="94.4443*"/>
+<colspec colname="col_2" colwidth="141.6665*"/>
+<colspec colname="col_3" colwidth="94.4443*"/>
+<colspec colname="col_4" colwidth="94.4447*"/>
+<thead>
+<row>
+<entry align="left" valign="top"><emphasis role="strong">Name</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Description</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Relations</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Attributes</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara>GeoObject</simpara></entry>
+<entry align="left" valign="top"><simpara>Environmental region defined in the geological domain</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>geoClass, rockType</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>PedoObject</simpara></entry>
+<entry align="left" valign="top"><simpara>Environmental region defined in the pedological (soil) domain</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>soilHorizon, soilClass</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>HydroObject</simpara></entry>
+<entry align="left" valign="top"><simpara>Environmental region defined in the hydrological domain</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>hydroClass, saturation, head</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>PhenomObject</simpara></entry>
+<entry align="left" valign="top"><simpara>Environmental region defined by an observable physical-chemical characteristic</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>delimitationMethod</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</section>
+<section xml:id="_container_and_support_elements">
+<title>Container and support elements</title>
+<table frame="all" rowsep="1" colsep="1">
+<title>MUDDI container elements derived from containerObject</title>
+<?dbhtml table-width="100%"?>
+<?dbfo table-width="100%"?>
+<?dblatex table-width="100%"?>
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="94.4443*"/>
+<colspec colname="col_2" colwidth="141.6665*"/>
+<colspec colname="col_3" colwidth="94.4443*"/>
+<colspec colname="col_4" colwidth="94.4447*"/>
+<thead>
+<row>
+<entry align="left" valign="top"><emphasis role="strong">Name</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Description</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Relations</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Attributes</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara>Conduit</simpara></entry>
+<entry align="left" valign="top"><simpara>Simple network link / node container</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>conduitClass</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Vault</simpara></entry>
+<entry align="left" valign="top"><simpara>Multipurpose network element container</simpara></entry>
+<entry align="left" valign="top"><simpara>commodity</simpara></entry>
+<entry align="left" valign="top"><simpara>vaultClass</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Shield</simpara></entry>
+<entry align="left" valign="top"><simpara>Structure providing limited protection (e.g. grout curtain) for other underground structures</simpara></entry>
+<entry align="left" valign="top"><simpara>shields, shieldsFrom</simpara></entry>
+<entry align="left" valign="top"><simpara>shieldClass, shieldOrientation</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Access</simpara></entry>
+<entry align="left" valign="top"><simpara>Access structure (e.g. manhole) for container or other structure</simpara></entry>
+<entry align="left" valign="top"><simpara>accessTo, accessFrom</simpara></entry>
+<entry align="left" valign="top"><simpara>accessClass</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table frame="all" rowsep="1" colsep="1">
+<title>MUDDI support elements derived from supportObject</title>
+<?dbhtml table-width="100%"?>
+<?dbfo table-width="100%"?>
+<?dblatex table-width="100%"?>
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="94.4443*"/>
+<colspec colname="col_2" colwidth="141.6665*"/>
+<colspec colname="col_3" colwidth="94.4443*"/>
+<colspec colname="col_4" colwidth="94.4447*"/>
+<thead>
+<row>
+<entry align="left" valign="top"><emphasis role="strong">Name</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Description</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Relations</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Attributes</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara>Footing</simpara></entry>
+<entry align="left" valign="top"><simpara>Simple footing support</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>footingClass</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Foundation</simpara></entry>
+<entry align="left" valign="top"><simpara>Foundation for underground or surface structures</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>foundationClass</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Piling</simpara></entry>
+<entry align="left" valign="top"><simpara>Vertical foundation element for underground or surface structures</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>pilingClass</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</section>
+</section>
+<section xml:id="_interfaces">
+<title>Interfaces</title>
+<table frame="all" rowsep="1" colsep="1">
+<title>MUDDI Interfaces</title>
+<?dbhtml table-width="100%"?>
+<?dbfo table-width="100%"?>
+<?dblatex table-width="100%"?>
+<tgroup cols="5">
+<colspec colname="col_1" colwidth="47.2221*"/>
+<colspec colname="col_2" colwidth="94.4443*"/>
+<colspec colname="col_3" colwidth="94.4443*"/>
+<colspec colname="col_4" colwidth="94.4443*"/>
+<colspec colname="col_5" colwidth="94.4447*"/>
+<thead>
+<row>
+<entry align="left" valign="top"><emphasis role="strong">Name</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Description</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">RealizedBy</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Attributes/Operations</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Relations</emphasis></entry>
 </row>
 </thead>
 <tbody>
@@ -930,86 +1176,127 @@ The most widely used architecture and engineering standard for representing and 
 <entry align="left" valign="top"><simpara>IAsset</simpara></entry>
 <entry align="left" valign="top"><simpara>Attributes of maintained asset, such as lifecycle stage</simpara></entry>
 <entry align="left" valign="top"><simpara>Structure</simpara></entry>
+<entry align="left" valign="top"><simpara>assetID, assetClass, operator, lifecycleStage, serviceLife, timeToFailure, initialValue, depreciationMethod, predecessor, getPresentValue</simpara></entry>
+<entry align="left" valign="top"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>I2D</simpara></entry>
 <entry align="left" valign="top"><simpara>2D Geometry plus depth</simpara></entry>
 <entry align="left" valign="top"><simpara>Structure</simpara></entry>
+<entry align="left" valign="top"><simpara>GM_Geometry (2D), elevation, depthBelowSurface, footprint, scale</simpara></entry>
+<entry align="left" valign="top"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>I3D</simpara></entry>
 <entry align="left" valign="top"><simpara>3D Geometric solid in 3D space</simpara></entry>
 <entry align="left" valign="top"><simpara>Structure</simpara></entry>
+<entry align="left" valign="top"><simpara>GM_Geometry (3D), anchorPosition, resolution</simpara></entry>
+<entry align="left" valign="top"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>IVoxel</simpara></entry>
 <entry align="left" valign="top"><simpara>Collection of voxels containing the 3D extent of the feature</simpara></entry>
 <entry align="left" valign="top"><simpara>Structure</simpara></entry>
+<entry align="left" valign="top"><simpara>voxelClassification, voxelScheme, anchorPosition, voxelResolution, getVoxels</simpara></entry>
+<entry align="left" valign="top"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>IRendered</simpara></entry>
 <entry align="left" valign="top"><simpara>3D rendered model of the feature (e.g. Collada)</simpara></entry>
 <entry align="left" valign="top"><simpara>Structure</simpara></entry>
+<entry align="left" valign="top"><simpara>model, modelClass, modelFormat, anchorPosition</simpara></entry>
+<entry align="left" valign="top"><simpara>modelConfiguration</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>IIFC</simpara></entry>
 <entry align="left" valign="top"><simpara>Operations for reading or writing IFC objects</simpara></entry>
 <entry align="left" valign="top"><simpara>Structure</simpara></entry>
+<entry align="left" valign="top"><simpara>GetIFC, GetMUDDI</simpara></entry>
+<entry align="left" valign="top"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>ICityGML</simpara></entry>
 <entry align="left" valign="top"><simpara>Operations for reading/writing CityGML with or without the UN ADE</simpara></entry>
 <entry align="left" valign="top"><simpara>Structure</simpara></entry>
+<entry align="left" valign="top"><simpara>GetCityGML, GetMUDDI</simpara></entry>
+<entry align="left" valign="top"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>ISurveyed</simpara></entry>
 <entry align="left" valign="top"><simpara>Position and extent measurements</simpara></entry>
 <entry align="left" valign="top"><simpara>Structure</simpara></entry>
+<entry align="left" valign="top"><simpara>surveyMethod, positionResult, extentResult, resultPrecision, resultAccuracy</simpara></entry>
+<entry align="left" valign="top"><simpara>surveyEvent</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>IObserved</simpara></entry>
-<entry align="left" valign="top"><simpara>Measurements of observed properties for the feature</simpara></entry>
+<entry align="left" valign="top"><simpara>Measurements of observed properties</simpara></entry>
 <entry align="left" valign="top"><simpara>Structure</simpara></entry>
+<entry align="left" valign="top"><simpara>observedProperty, procedure, resultValue</simpara></entry>
+<entry align="left" valign="top"><simpara>observationEvent</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>IDataQuality</simpara></entry>
+<entry align="left" valign="top"><simpara>Quality of positioning and other measurements of infrastructure characteristics</simpara></entry>
+<entry align="left" valign="top"><simpara>Structure</simpara></entry>
+<entry align="left" valign="top"><simpara>surveyQualityLevelASCE3802, completeness, positionalAccuracy, topologicalConsistency, thematicAccuracy, maximalFootprint</simpara></entry>
+<entry align="left" valign="top"><simpara>surveyEvent</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>ILink</simpara></entry>
 <entry align="left" valign="top"><simpara>General link facility for distributed data</simpara></entry>
 <entry align="left" valign="top"><simpara>Structure</simpara></entry>
+<entry align="left" valign="top"><simpara>linkClass, role, targetClass, action</simpara></entry>
+<entry align="left" valign="top"><simpara>linkTarget</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>IModel</simpara></entry>
 <entry align="left" valign="top"><simpara>Configuration, input and output attributes specific to simulation models and model results</simpara></entry>
 <entry align="left" valign="top"><simpara>Structure</simpara></entry>
+<entry align="left" valign="top"><simpara>inputProperty[0..*], outputProperty[1..*]</simpara></entry>
+<entry align="left" valign="top"><simpara>model, modelEvent</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>IGraph</simpara></entry>
 <entry align="left" valign="top"><simpara>Attributes and relations for topological networks</simpara></entry>
 <entry align="left" valign="top"><simpara>NetworkObject</simpara></entry>
+<entry align="left" valign="top"><simpara>isComplex</simpara></entry>
+<entry align="left" valign="top"><simpara>connectsFrom, connectsTo, consistsOf, constitutes</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>IService</simpara></entry>
 <entry align="left" valign="top"><simpara>Network service area, sources, and sinks</simpara></entry>
 <entry align="left" valign="top"><simpara>Network</simpara></entry>
+<entry align="left" valign="top"><simpara>providerArea, consumerArea</simpara></entry>
+<entry align="left" valign="top"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>IControl</simpara></entry>
 <entry align="left" valign="top"><simpara>Attributes of network nodes which control network operation</simpara></entry>
 <entry align="left" valign="top"><simpara>NetworkNode</simpara></entry>
+<entry align="left" valign="top"><simpara>controlClass, controlState, isSource, isSink</simpara></entry>
+<entry align="left" valign="top"><simpara>dependsOn, actuationEvent</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>IDistribute</simpara></entry>
 <entry align="left" valign="top"><simpara>Attributes of network links affecting or reflecting network operation</simpara></entry>
 <entry align="left" valign="top"><simpara>NetworkLink</simpara></entry>
+<entry align="left" valign="top"><simpara>cross-section, flowVelocity, flowRate, flowDirection, potential, potentialDifference, commodityStatus, measuredTime</simpara></entry>
+<entry align="left" valign="top"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>IBore</simpara></entry>
 <entry align="left" valign="top"><simpara>Borehole geometry and interval features, either real or synthetic</simpara></entry>
 <entry align="left" valign="top"><simpara>EnvironmentObject</simpara></entry>
+<entry align="left" valign="top"><simpara>surfacePosition, axisLinestring, diameter, isSample, interpolationMethod, getCore, getCoreInterval</simpara></entry>
+<entry align="left" valign="top"></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>ISection</simpara></entry>
 <entry align="left" valign="top"><simpara>Cross-section geometry and 2D region features constructed from environmental objects</simpara></entry>
 <entry align="left" valign="top"><simpara>EnvironmentObject</simpara></entry>
+<entry align="left" valign="top"><simpara>interpolationMethod, surfaceTrace, getSectionSurface, depth, getModel,</simpara></entry>
+<entry align="left" valign="top"><simpara>sectionRegion</simpara></entry>
 </row>
 </tbody>
 </tgroup>
@@ -1017,15 +1304,136 @@ The most widely used architecture and engineering standard for representing and 
 </section>
 </chapter>
 <chapter xml:id="Mappings">
-<title>Mappings between UG3IM and Candidate Models</title>
-<simpara><emphasis role="strong">In Progress</emphasis></simpara>
+<title>Mappings between MUDDI and Candidate Models</title>
+<simpara>This section presents provisional mappings between MUDDI entities and those of candidate models described in <link linkend="CandidateModels">Section 6</link>. Some mappings may be direct, broader, or narrower. There may also be different cardinalities, e.g. one MUDDI entity mapping into multiple entities in a different model. The mappings presented here are a first pass for developing data conversion routines, as well as guiding future MUDDI implementations.</simpara>
+<table frame="all" rowsep="1" colsep="1">
+<title>Mappings from MUDDI to candidate infrastructure model entities</title>
+<?dbhtml table-width="100%"?>
+<?dbfo table-width="100%"?>
+<?dblatex table-width="100%"?>
+<tgroup cols="5">
+<colspec colname="col_1" colwidth="85*"/>
+<colspec colname="col_2" colwidth="85*"/>
+<colspec colname="col_3" colwidth="85*"/>
+<colspec colname="col_4" colwidth="85*"/>
+<colspec colname="col_5" colwidth="85*"/>
+<thead>
+<row>
+<entry align="left" valign="top"><emphasis role="strong">MUDDI Entity Name</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">CityGML UN ADE</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Target Fit</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">INSPIRE / IMKL</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Target Fit</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara>Structure</simpara></entry>
+<entry align="left" valign="top"><simpara>AbstractCityObject</simpara></entry>
+<entry align="left" valign="top"><simpara>wider</simpara></entry>
+<entry align="left" valign="top"><simpara>Feature</simpara></entry>
+<entry align="left" valign="top"><simpara>wider</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>NetworkObject</simpara></entry>
+<entry align="left" valign="top"><simpara>AbstractNetworkFeature</simpara></entry>
+<entry align="left" valign="top"><simpara>narrower</simpara></entry>
+<entry align="left" valign="top"><simpara>NetworkElement</simpara></entry>
+<entry align="left" valign="top"><simpara>level</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>Network</simpara></entry>
+<entry align="left" valign="top"><simpara>Network +/- NetworkGraph +/- FeatureGraph</simpara></entry>
+<entry align="left" valign="top"><simpara>level</simpara></entry>
+<entry align="left" valign="top"><simpara>Network</simpara></entry>
+<entry align="left" valign="top"><simpara>level</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>NetworkNode</simpara></entry>
+<entry align="left" valign="top"><simpara>Node +/- FeatureGraph</simpara></entry>
+<entry align="left" valign="top"><simpara>level / complex</simpara></entry>
+<entry align="left" valign="top"><simpara>Node</simpara></entry>
+<entry align="left" valign="top"><simpara>level</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>NetworkLink</simpara></entry>
+<entry align="left" valign="top"><simpara>AbstractLink +/- FeatureGraph +/- AbstractDistributionElement</simpara></entry>
+<entry align="left" valign="top"><simpara>level / complex</simpara></entry>
+<entry align="left" valign="top"><simpara>Link</simpara></entry>
+<entry align="left" valign="top"><simpara>level</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>ContainerObject</simpara></entry>
+<entry align="left" valign="top"><simpara>ProtectiveElement</simpara></entry>
+<entry align="left" valign="top"><simpara>wider</simpara></entry>
+<entry align="left" valign="top"><simpara>UtilityNodeContainer</simpara></entry>
+<entry align="left" valign="top"><simpara>narrower</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>SupportObject</simpara></entry>
+<entry align="left" valign="top"><simpara>Bedding</simpara></entry>
+<entry align="left" valign="top"><simpara>narrower</simpara></entry>
+<entry align="left" valign="top"><simpara>PoleFoundation</simpara></entry>
+<entry align="left" valign="top"><simpara>narrower</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table frame="all" rowsep="1" colsep="1">
+<title>Mappings from MUDDI to candidate environment model entities</title>
+<?dbhtml table-width="100%"?>
+<?dbfo table-width="100%"?>
+<?dblatex table-width="100%"?>
+<tgroup cols="5">
+<colspec colname="col_1" colwidth="85*"/>
+<colspec colname="col_2" colwidth="85*"/>
+<colspec colname="col_3" colwidth="85*"/>
+<colspec colname="col_4" colwidth="85*"/>
+<colspec colname="col_5" colwidth="85*"/>
+<thead>
+<row>
+<entry align="left" valign="top"><emphasis role="strong">MUDDI Entity Name</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">GeoSciML</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Fit</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">INSPIRE Geo / Hydrogeo / Soil</emphasis></entry>
+<entry align="left" valign="top"><emphasis role="strong">Fit</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara>GeoObject</simpara></entry>
+<entry align="left" valign="top"><simpara>GeologicFeature</simpara></entry>
+<entry align="left" valign="top"><simpara>level</simpara></entry>
+<entry align="left" valign="top"><simpara>GeologicUnit or GeologicStructure</simpara></entry>
+<entry align="left" valign="top"><simpara>level</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>PedoObject</simpara></entry>
+<entry align="left" valign="top"><simpara>-</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>SoilBody or SoilHorizon or SoilLayer</simpara></entry>
+<entry align="left" valign="top"><simpara>narrower</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>HydroObject</simpara></entry>
+<entry align="left" valign="top"><simpara>-</simpara></entry>
+<entry align="left" valign="top"></entry>
+<entry align="left" valign="top"><simpara>HydrogeologicalObject or HydrogeologicalUnit or GroundwaterBody</simpara></entry>
+<entry align="left" valign="top"><simpara>narrower</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>PhenomObject</simpara></entry>
+<entry align="left" valign="top"><simpara>PhysicalDescription</simpara></entry>
+<entry align="left" valign="top"><simpara>narrower</simpara></entry>
+<entry align="left" valign="top"><simpara>GroundwaterProfile or PossibleContaminatedSoilSite</simpara></entry>
+<entry align="left" valign="top"><simpara>narrower</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
 </chapter>
-<chapter xml:id="ImplementationGuidelines">
-<title>Implementation Guidelines</title>
-<simpara><emphasis role="strong">In Progress</emphasis></simpara>
-</chapter>
-<appendix xml:id="_abstract_ug3im_test_suite">
-<title>Abstract UG3IM Test Suite</title>
+<appendix xml:id="_abstract_muddi_test_suite">
+<title>Abstract MUDDI Test Suite</title>
 <table frame="all" rowsep="1" colsep="1">
 <title>A.1.1	Conformance Class OGC 17-090_c1</title>
 <?dbhtml table-width="100%"?>
@@ -1037,15 +1445,15 @@ The most widely used architecture and engineering standard for representing and 
 <tbody>
 <row>
 <entry align="right" valign="top"><simpara><emphasis role="strong">Test identifier</emphasis></simpara></entry>
-<entry align="left" valign="top"><simpara>UG3IM_UML</simpara></entry>
+<entry align="left" valign="top"><simpara>MUDDI_UML</simpara></entry>
 </row>
 <row>
 <entry align="right" valign="top"><simpara><emphasis role="strong">Test purpose:</emphasis></simpara></entry>
-<entry align="left" valign="top"><simpara>Confirm that a valid implementation of UG3IM is conformant with the UML model</simpara></entry>
+<entry align="left" valign="top"><simpara>Confirm that a valid implementation of MUDDI is conformant with the UML model</simpara></entry>
 </row>
 <row>
 <entry align="right" valign="top"><simpara><emphasis role="strong">Test method:</emphasis></simpara></entry>
-<entry align="left" valign="top"><simpara>Inspection of all required and optional implementation elements for UG3IM UML conformance</simpara></entry>
+<entry align="left" valign="top"><simpara>Inspection of all required and optional implementation elements for MUDDI UML conformance</simpara></entry>
 </row>
 <row>
 <entry align="right" valign="top"><simpara><emphasis role="strong">Requirement:</emphasis></simpara></entry>
@@ -1059,13 +1467,16 @@ The most widely used architecture and engineering standard for representing and 
 </tgroup>
 </table>
 </appendix>
-<appendix xml:id="_informative_ug3im_implementation_examples">
-<title>Informative UG3IM Implementation Examples</title>
-
-</appendix>
 <appendix xml:id="_uml_model">
 <title>UML model</title>
-
+<itemizedlist>
+<listitem>
+<simpara><link xl:href="https://portal.opengeospatial.org/files/?artifact_id=90837">MUDDI Conceptual Model v0.9 EA file</link></simpara>
+</listitem>
+<listitem>
+<simpara><link xl:href="https://portal.opengeospatial.org/files/?artifact_id=90837&amp;version=1&amp;format=xml">MUDDI Conceptual Model v0.9 XMI file</link></simpara>
+</listitem>
+</itemizedlist>
 </appendix>
 <appendix xml:id="_revision_history">
 <title>Revision History</title>
@@ -1075,11 +1486,11 @@ The most widely used architecture and engineering standard for representing and 
 <?dbfo table-width="90%"?>
 <?dblatex table-width="90%"?>
 <tgroup cols="5">
-<colspec colname="col_1" colwidth="77*"/>
-<colspec colname="col_2" colwidth="77*"/>
-<colspec colname="col_3" colwidth="77*"/>
-<colspec colname="col_4" colwidth="77*"/>
-<colspec colname="col_5" colwidth="77*"/>
+<colspec colname="col_1" colwidth="76.5*"/>
+<colspec colname="col_2" colwidth="76.5*"/>
+<colspec colname="col_3" colwidth="76.5*"/>
+<colspec colname="col_4" colwidth="76.5*"/>
+<colspec colname="col_5" colwidth="76.5*"/>
 <thead>
 <row>
 <entry align="left" valign="top">Date</entry>
@@ -1093,9 +1504,30 @@ The most widely used architecture and engineering standard for representing and 
 <row>
 <entry align="left" valign="top"><simpara>December 1, 2017</simpara></entry>
 <entry align="left" valign="top"><simpara>J. Lieberman</simpara></entry>
-<entry align="left" valign="top"><simpara>.1</simpara></entry>
+<entry align="left" valign="top"><simpara>0.1</simpara></entry>
 <entry align="left" valign="top"><simpara>all</simpara></entry>
 <entry align="left" valign="top"><simpara>initial version</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>January 21, 2018</simpara></entry>
+<entry align="left" valign="top"><simpara>J. Lieberman</simpara></entry>
+<entry align="left" valign="top"><simpara>0.5</simpara></entry>
+<entry align="left" valign="top"><simpara>all</simpara></entry>
+<entry align="left" valign="top"><simpara>expanded draft with mappings</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>July 23, 2018</simpara></entry>
+<entry align="left" valign="top"><simpara>J. Lieberman</simpara></entry>
+<entry align="left" valign="top"><simpara>0.9</simpara></entry>
+<entry align="left" valign="top"><simpara>all</simpara></entry>
+<entry align="left" valign="top"><simpara>expanded draft with mappings</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara>November 29, 2017</simpara></entry>
+<entry align="left" valign="top"><simpara>J. Lieberman</simpara></entry>
+<entry align="left" valign="top"><simpara>1.0</simpara></entry>
+<entry align="left" valign="top"><simpara>all</simpara></entry>
+<entry align="left" valign="top"><simpara>Complete after reviews</simpara></entry>
 </row>
 </tbody>
 </tgroup>
@@ -1103,10 +1535,7 @@ The most widely used architecture and engineering standard for representing and 
 </appendix>
 <appendix xml:id="Bibliography">
 <title>Bibliography</title>
-<orderedlist numeration="arabic">
-<listitem>
-<simpara><anchor xml:id="Lieberman2017" xreflabel="[Lieberman2017]"/>J. Lieberman and A. ed’s Ryan, “OGC Underground Infrastructure Concept Study Engineering Report,” 2017.</simpara>
-</listitem>
-</orderedlist>
+<simpara><anchor xml:id="Lieberman2017" xreflabel="[Lieberman2017]"/>[1] J. Lieberman and A. ed’s Ryan, “OGC Underground Infrastructure Concept Study Engineering Report,” 2017.</simpara>
+<simpara><anchor xml:id="Lieberman2018" xreflabel="[Lieberman2018]"/>[2] Lieberman2018</simpara>
 </appendix>
 </book>
