@@ -3,8 +3,6 @@
 
 The following normative documents are referenced in this document.
 
-.NOTE: 	Only normative standards are referenced here, e.g. OGC, ISO or other SDO standards. All other references are listed in the bibliography.
-
  * [[NR-ASCE-38-02]]ASCE 38-02: Standard Guideline for the Collection and Depiction of Existing Subsurface Utility Data, American Society of Civil Engineers, 2002.
 //The ASCE Construction Institute Committee for the Standard for Recording and Exchanging Utility Infrastructure Data is producing a white paper that should be available for referencing by Fall 2017
 

@@ -44,23 +44,25 @@ Existing models identified in the UICDS can be divided into those covering gener
 
 === Candidate infrastructure models and characteristics
 
-. *CityGML Utility Network ADE (Application Domain Extension)* <<NR-CityGML-UN-ADE,[1]>> leverages CityGML by representing supply and disposal networks in 3D city models. CityGML is an OGC data model and XML-based format for the storage and exchange of virtual 3D city models. As a CityGML extension, the Utility Network ADE directly supports 3D topographic, topological and functional modeling of hierarchies; it can thus provide homogenized and integrated views of multi-utility networks together with other CityObjects. It would likely require specialized CityGML software systems, however, to leverage more advanced UN ADE characteristics such as network vs feature graphs or functional network roles.
+. *CityGML Utility Network ADE (Application Domain Extension)* <<NR-CityGML-UN-ADE,[1]>> leverages CityGML by representing supply and disposal networks in 3D city models. CityGML is an OGC data model and XML-based format for the storage and exchange of virtual 3D city models. As a CityGML extension, the Utility Network (UN) ADE directly supports 3D topographic, topological and functional modeling of hierarchies; it can thus provide homogenized and integrated views of multi-utility networks together with other CityObjects. It would likely require specialized CityGML software systems, however, to leverage more advanced UN ADE characteristics such as network vs feature graphs or functional network roles.
 +
 [#img_cityGML,reftext='{figure-caption} {counter:figure-num}']
 .CityGML Utility Network ADE Data Model
 image::images/6-citygml.png[]
 +
-. *INSPIRE Utility Networks* <<NR-INSPIRE-UN,[2]>> is one of the 34 INSPIRE spatial data themes. INSPIRE is a European Union initiative to establish an infrastructures for spatial information that is geared to help to make spatial or geographical information more accessible and interoperable for a wide range of purposes supporting sustainable development. The theme _Utility and Government Services_ provides basic information (e.g. the location, basic technical characteristics or involved parties) on a wide range of administrative and social services of public interest.
-Subtheme (INSPIRE, 2013)::
-* _Utility Networks_: Node-link-node structured networks for collection, transmission and distribution, including electricity, oil/gas and chemicals, sewer, thermal, water or (not mandatory) telecommunications networks;
+. *INSPIRE Utility Networks* <<NR-INSPIRE-UN,[2]>> is one of the 34 INSPIRE spatial data themes. INSPIRE is a European Union initiative to establish an infrastructure for spatial information that is geared to help to make spatial or geographical information more accessible and interoperable for a wide range of purposes supporting sustainable development. The theme _Utility and Government Services_ provides basic information (e.g. the location, basic technical characteristics or involved parties) on a wide range of administrative and social services of public interest.
 +
-General service information::
+*Subtheme(INSPIRE, 2013)*
++
+ * _Utility Networks_: Node-link-node structured networks for collection, transmission and distribution, including electricity, oil/gas and chemicals, sewer, thermal, water or (not mandatory) telecommunications networks;
++
+*General service information*
 +
  * Feature location;
  * Party involved in the service (Administration or organization on behalf of an administrative mandate);
  * Basic technical characteristics, such as capacity or details on the type of service provided.
 +
-Utilities considered::
+*Utilities considered*
  * Electricity network,
  * Oil, Gas & Chemicals network,
  * Sewer network,
@@ -111,7 +113,7 @@ The models described here are intended to represent data for particular utility 
 * IEC 61508 specifies the functional safety of electrical/electronic/programmable electronic safety-related systems.
 
 +
-. *Enterprise Systems for Utilities* – The MultiSpeak specification <<NR-MultiSpeak,[6]>> is a North American standard for data exchange between enterprise systems which commonly applied in utilities. It started in at the beginning of this century as a collaborative effort between NRECA (National Rural Electric Cooperative Association in the United States) and a small group of vendors supplying software to U.S. electric cooperatives.  The current version of the standard covers: Distribution System Modeling, Work Management, Business Functional External to Distribution Management, Distribution Operations, and Distribution Engineering, Planning Construction and GIS. MultiSpeak has its origins in serving the small utility and electric cooperative markets and is currently in use in the daily operations of more than 600 electric cooperatives, investor-owned utilities, municipals, and public power districts in the US and around the world.
+. *Enterprise Systems for Utilities* – The MultiSpeak specification <<NR-MultiSpeak,[6]>> is a North American standard for data exchange between enterprise systems which is commonly applied in utilities. It started in at the beginning of this century as a collaborative effort between NRECA (National Rural Electric Cooperative Association in the United States) and a small group of vendors supplying software to U.S. electric cooperatives.  The current version of the standard covers: Distribution System Modeling, Work Management, Business Functional External to Distribution Management, Distribution Operations, and Distribution Engineering, Planning Construction and Geographic Information Systems (GIS). MultiSpeak has its origins in serving the small utility and electric cooperative markets and is currently in use in the daily operations of more than 600 electric cooperatives, investor-owned utilities, municipals, and public power districts in the US and around the world.
 +
 [#img_multiSpeak,reftext='{figure-caption} {counter:figure-num}']
 .MultiSpeak Process Model Overview
@@ -136,16 +138,16 @@ image::images/6-MultiSpeak.png[]
 
  . *GeoSciML*
 +
-Used for geological map data, boreholes, and structural features such as faults and folds. http://www.opengeospatial.org/standards/geosciml[GeoSciML] is the model/exchange format leveraged by INSPIRE for its https://inspire.ec.europa.eu/Themes/128/2892[Data Specification on Geology]
+Used for geological map data, boreholes, and structural features such as faults and folds. link:http://www.opengeospatial.org/standards/geosciml[GeoSciML] is the model/exchange format leveraged by INSPIRE for its https://inspire.ec.europa.eu/Themes/128/2892[Data Specification on Geology]
 +
 . *INSPIRE*
 +
-http://inspire.ec.europa.eu/id/document/tg/ge[Data Specification on Geology]
+link:http://inspire.ec.europa.eu/id/document/tg/ge[Data Specification on Geology]
 uses and extends GeoSciML to cover a range of geologic thematic features
 +
   . *GeoTOP*
 +
-https://www.tno.nl/en/focus-areas/energy/geological-survey-of-the-netherlands/geological-survey-of-the-netherlands/geotop/[GeoTOP] is a detailed three-dimensional model of the upper 30 to 50 meters of the subsurface produced by the Netherlands Organization for Applied Scientific Research (TNO). It provides the user with a cell-based description of the spatial variability of geological, physical, and chemical parameters in the subsurface.
+link:https://www.tno.nl/en/focus-areas/energy/geological-survey-of-the-netherlands/geological-survey-of-the-netherlands/geotop/[GeoTOP] is a detailed three-dimensional model of the upper 30 to 50 meters of the subsurface produced by the Netherlands Organization for Applied Scientific Research (TNO). It provides the user with a cell-based description of the spatial variability of geological, physical, and chemical parameters in the subsurface.
 +
 . *BGS*
 National Geological Model – UK 3D NGM
