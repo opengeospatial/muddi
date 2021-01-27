@@ -40,7 +40,7 @@ To obtain additional rights of use, visit <link xl:href="http://www.opengeospati
 </preface>
 <chapter xml:id="_summary">
 <title>Summary</title>
-<simpara>The Underground Infrastructure Concept Development Study (UICDS) Engineering Report [<link linkend="Lieberman2017">1</link>] examined the present state of underground infrastructure information (UGII), costs and benefits of that state, as well as future opportunities for an improved state. That report describes a number of candidate models for UGII and recommends a number of follow-on activities, including development of a prototype UGII integration model to support subsequent UGII integration and exchange initiatives. A follow-up workshop and model development effort resulted in another engineering report describing an initial (1.0) version of the conceptual UGII integration model MUDDI (Model for Underground Data Definition and Interchange) [<link linkend="Lieberman2018">Lieberman2018</link>].  The present updated report describes MUDDI version 1.1. The goal of MUDDI is to serve as the basis for integration of datasets from different models, at the levels of detail required to address application use cases described in [<link linkend="Lieberman2017">1</link>]. MUDDI as described here is a conceptual model which will serve as the basis for one or more conformant and interchangeable logical and physical implementations such as GML (Geographic Markup Language) or SFS (Simple Features SQL). The current version 1.1 of MUDDI is has been updated and refined from the initial version 1.0, but is still intended to serve as an input to the proposed OGC Underground Infrastructure Pilot as well as similar implementations and deployments in realistic application scenarios. The present model is also suitable as input to begin development of a formal conceptual model standard.</simpara>
+<simpara>The Underground Infrastructure Concept Development Study (UICDS) Engineering Report [<link linkend="Lieberman2017">1</link>] examined the present state of underground infrastructure information (UGII), costs and benefits of that state, as well as future opportunities for an improved state. That report describes a number of candidate models for UGII and recommends a number of follow-on activities, including development of a prototype UGII integration model to support subsequent UGII integration and exchange initiatives. A follow-up workshop and model development effort resulted in another engineering report describing an initial (1.0) version of the conceptual UGII integration model MUDDI (Model for Underground Data Definition and Interchange) [<link linkend="Lieberman2018">2</link>].  The present updated report describes MUDDI version 1.1. The goal of MUDDI is to serve as the basis for integration of datasets from different models, at the levels of detail required to address application use cases described in [<link linkend="Lieberman2017">1</link>]. MUDDI as described here is a conceptual model which will serve as the basis for one or more conformant and interchangeable logical and physical implementations such as GML (Geographic Markup Language) or SFS (Simple Features SQL). The current version 1.1 of MUDDI has been updated and refined from the initial version 1.0, but is still intended to serve as an input to the proposed OGC Underground Infrastructure Pilot as well as similar implementations and deployments in realistic application scenarios. The present model is also suitable as input to begin development of a formal conceptual model standard.</simpara>
 <section xml:id="_requirements_research_motivation">
 <title>Requirements &amp; Research Motivation</title>
 <simpara>The development of MUDDI has been motivated by a number of specific design requirements described in the <link linkend="overview">Overview</link> but the principal motivation has been to achieve compatibility and minimal information loss with regard to data represented by several significant existing models and model standards, in order to support both data interchange and data integration across a variety of underground infrastructure components, functions, and associated environmental properties.</simpara>
@@ -117,20 +117,23 @@ To obtain additional rights of use, visit <link xl:href="http://www.opengeospati
 <title>References</title>
 <simpara>The following normative documents are referenced in this document.</simpara>
 <itemizedlist>
-<title>NOTE: 	Only normative standards are referenced here, e.g. OGC, ISO or other SDO standards. All other references are listed in the bibliography.</title>
 <listitem>
 <simpara><anchor xml:id="NR-ASCE-38-02" xreflabel="[NR-ASCE-38-02]"/>ASCE 38-02: Standard Guideline for the Collection and Depiction of Existing Subsurface Utility Data, American Society of Civil Engineers, 2002.</simpara>
 </listitem>
 <listitem>
-<simpara><anchor xml:id="NR-CityGML-UN-ADE" xreflabel="[NR-CityGML-UN-ADE]"/>CityGML Utility Network ADE::
+<simpara><anchor xml:id="NR-CityGML-UN-ADE" xreflabel="[NR-CityGML-UN-ADE]"/>CityGML Utility Network ADE (CUA)::
 <link xl:href="http://en.wiki.utilitynetworks.sig3d.org">http://en.wiki.utilitynetworks.sig3d.org</link></simpara>
 </listitem>
 <listitem>
-<simpara><anchor xml:id="NR-EarthResourceML" xreflabel="[NR-EarthResourceML]"/>EarthResourceML:
+<simpara><anchor xml:id="NR-EarthResourceML" xreflabel="[NR-EarthResourceML]"/>EarthResourceML(ERML):
 <link xl:href="http://www.cgi-iugs.org/tech_collaboration/earthResourceML.html">http://www.cgi-iugs.org/tech_collaboration/earthResourceML.html</link></simpara>
 </listitem>
 <listitem>
-<simpara><anchor xml:id="NR-GeoSciML" xreflabel="[NR-GeoSciML]"/>GeoSciML:
+<simpara><anchor xml:id="NR-ESRI-UN" xreflabel="[NR-ESRI-UN]"/> ESRI Utility Network Model (EUN):
+<link xl:href="https://pro.arcgis.com/en/pro-app/help/data/utility-network/a-quick-tour-of-utility-networks.htm">https://pro.arcgis.com/en/pro-app/help/data/utility-network/a-quick-tour-of-utility-networks.htm</link></simpara>
+</listitem>
+<listitem>
+<simpara><anchor xml:id="NR-GeoSciML" xreflabel="[NR-GeoSciML]"/>GeoSciML (GSML):
 <link xl:href="http://www.opengeospatial.org/standards/geosciml">http://www.opengeospatial.org/standards/geosciml</link></simpara>
 </listitem>
 <listitem>
@@ -138,31 +141,35 @@ To obtain additional rights of use, visit <link xl:href="http://www.opengeospati
 <link xl:href="http://www.opengeospatial.org/standards/gml">http://www.opengeospatial.org/standards/gml</link></simpara>
 </listitem>
 <listitem>
-<simpara><anchor xml:id="NR-INSPIRE-UN" xreflabel="[NR-INSPIRE-UN]"/>INSPIRE Utility Networks:
+<simpara><anchor xml:id="NR-IFC" xreflabel="[NR-IFC]"/>Industry Foundation Classes (IFC):
+<link xl:href="https://www.buildingsmart.org/standards/bsi-standards/industry-foundation-classes/">https://www.buildingsmart.org/standards/bsi-standards/industry-foundation-classes/</link></simpara>
+</listitem>
+<listitem>
+<simpara><anchor xml:id="NR-INSPIRE-UN" xreflabel="[NR-INSPIRE-UN]"/>INSPIRE Utility Networks (IUN):
 <link xl:href="http://inspire.ec.europa.eu/theme/us">http://inspire.ec.europa.eu/theme/us</link></simpara>
 </listitem>
 <listitem>
-<simpara><anchor xml:id="NR-IMKL" xreflabel="[NR-IMKL]"/>Information model for cable and pipes:
+<simpara><anchor xml:id="NR-IMKL" xreflabel="[NR-IMKL]"/>Information model for cable and pipes (IMKL):
 <link xl:href="https://www.agiv.be/producten/klip/meer-over/technische-documentatie/technische-documentatie-imkl">https://www.agiv.be/producten/klip/meer-over/technische-documentatie/technische-documentatie-imkl</link></simpara>
 </listitem>
 <listitem>
-<simpara><anchor xml:id="NR-LandInfra" xreflabel="[NR-LandInfra]"/>Land Infra:
+<simpara><anchor xml:id="NR-LandInfra" xreflabel="[NR-LandInfra]"/>Land Infra (LI):
 Land and Infrastructure Conceptual Model Standard at <link xl:href="http://www.opengeospatial.org/standards/landinfra">http://www.opengeospatial.org/standards/landinfra</link></simpara>
 </listitem>
 <listitem>
-<simpara><anchor xml:id="NR-PAS-128" xreflabel="[NR-PAS-128]"/>PAS 128:2014:
+<simpara><anchor xml:id="NR-PAS-128" xreflabel="[NR-PAS-128]"/>PAS 128:2014 (PAS128):
 Specification for Underground Utility Detection, Verification and Location, British Standards Institution, 2014.</simpara>
 </listitem>
 <listitem>
-<simpara><anchor xml:id="NR-PAS-256" xreflabel="[NR-PAS-256]"/>PAS 256:2017:
+<simpara><anchor xml:id="NR-PAS-256" xreflabel="[NR-PAS-256]"/>PAS 256:2017 (PAS256):
 Buried assets. Capturing, Recording, Maintaining and Sharing of Location Information and Data, British Standards Institution, 2017.</simpara>
 </listitem>
 <listitem>
-<simpara><anchor xml:id="NR-CIM" xreflabel="[NR-CIM]"/>Common Information Model:
+<simpara><anchor xml:id="NR-CIM" xreflabel="[NR-CIM]"/>Common Information Model (CIM):
 International Electrotechnical Commission global series of standards for electric power transmission and distribution at <link xl:href="https://webstore.iec.ch/home?ReadForm">https://webstore.iec.ch/home?ReadForm</link>.</simpara>
 </listitem>
 <listitem>
-<simpara><anchor xml:id="NR-MultiSpeak" xreflabel="[NR-MultiSpeak]"/>MultiSpeak: North American standard for data exchange between enterprise systems at <link xl:href="http://www.multispeak.org/">http://www.multispeak.org/</link></simpara>
+<simpara><anchor xml:id="NR-MultiSpeak" xreflabel="[NR-MultiSpeak]"/>MultiSpeak (MSU): North American standard for data exchange between enterprise systems at <link xl:href="http://www.multispeak.org/">http://www.multispeak.org/</link></simpara>
 </listitem>
 </itemizedlist>
 </chapter>
@@ -227,7 +234,7 @@ International Electrotechnical Commission global series of standards for electri
 </chapter>
 <chapter xml:id="Overview">
 <title>Overview</title>
-<simpara>The Underground Infrastructure Concept Development Study (UICDS) Engineering Report [<link linkend="Lieberman2017">1</link>] examined the present state of underground infrastructure information (UGII), costs and benefits of that state, as well as future opportunities for an improved state. That report describes a number of candidate models for UGII and recommends a number of follow-on activities, including development of a prototype UGII integration model to support subsequent UGII integration and exchange initiatives. A follow-up workshop and model development effort resulted in another engineering report describing an initial (1.0) version of the conceptual UGII integration model MUDDI (Model for Underground Data Definition and Interchange) [<link linkend="Lieberman2018">Lieberman2018</link>].  The present updated report describes MUDDI version 1.1. The goal of MUDDI is to serve as the basis for integration of datasets from different models, at the levels of detail required to address application use cases described in [<link linkend="Lieberman2017">1</link>]. MUDDI as described here is a conceptual model which will serve as the basis for one or more conformant and interchangeable logical and physical implementations such as GML (Geographic Markup Language) or SFS (Simple Features SQL). The current version 1.1 of MUDDI is has been updated and refined from the initial version 1.0, but is still intended to serve as an input to the proposed OGC Underground Infrastructure Pilot as well as similar implementations and deployments in realistic application scenarios. The present model is also suitable as input to begin development of a formal conceptual model standard.</simpara>
+<simpara>The Underground Infrastructure Concept Development Study (UICDS) Engineering Report [<link linkend="Lieberman2017">1</link>] examined the present state of underground infrastructure information (UGII), costs and benefits of that state, as well as future opportunities for an improved state. That report describes a number of candidate models for UGII and recommends a number of follow-on activities, including development of a prototype UGII integration model to support subsequent UGII integration and exchange initiatives. A follow-up workshop and model development effort resulted in another engineering report describing an initial (1.0) version of the conceptual UGII integration model MUDDI (Model for Underground Data Definition and Interchange) [<link linkend="Lieberman2018">2</link>].  The present updated report describes MUDDI version 1.1. The goal of MUDDI is to serve as the basis for integration of datasets from different models, at the levels of detail required to address application use cases described in [<link linkend="Lieberman2017">1</link>]. MUDDI as described here is a conceptual model which will serve as the basis for one or more conformant and interchangeable logical and physical implementations such as GML (Geographic Markup Language) or SFS (Simple Features SQL). The current version 1.1 of MUDDI has been updated and refined from the initial version 1.0, but is still intended to serve as an input to the proposed OGC Underground Infrastructure Pilot as well as similar implementations and deployments in realistic application scenarios. The present model is also suitable as input to begin development of a formal conceptual model standard.</simpara>
 <section xml:id="_design_requirements">
 <title>Design Requirements</title>
 <simpara>The development of MUDDI has been motivated by a number of specific design requirements:</simpara>
@@ -241,7 +248,7 @@ International Electrotechnical Commission global series of standards for electri
 <varlistentry>
 <term>2) Compatibility</term>
 <listitem>
-<simpara>The model should derive from or map to/from existing candidate models such as INSPIRE (Infrastructure for Spatial Information in the European Community), CityGML UN ADE (Itility Networks Application Domain Extension), GeoSciML, or IMKL (Informatie Model Kabels en Leidingen).</simpara>
+<simpara>The model should derive from or map to/from existing candidate models such as INSPIRE <link linkend="NR-INSPIRE-UN">[IUN]</link> (Infrastructure for Spatial Information in the European Community), CityGML UN ADE <link linkend="NR-CityGML-UN-ADE">[CUA]</link> (Utility Networks Application Domain Extension), GeoSciML <link linkend="NR-GeoSciML">[GSML]</link>, or IMKL <link linkend="NR-IMKL">[IMKL]</link> (Informatie Model Kabels en Leidingen).</simpara>
 </listitem>
 </varlistentry>
 <varlistentry>
@@ -304,7 +311,7 @@ International Electrotechnical Commission global series of standards for electri
 <simpara>Description of candidate model scopes, characteristics, goals, strengths, and weaknesses</simpara>
 </listitem>
 <listitem>
-<simpara>Overview and narrative of the MUDDI UML model</simpara>
+<simpara>Overview and narrative of the MUDDI Unified Modeling Language (UML) model</simpara>
 </listitem>
 <listitem>
 <simpara>Details of individual MUDDI modules / interfaces and the use cases they address</simpara>
@@ -332,12 +339,12 @@ International Electrotechnical Commission global series of standards for electri
 <listitem>
 <simpara><emphasis role="strong">Planning, design and construction of large scale projects (AE)</emphasis></simpara>
 <simpara>Cities and other large jurisdictions undergo constant change. At any one moment there may be a dozen or more new projects on the drawing boards and in construction. It is in the interests of these jurisdictions that new development be as economical as possible: that costs are held to a minimum and that projects are completed on schedule and in budget. To meet these objectives, project planners, engineers and architects need access to the best possible information to guide their plans and designs. They need to know if the capacity of utilities and characteristics of the underground environment can support the scale of the project envisioned. They will also need to know precisely where those utilities are located in order to properly plan building foundations and new building service connections. Answers to these questions require access to high quality information in a form that is straightforward to integrate and analyze.</simpara>
-<simpara>Comprehensive and interoperable information about existing infrastructure networks is a pre-requisite for efficient planning and design for major new development. Information about existing and potential natural conditions are also essential for assessing both impacts to the environment and vulnerabilities to events such as flooding, hurricanes, and earthquakes. All of these need to be appropriately accounted for in good designs. When data are incomplete, incompatible, and difficult to find, this can lead to unduly large contract contingencies as well as significant delays in moving forward. Once construction does commence, unexpected discoveries of serious underlying conditions too often require very expensive change orders and long time delays. Major projects that cover a large area and extend over many years need continuing access to good underground data. If this access is not maintained, it adds additional cost and risk to the project.</simpara>
+<simpara>Comprehensive and interoperable information about existing infrastructure networks is a pre-requisite for efficient planning and design for major new development. Information about existing and potential natural conditions is also essential for assessing both impacts to the environment and vulnerabilities to events such as flooding, hurricanes, and earthquakes. All of these need to be appropriately accounted for in good designs. When data are incomplete, incompatible, and difficult to find, this can lead to unduly large contract contingencies as well as significant delays in moving forward. Once construction does commence, unexpected discoveries of serious underlying conditions too often require very expensive change orders and long time delays. Major projects that cover a large area and extend over many years need continuing access to good underground data. If this access is not maintained, it adds additional cost and risk to the project.</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Disaster planning and response (DP)</emphasis></simpara>
 <simpara>Large scale disasters do not happen very often, but when they do, the failure to anticipate effects on major infrastructure features as well as on other components of the built environment that depend upon that infrastructure, can add billions to costs and result in the displacement, injury and death of large numbers of people. Disasters that are particularly associated with infrastructure failures include power blackouts, floods, tsunamis and storm surges; earthquakes, tornados, hurricanes and other high wind events; high heat events, fuel explosions, and terrorist attacks. A disaster event, at its most disabling, can lead to the failure of major utility generating, storage, control or transmission facilities, cutting off utility resources to large areas. Power failures caused by storm, flood or heat can black out an entire region and cause the shutdown of many critical facilities. A storm surge can flood transit and vehicular tunnels, short circuit electric substations and knock out basement utilities.  Interdependencies between infrastructure networks can mean that the failure of one system disables others in a cascading effect. Although not all the damage caused by a disaster event can be anticipated or prevented, any capacity to do so is utterly dependent on the rapid availability of high-quality, interoperable, geospatially enabled data for analyzing vulnerabilities to disaster consequences.</simpara>
-<simpara>Interoperable underground utility data that depict large-scale and/or critical transmission, generation, or storage features with their physical and functional interconnections are particularly important. They enable analysis and simulation of the effects of a disaster event, development of protective strategies, and quick reaction to outages and damage. Such data are also important for ing single points of failure, interdependencies, and triggers for cascading effects. Data about corresponding above-surface features along with underground environment characteristics such as permeability and saturation are also needed to examine the effects of disaster scenarios such as storm surge levels. Major utility features comprise only a small percentage of the overall utility infrastructure, dominated as it is by street-level distribution branches, and concerns for their security often mitigate against data standardization and sharing. Nevertheless, without proper integration and analysis of data for both strategic and street-level infrastructure components, jurisdictions will remain hopelessly vulnerable and reactive to disaster events rather than properly prepared.</simpara>
+<simpara>Interoperable underground utility data that depict large-scale and/or critical transmission, generation, or storage features with their physical and functional interconnections are particularly important. They enable analysis and simulation of the effects of a disaster event, development of protective strategies, and quick reaction to outages and damage. Such data are also important for identifying single points of failure, interdependencies, and triggers for cascading effects. Data about corresponding above-surface features along with underground environment characteristics such as permeability and saturation are also needed to examine the effects of disaster scenarios such as storm surge levels. Major utility features comprise only a small percentage of the overall utility infrastructure, which is dominated by street-level distribution branches; and concerns for their security often mitigate against data standardization and sharing. Nevertheless, without proper integration and analysis of data for both strategic and street-level infrastructure components, jurisdictions will remain hopelessly vulnerable and reactive to disaster events rather than properly prepared.</simpara>
 </listitem>
 <listitem>
 <simpara><emphasis role="strong">Utility related emergency response (ER)</emphasis></simpara>
@@ -466,7 +473,7 @@ New generations of sensors and smart control valves that can be attached to unde
 <simpara>Complexity of object representation, e.g. 2D point or 3D solid geometry.</simpara>
 </listitem>
 <listitem>
-<simpara>Aggregation and generalization of objects and object details. For example a collector with cables can be modeled by many objects or by one object with a property of number of cables.</simpara>
+<simpara>Aggregation and generalization of objects and object details. For example, a collector with multiple cables can be modeled by many objects or by one object with a property of number of cables.</simpara>
 </listitem>
 <listitem>
 <simpara>Relations represented between distinct networks.</simpara>
@@ -544,7 +551,7 @@ New generations of sensors and smart control valves that can be attached to unde
 <title>Candidate infrastructure models and characteristics</title>
 <orderedlist numeration="arabic">
 <listitem>
-<simpara><emphasis role="strong">CityGML Utility Network ADE (Application Domain Extension)</emphasis> <link linkend="NR-CityGML-UN-ADE">[1]</link> leverages CityGML by representing supply and disposal networks in 3D city models. CityGML is an OGC data model and XML-based format for the storage and exchange of virtual 3D city models. As a CityGML extension, the Utility Network ADE directly supports 3D topographic, topological and functional modeling of hierarchies; it can thus provide homogenized and integrated views of multi-utility networks together with other CityObjects. It would likely require specialized CityGML software systems, however, to leverage more advanced UN ADE characteristics such as network vs feature graphs or functional network roles.</simpara>
+<simpara><emphasis role="strong">CityGML Utility Network ADE (Application Domain Extension)</emphasis> <link linkend="NR-CityGML-UN-ADE">[CUA]</link> leverages CityGML by representing supply and disposal networks in 3D city models. CityGML is an OGC data model and XML-based format for the storage and exchange of virtual 3D city models. As a CityGML extension, the Utility Network (UN) ADE directly supports 3D topographic, topological and functional modeling of hierarchies; it can thus provide homogenized and integrated views of multi-utility networks together with other CityObjects. It would likely require specialized CityGML software systems, however, to leverage more advanced UN ADE characteristics such as network vs feature graphs or functional network roles.</simpara>
 <figure xml:id="img_cityGML" xreflabel="Figure 1">
 <title>CityGML Utility Network ADE Data Model</title>
 <mediaobject>
@@ -556,21 +563,14 @@ New generations of sensors and smart control valves that can be attached to unde
 </figure>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">INSPIRE Utility Networks</emphasis> <link linkend="NR-INSPIRE-UN">[2]</link> is one of the 34 INSPIRE spatial data themes. INSPIRE is a European Union initiative to establish an infrastructures for spatial information that is geared to help to make spatial or geographical information more accessible and interoperable for a wide range of purposes supporting sustainable development. The theme <emphasis>Utility and Government Services</emphasis> provides basic information (e.g. the location, basic technical characteristics or involved parties) on a wide range of administrative and social services of public interest.</simpara>
-<variablelist>
-<varlistentry>
-<term>Subtheme (INSPIRE, 2013)</term>
-<listitem>
+<simpara><emphasis role="strong">INSPIRE Utility Networks</emphasis> <link linkend="NR-INSPIRE-UN">[IUN]</link> is one of the 34 INSPIRE spatial data themes. INSPIRE is a European Union initiative to establish an infrastructure for spatial information that is geared to help to make spatial or geographical information more accessible and interoperable for a wide range of purposes supporting sustainable development. The theme <emphasis>Utility and Government Services</emphasis> provides basic information (e.g. the location, basic technical characteristics or involved parties) on a wide range of administrative and social services of public interest.</simpara>
+<simpara><emphasis role="strong">Subtheme(INSPIRE, 2013)</emphasis></simpara>
 <itemizedlist>
 <listitem>
 <simpara><emphasis>Utility Networks</emphasis>: Node-link-node structured networks for collection, transmission and distribution, including electricity, oil/gas and chemicals, sewer, thermal, water or (not mandatory) telecommunications networks;</simpara>
 </listitem>
 </itemizedlist>
-</listitem>
-</varlistentry>
-<varlistentry>
-<term>General service information</term>
-<listitem>
+<simpara><emphasis role="strong">General service information</emphasis></simpara>
 <itemizedlist>
 <listitem>
 <simpara>Feature location;</simpara>
@@ -582,11 +582,7 @@ New generations of sensors and smart control valves that can be attached to unde
 <simpara>Basic technical characteristics, such as capacity or details on the type of service provided.</simpara>
 </listitem>
 </itemizedlist>
-</listitem>
-</varlistentry>
-<varlistentry>
-<term>Utilities considered</term>
-<listitem>
+<simpara><emphasis role="strong">Utilities considered</emphasis></simpara>
 <itemizedlist>
 <listitem>
 <simpara>Electricity network,</simpara>
@@ -617,11 +613,8 @@ New generations of sensors and smart control valves that can be attached to unde
 </listitem>
 </itemizedlist>
 </listitem>
-</varlistentry>
-</variablelist>
-</listitem>
 <listitem>
-<simpara><emphasis role="strong">IMKL (Information model for cable and pipes)</emphasis> <link linkend="NR-IMKL">[3]</link> is an INSPIRE-based specification for the exchange of cable and pipe information. As mentioned in UICDS contribution from Sisi Zlatanova and Ben Gorte of Delft University of Technology, Netherlands, IMKL has been developed by the Dutch Cadastre and further refined by Informatie Vlaanderen. It extends the INSPIRE Utility Services model as illustrated in Figure 3.</simpara>
+<simpara><emphasis role="strong">IMKL (Information model for cable and pipes)</emphasis> <link linkend="NR-IMKL">[IMKL]</link> is an INSPIRE-based specification for the exchange of cable and pipe information. As mentioned in UICDS contribution from Sisi Zlatanova and Ben Gorte of Delft University of Technology, Netherlands, IMKL has been developed by the Dutch Cadastre and further refined by Informatie Vlaanderen. It extends the INSPIRE Utility Services model as illustrated in Figure 3.</simpara>
 <figure xml:id="img_IMKL" xreflabel="Figure 3">
 <title>Flanders refinement of IMKL data model</title>
 <mediaobject>
@@ -652,7 +645,7 @@ New generations of sensors and smart control valves that can be attached to unde
 </figure>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">ESRI Utility Network Model</emphasis> <link linkend="NR-ESRI-UN">[3]</link> represents a number of models constructed as geodatabases that leverage ArcGIS geometric networks to represent the connections between utility objects specialized for particular utilities, including</simpara>
+<simpara><emphasis role="strong">ESRI Utility Network Model</emphasis> <link linkend="NR-ESRI-UN">[EUN]</link> represents a number of models constructed as geodatabases that leverage ArcGIS geometric networks to represent the connections between utility objects specialized for particular utilities, including</simpara>
 <itemizedlist>
 <listitem>
 <simpara>Utility and Pipeline Data Model</simpara>
@@ -674,7 +667,7 @@ New generations of sensors and smart control valves that can be attached to unde
 <simpara>The models described here are intended to represent data for particular utility industries. They are potential sources of data objects, properties, and codelists for UGI pertaining to those utilities. Information from datasets conforming to these models may also need to be mapped into an integration model. They themselves are not, however, candidates for cross-utility integration models.</simpara>
 <orderedlist numeration="arabic">
 <listitem>
-<simpara><emphasis role="strong">Power Utilities</emphasis> – IEC (International Electrotechnical Commission) CIM (Common Information Model) <link linkend="NR-CIM">[5]</link> is a global standard for electric power transmission and distribution. The CIM is currently maintained as a UML model. It defines a common vocabulary and basic ontology for aspects of the electric power industry. The standards are listed below:</simpara>
+<simpara><emphasis role="strong">Power Utilities</emphasis> – IEC (International Electrotechnical Commission) CIM (Common Information Model) <link linkend="NR-CIM">[CIM]</link> is a global standard for electric power transmission and distribution. The CIM is currently maintained as a UML model. It defines a common vocabulary and basic ontology for aspects of the electric power industry. The standards are listed below:</simpara>
 <itemizedlist>
 <listitem>
 <simpara>IEC 62357 specifies a reference Service Oriented Architecture (SOA) and framework for the development and application of IEC standards for the exchange of power system information in distribution, transmission, and generation systems involved in electric utility operations and planning. The multi-layer reference architecture considers new concepts and evolving technologies, such as semantic modeling and canonical data models, in order to build on technology trends of other industries and standards activities to achieve the interoperability goals of the Smart Grid.</simpara>
@@ -700,7 +693,7 @@ New generations of sensors and smart control valves that can be attached to unde
 </itemizedlist>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">Enterprise Systems for Utilities</emphasis> – The MultiSpeak specification <link linkend="NR-MultiSpeak">[6]</link> is a North American standard for data exchange between enterprise systems which commonly applied in utilities. It started in at the beginning of this century as a collaborative effort between NRECA (National Rural Electric Cooperative Association in the United States) and a small group of vendors supplying software to U.S. electric cooperatives.  The current version of the standard covers: Distribution System Modeling, Work Management, Business Functional External to Distribution Management, Distribution Operations, and Distribution Engineering, Planning Construction and GIS. MultiSpeak has its origins in serving the small utility and electric cooperative markets and is currently in use in the daily operations of more than 600 electric cooperatives, investor-owned utilities, municipals, and public power districts in the US and around the world.</simpara>
+<simpara><emphasis role="strong">Enterprise Systems for Utilities</emphasis> – The MultiSpeak specification <link linkend="NR-MultiSpeak">[MSU]</link> is a North American standard for data exchange between enterprise systems which is commonly applied in utilities. It started in at the beginning of this century as a collaborative effort between NRECA (National Rural Electric Cooperative Association in the United States) and a small group of vendors supplying software to U.S. electric cooperatives.  The current version of the standard covers: Distribution System Modeling, Work Management, Business Functional External to Distribution Management, Distribution Operations, and Distribution Engineering, Planning Construction and Geographic Information Systems (GIS). MultiSpeak has its origins in serving the small utility and electric cooperative markets and is currently in use in the daily operations of more than 600 electric cooperatives, investor-owned utilities, municipals, and public power districts in the US and around the world.</simpara>
 <figure xml:id="img_multiSpeak" xreflabel="Figure 6">
 <title>MultiSpeak Process Model Overview</title>
 <mediaobject>
@@ -786,10 +779,10 @@ National Geological Model – UK 3D NGM</simpara>
 <simpara>Underground storage</simpara>
 <orderedlist numeration="arabic">
 <listitem>
-<simpara><emphasis role="strong">Industry Foundation Classes</emphasis> <link linkend="NR-IFC">[4]</link> is the most widely used architecture and engineering standard for representing and exchanging data about buildings and their components. IFC represents logical building structures and their accompanying properties (attributes) along with 2D and 3D geometry. IFC can also represent utilities components as building services, but generally focuses on buildings themselves rather than general city infrastructure.</simpara>
+<simpara><emphasis role="strong">Industry Foundation Classes</emphasis> <link linkend="NR-IFC">[IFC]</link> is the most widely used architecture and engineering standard for representing and exchanging data about buildings and their components. IFC represents logical building structures and their accompanying properties (attributes) along with 2D and 3D geometry. IFC can also represent utilities components as building services, but generally focuses on buildings themselves rather than general city infrastructure.</simpara>
 </listitem>
 <listitem>
-<simpara><emphasis role="strong">Land and Infrastructure Conceptual Model (LandInfra)</emphasis> <link linkend="NR-LandInfra">[5]</link> is an OGC standard for division of land. The standard includes support for topography as well as subsurface information. It also provisions support for information about civil engineered facilities such as roads and railways, and in the future, “wet” infrastructure including storm drainage, wastewater, and water distribution systems. LandInfra is divided into 15 Requirements Classes for particular subject areas. LandInfra does overlap onto many underground infrastructure elements but it&#8217;s focus is on the land divisions that may be implied by infrastructure components such as water systems, rather than the components themselves.</simpara>
+<simpara><emphasis role="strong">Land and Infrastructure Conceptual Model (LandInfra)</emphasis> <link linkend="NR-LandInfra">[LI]</link> is an OGC standard for division of land. The standard includes support for topography as well as subsurface information. It also provisions support for information about civil engineered facilities such as roads and railways, and in the future, “wet” infrastructure including storm drainage, wastewater, and water distribution systems. LandInfra is divided into 15 Requirements Classes for particular subject areas. LandInfra does overlap onto many underground infrastructure elements but it&#8217;s focus is on the land divisions that may be implied by infrastructure components such as water systems, rather than the components themselves.</simpara>
 <figure xml:id="img_landInfra" xreflabel="Figure 7">
 <title>Current LandInfra requirement classes and corresponding InfraGML packages (minus prospective utility network classes)</title>
 <mediaobject>
@@ -1529,13 +1522,20 @@ National Geological Model – UK 3D NGM</simpara>
 <entry align="left" valign="top"><simpara>all</simpara></entry>
 <entry align="left" valign="top"><simpara>Complete after reviews</simpara></entry>
 </row>
+<row>
+<entry align="left" valign="top"><simpara>January 3, 2020</simpara></entry>
+<entry align="left" valign="top"><simpara>J. Lieberman</simpara></entry>
+<entry align="left" valign="top"><simpara>1.1</simpara></entry>
+<entry align="left" valign="top"><simpara>all</simpara></entry>
+<entry align="left" valign="top"><simpara>Updated model</simpara></entry>
+</row>
 </tbody>
 </tgroup>
 </table>
 </appendix>
 <appendix xml:id="Bibliography">
 <title>Bibliography</title>
-<simpara><anchor xml:id="Lieberman2017" xreflabel="[Lieberman2017]"/>[1] J. Lieberman and A. ed’s Ryan, “OGC Underground Infrastructure Concept Study Engineering Report,” 2017.</simpara>
-<simpara><anchor xml:id="Lieberman2018" xreflabel="[Lieberman2018]"/>[2] Lieberman2018</simpara>
+<simpara><anchor xml:id="Lieberman2017" xreflabel="[Lieberman2017]"/>[1] J. Lieberman and A. Ryan, Eds., “OGC Underground Infrastructure Concept Study Engineering Report,” 2017.</simpara>
+<simpara><anchor xml:id="Lieberman2018" xreflabel="[Lieberman2018]"/>[2] J. Lieberman, Ed., “Model for Underground Data Definition and Integration (MUDDI) Engineering Report,” 2018.</simpara>
 </appendix>
 </book>
