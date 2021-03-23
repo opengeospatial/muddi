@@ -18,10 +18,10 @@
 // *****************************************************************************
 // please don't change any of the following, but proceed at line 62
 // *****************************************************************************
-:publicationDate: Draft
-:approvalDate: Draft
-:referenceURL: ID
-:copyrightYear: 2019
+:publicationDate: 2021-03-23
+:approvalDate: 2020-01-03
+:referenceURL: MUDDI
+:copyrightYear: 2021
 //
 :titletext: {title}
 :doctype: book
@@ -46,7 +46,7 @@ Posted Date: {postedDate}
 
 Reference number of this document: {docReference}
 
-Reference URL for this document: http://www.opengis.net/doc/PER/t13-{referenceURL}
+Reference URL for this document: http://www.opengis.net/doc/PER/{referenceURL}
 
 Category: Public Engineering Report
 
